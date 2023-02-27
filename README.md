@@ -1,3 +1,5 @@
+[![Deployment pipeline](https://github.com/larts85/masaje_las_manos/actions/workflows/pull_request.yml/badge.svg)](https://github.com/larts85/masaje_las_manos/actions/workflows/pull_request.yml)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
