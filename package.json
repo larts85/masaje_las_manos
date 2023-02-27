@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "CI=true jest --watch",
-    "test-ci": "CI=true jest --watch"
+    "test": "jest --watch",
+    "test-ci": "jest"
   },
   "dependencies": {
     "@types/node": "18.14.1",
