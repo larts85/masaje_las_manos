@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Su bienestar en nuestras manos" />
         <link rel="stylesheet" href="/favicon.ico" />
       </Head>
-      <h1 className="text-1xl font-bold underline">Hello world!</h1>
+      <h1 className="text-1xl font-bold underline">Hello  world!</h1>
     </>
   )
 }
