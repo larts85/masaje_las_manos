@@ -1,14 +1,13 @@
-name: Deployment pipeline
+name: Linter and Tests
 
 on: [pull_request]
 
 jobs:
   Deploy:
-    runs-on: 
-      ubuntu-20.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-        with: 
+        with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
