@@ -1,15 +1,24 @@
 /* eslint-disable @next/next/no-css-tags */
+import type { NextPage } from 'next'
 import Head from 'next/head'
+import useTranslations from '../../hooks/useTraslations'
+import Header from '../../components/Header/index'
 
-export default function Home() {
+const Home: NextPage = () => {
+  const { translations } = useTranslations()
   return (
     <>
       <Head>
-        <title>Masaje Las Manos</title>
-        <meta name="description" content="Su bienestar en nuestras manos" />
-        <link rel="stylesheet" href="/favicon.ico" />
+        <title>{translations.home.pageTitle}</title>
+        <meta name="description" content={translations.home.metaDescription} />
+        {/* <link rel="stylesheet" href="/favicon.ico" /> */}
       </Head>
-      <h1 className="text-1xl font-bold underline">Hello world!</h1>
+      <Header />
+      <h1 className="text-1xl font-bold underline">
+        {translations.home.greeting}
+      </h1>
     </>
   )
 }
+
+export default Home

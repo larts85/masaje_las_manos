@@ -1,0 +1,12 @@
+{
+  "home": {
+    "pageTitle": "The Hand Massage",
+    "metaDescription": "Your well-being in our hands",
+    "greeting": "Hello world"
+  },
+  "navLinks": {
+    "home": "Home",
+    "contact": "Contact",
+    "anchorTitle": "Page"
+  }
+}
