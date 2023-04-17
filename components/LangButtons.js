@@ -11,7 +11,6 @@ const LangButtons = () => {
           locale !== lang && (
             <Link key={lang} locale={lang} href={asPath}>
               <div key={lang}>{lang.split('-')[0]}</div>
-              {/* {lang.split('-')[0]} */}
             </Link>
           ),
       )}

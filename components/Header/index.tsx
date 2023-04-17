@@ -3,13 +3,14 @@ import useTranslations from '../../hooks/useTraslations'
 import LangButtons from '../LangButtons'
 
 const Header: FC = () => {
+  const { translations } = useTranslations()
   return (
     <header>
       <LangButtons />
       <nav>
         <ul>
-          <li>{useTranslations().translations.navLinks.home}</li>
-          <li>{useTranslations().translations.navLinks.anchorTitle}</li>
+          <li>{translations.navLinks.home}</li>
+          <li>{translations.navLinks.anchorTitle}</li>
         </ul>
       </nav>
     </header>
