@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import useTranslations from '../../hooks/useTraslations'
-import LangButtons from '../LangButtons'
+import LangButtons from '../langButtons'
 
 const Header: FC = () => {
   const { translations } = useTranslations()

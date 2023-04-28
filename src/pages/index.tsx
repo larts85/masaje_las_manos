@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-css-tags */
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import useTranslations from '../../hooks/useTraslations'
-import Header from '../../components/Header/index'
+import useTranslations from '@/hooks/useTraslations'
+import Header from '../components/Header'
 
 const Home: NextPage = () => {
   const { translations } = useTranslations()
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <Head>
         <title>{translations.home.pageTitle}</title>
         <meta name="description" content={translations.home.metaDescription} />
-        {/* <link rel="stylesheet" href="/favicon.ico" /> */}
+        <link rel="stylesheet" href="/favicon.ico" />
       </Head>
       <Header />
       <h1 className="text-1xl font-bold underline">

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Home from '@/pages'
+import Home from '../pages'
 
 jest.mock('next/router', () => {
   return {

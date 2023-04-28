@@ -6,11 +6,11 @@ const LangButtons = () => {
 
   return (
     <nav>
-      {locales.map(
+      {locales!.map(
         (lang) =>
           locale !== lang && (
             <Link key={lang} locale={lang} href={asPath}>
-              <div key={lang}>{lang.split('-')[0]}</div>
+              <div role="button">{lang.split('-')[0]}</div>
             </Link>
           ),
       )}
