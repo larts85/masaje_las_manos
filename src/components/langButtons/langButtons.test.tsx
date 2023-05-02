@@ -10,28 +10,31 @@ jest.mock('next/router', () => {
       return {
         locale: 'en-US',
         locales: ['en-US', 'es-AR', 'pt-BR'],
-        asPath: '',
+        asPath: '/',
       }
     },
   }
 })
 
 describe('LangButtons', () => {
-  it('renders a button for each available language', () => {
+  it('should renders a button for each available language', () => {
     render(<LangButtons />)
-
-    const englishButton = screen.queryByRole('button', { name: /en/i })
     const spanishButton = screen.queryByRole('button', { name: /es/i })
-    expect(englishButton).toEqual(null)
     expect(spanishButton).toBeInTheDocument()
   })
 
-  it('redirects to the selected language when a button is clicked', async () => {
+  it('should not generate a button for the current language', () => {
+    render(<LangButtons />)
+
+    const englishButton = screen.queryByRole('button', { name: /en/i })
+    expect(englishButton).not.toBeInTheDocument()
+  })
+
+  it('should redirect to the selected language when a button is clicked', async () => {
     const { debug } = render(<LangButtons />)
     debug()
-    const buttons = screen.getAllByRole('button')
-    fireEvent.click(buttons[0])
-    const currentUrl = await window.location.href
-    expect(currentUrl).toContain('/es')
+    const spanishButton = screen.queryByRole('button', { name: /es/i })
+    fireEvent.click(spanishButton)
+    expect(window.location.href).toContain('es')
   })
 })
