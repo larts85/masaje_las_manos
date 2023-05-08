@@ -4,11 +4,7 @@ import { useRouter } from 'next/router'
 
 const LangButtons = () => {
   const { asPath } = useRouter()
-  const {
-    currentLang,
-    langs,
-  }: { currentLang: string | undefined; langs: string[] | undefined } =
-    useTranslations()
+  const { currentLang, langs } = useTranslations()
 
   return (
     <nav>
