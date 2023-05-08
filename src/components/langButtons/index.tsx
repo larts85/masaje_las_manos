@@ -1,14 +1,16 @@
+import useTranslations from '@/hooks/useTranslations'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const LangButtons = () => {
-  const { asPath, locale, locales } = useRouter()
+  const { asPath } = useRouter()
+  const { currentLang, langs } = useTranslations()
 
   return (
     <nav>
-      {locales!.map(
+      {langs!.map(
         (lang) =>
-          locale !== lang && (
+          currentLang !== lang && (
             <Link key={lang} locale={lang} href={asPath}>
               <div role="button">{lang.split('-')[0]}</div>
             </Link>

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import useTranslations from '../../hooks/useTraslations'
+import useTranslations from '../../hooks/useTranslations'
 import LangButtons from '../LangButtons'
 
 const Header: FC = () => {

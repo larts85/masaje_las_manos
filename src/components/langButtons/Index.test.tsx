@@ -2,38 +2,66 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import LangButtons from '.'
 
-jest.mock('next/router', () => {
-  return {
-    ...jest.requireActual('next/router'),
-    useRouter() {
-      return {
-        locale: 'en-US',
-        locales: ['en-US', 'es-AR', 'pt-BR'],
-        asPath: '/',
-      }
-    },
-  }
-})
+const mockRouter = jest.fn()
+
+jest.mock('next/router', () => ({
+  ...jest.requireActual('next/router'),
+  useRouter: () => mockRouter(),
+}))
+
+jest.mock('@/hooks/useTranslations', () => () => ({
+  currentLang: 'es-AR',
+  langs: ['en-US', 'es-AR', 'pt-BR'],
+}))
 
 describe('LangButtons', () => {
   it('should renders a button for each available language', () => {
+    mockRouter.mockReturnValue({
+      asPath: '/',
+      locale: 'en-US',
+      locales: ['en-US', 'es-AR', 'pt-BR'],
+    })
     render(<LangButtons />)
-    const spanishButton = screen.getByRole('button', { name: /es/i })
+
+    const spanishButton = screen.getByRole('link', { name: /es/i })
     expect(spanishButton).toBeInTheDocument()
   })
 
   it('should not generate a button for the current language', () => {
+    mockRouter.mockReturnValue({
+      asPath: '/',
+      locale: 'en-US',
+      locales: ['en-US', 'es-AR', 'pt-BR'],
+    })
     render(<LangButtons />)
 
-    const englishButton = screen.queryByRole('button', { name: /en/i })
+    const englishButton = screen.queryByRole('link', { name: /en/i })
     expect(englishButton).not.toBeInTheDocument()
   })
 
-  it('should redirect to the selected language when a button is clicked', async () => {
-    const { debug } = render(<LangButtons />)
-    debug()
-    const spanishButton = screen.getByRole('button', { name: /es/i })
-    fireEvent.click(spanishButton)
-    expect(window.location.pathname).toBe('es-AR')
+  it('should change path on button click', () => {
+    const onMock = jest.fn(() => Promise.resolve(true))
+    const emitMock = jest.fn(() => Promise.resolve(true))
+    const pushMock = jest.fn(() => Promise.resolve(true))
+
+    mockRouter.mockImplementation(() => ({
+      push: pushMock,
+      prefetch: () => Promise.resolve(true),
+      asPath: 'pt-BR',
+      events: {
+        off: jest.fn(),
+        emit: emitMock,
+        on: onMock,
+      },
+    }))
+
+    render(<LangButtons />)
+
+    const portugueseButton = screen.getByRole('button', { name: /pt/i })
+    fireEvent.click(portugueseButton)
+
+    expect(pushMock).toHaveBeenCalled()
+    expect(emitMock).toHaveBeenCalled()
+    expect(onMock).toHaveBeenCalled()
   })
 })

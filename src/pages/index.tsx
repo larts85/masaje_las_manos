@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-css-tags */
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import useTranslations from '@/hooks/useTraslations'
+import useTranslations from '@/hooks/useTranslations'
 import Header from '../components/Header'
 
 const Home: NextPage = () => {
