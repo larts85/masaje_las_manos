@@ -58,4 +58,5 @@ describe('LangButtons', () => {
     expect(pushMock).toHaveBeenCalled()
     expect(emitMock).toHaveBeenCalled()
     expect(onMock).toHaveBeenCalled()
+  })
 })
