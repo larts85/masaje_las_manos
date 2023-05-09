@@ -1,0 +1,12 @@
+{
+  "home": {
+    "pageTitle": "Masaje Las Manos",
+    "metaDescription": "Su bienestar en nuestras manos",
+    "greeting": "Hola mundo"
+  },
+  "navLinks": {
+    "home": "Inicio",
+    "contact": "Contacto",
+    "anchorTitle": "Página"
+  }
+}

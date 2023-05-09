@@ -1,6 +1,6 @@
 {
   "name": "masaje_las_manos",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watchAll --coverage",
+    "test-file": "jest --watchAll --coverage -- -t $NAME",
     "test-ci": "jest"
   },
   "dependencies": {
