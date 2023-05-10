@@ -2,26 +2,39 @@ import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Home from '../pages'
 
-jest.mock('next/router', () => {
-  return {
-    //se traen todas las propiedades y metodos del next/router
-    ...jest.requireActual('next/router'),
-    useRouter() {
-      return {
-        locale: 'en-US',
-        locales: ['en-US'],
-        asPath: '',
-      }
-    },
-  }
-})
+const mockRouter = jest.fn()
+jest.mock('next/router', () => ({
+  ...jest.requireActual('next/router'),
+  useRouter: () => mockRouter(),
+}))
 
 describe('Home', () => {
   it('renders a heading', () => {
+    mockRouter.mockReturnValue({
+      asPath: '/',
+      locale: 'en-US',
+      locales: ['en-US', 'es-AR', 'pt-BR'],
+    })
+
     render(<Home />)
 
     const heading = screen.getByRole('heading', {
       name: /Hello world/i,
+    })
+    expect(heading).toBeInTheDocument()
+  })
+
+  it('renders a heading', () => {
+    mockRouter.mockReturnValue({
+      asPath: '/',
+      locale: 'es-AR',
+      locales: ['en-US', 'es-AR', 'pt-BR'],
+    })
+
+    render(<Home />)
+
+    const heading = screen.getByRole('heading', {
+      name: /hola mundo/i,
     })
     expect(heading).toBeInTheDocument()
   })
