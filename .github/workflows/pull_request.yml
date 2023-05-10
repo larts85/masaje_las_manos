@@ -19,4 +19,10 @@ jobs:
       - name: Build
         run: yarn build
       - name: Test
-        run: yarn test-ci
+        run: yarn test-ci --coverage
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: coverage/lcov-report/
+
