@@ -6,7 +6,9 @@
   },
   "navLinks": {
     "home": "Começar",
+    "services": "Serviços",
     "contact": "Contato",
+    "aboutUs": "Sobre nós",
     "anchorTitle": "Página"
   }
 }
