@@ -22,7 +22,7 @@ module.exports = {
           success: '#00AF80',
           successLight: '#00E08B',
         },
-        natural: {
+        nautral: {
           base: '#7B7B7B',
           light: '#C5C5C5',
           lighter: '#F8F8F8',
@@ -33,6 +33,11 @@ module.exports = {
           light: '#FFE7C0',
           lighter: '#FFF5E5',
           darker: '#785825',
+        },
+        variations: {
+          primaryDisable: '#785825CC',
+          secondaryHover: '#F8D498CC',
+          transparentBorder: 'rgba(0, 0, 0, 0.7)',
         },
       },
       fontFamily: {
@@ -47,6 +52,24 @@ module.exports = {
         '14px': '14px',
         '64px': '64px',
         '56px': '56px',
+      },
+      width: {
+        '815px': '815px',
+        '175px': '175px',
+      },
+      height: {
+        '92px': '92px',
+        '52px': '52px',
+      },
+      boxShadow: {
+        predetermined: '4px 4px 2px rgba(0, 0, 0, 0.25)',
+        active: 'inset 4px 4px 1px rgba(0, 0, 0, 0.1)',
+        disabled: 'rgba(120, 88, 37, 0.8)',
+        transparentActive: 'inset 4px 4px 1px #EDE7E7',
+      },
+      borderWidth: {
+        '3px': '3px',
+        '0.5px': '0.5px',
       },
     },
   },
