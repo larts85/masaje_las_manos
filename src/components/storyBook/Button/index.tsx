@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
-import { className as typografyClassName } from '../typografy'
+import { className as typografyClassName } from '../Typografy'
 
 export const className = {
   buttonContainer:
