@@ -23,33 +23,31 @@ export const className = {
   },
 }
 const Buttons: FC = () => {
-  const [isPrimaryActive, setIsPrimaryActive] = useState(false)
-  const [isSecondaryActive, setIsSecondaryActive] = useState(false)
-  const [istransparentActive, setIsTransparentActive] = useState(false)
+  const [isActive, setIsActive] = useState({
+    primary: false,
+    secondary: false,
+    transparent: false,
+  })
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const target = e.target as HTMLButtonElement
-    if (target.name === 'primary') {
-      setIsPrimaryActive(!isPrimaryActive)
-    }
-    if (target.name === 'secondary') {
-      setIsSecondaryActive(!isSecondaryActive)
-    }
-    if (target.name === 'transparent') {
-      setIsTransparentActive(!istransparentActive)
-    }
+  const handleSubmit = (buttonName: keyof typeof isActive) => {
+    setIsActive(() => ({
+      ...isActive,
+      [buttonName]: !isActive[buttonName],
+    }))
   }
   return (
     <>
-      <div className={className.buttonContainer}>
+      <div
+        className={className.buttonContainer}
+        onClick={() => handleSubmit('primary')}
+      >
         <button
           className={
-            isPrimaryActive
+            isActive.primary
               ? className.primary.active
               : className.primary.primary
           }
-          name="primary"
-          onClick={handleSubmit}
+          onClick={() => handleSubmit('primary')}
         >
           PRIMARY
         </button>
@@ -58,12 +56,11 @@ const Buttons: FC = () => {
       <div className={className.buttonContainer}>
         <button
           className={
-            isSecondaryActive
+            isActive.secondary
               ? className.secondary.active
               : className.secondary.secondary
           }
-          name="secondary"
-          onClick={handleSubmit}
+          onClick={() => handleSubmit('secondary')}
         >
           SECONDARY
         </button>
@@ -72,12 +69,11 @@ const Buttons: FC = () => {
       <div className={className.buttonContainer}>
         <button
           className={
-            istransparentActive
+            isActive.transparent
               ? className.transparent.active
               : className.transparent.transparent
           }
-          name="transparent"
-          onClick={handleSubmit}
+          onClick={() => handleSubmit('transparent')}
         >
           TRANSPARENT
         </button>
