@@ -23,9 +23,9 @@ const RadioButtons: FC = () => {
           className={className.radioButons}
           onClick={handleSubmit}
         />
-        <div className={isChecked ? className.radioButtonsSelect : 'hidden'}>
-          {' '}
-        </div>
+        <div
+          className={isChecked ? className.radioButtonsSelect : 'hidden'}
+        ></div>
       </label>
     </div>
   )
