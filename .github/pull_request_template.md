@@ -15,30 +15,29 @@ A few sentences describing the overall goals of the pull request's commits. Incl
 
 ## Nomenclatura y convenciones.
 
-- Usar camelCase para nombrar variables y funciones.
-- Usar PascalCase para nombrar componentes en React.
-- Usar nombres descriptivos y coherentes para todas las variables, funciones, componentes y archivos. NO USAR UNA SOLA LETRA PARA NOMBRAR VARIABLES. ej.: `error => e` , `index => i`.
-- Usar eslint y prettier para mantener la limpieza de errores. NO DEJAR WARNINGS DE ESLINT SIN SOLUCIONAR.
-  Variabilizar todos los números y las cadenas de texto. NO INGRESAR MAGIC STRINGS, O MAGIC NUMBERS ej.:
+- Use camelCase to name variables and functions.
+- Use PascalCase to name components in React.
+- Use descriptive and consistent names for all variables, functions, components and files. DO NOT USE A SINGLE LETTER TO NAME VARIABLES. eg: `error => e` , `index => i`.
+- Use eslint and prettier to keep bug cleanup. DO NOT LEAVE ESLINT WARNINGS UNSOLVED.
+- Vary all numbers and text strings. DO NOT ENTER MAGIC STRINGS, OR MAGIC NUMBERS e.g.:
 
   `'template_discount'` => `ACTION_TYPES.TEMPLATE_DISCOUNT`
-
   `if (age > 18)` => `if (age > AGE_ADULTHOOD)`
 
-## Modularización y reutilización de código.
+## Modularization and code reuse.
 
-Es importante modularizar el código en módulos o componentes reutilizables para evitar la repetición de código y mejorar la legibilidad y mantenibilidad del proyecto.
+It is important to modularize the code into reusable modules or components to avoid code repetition and improve the readability and maintainability of the project.
 
-- Separar la lógica de presentación y la lógica de datos en diferentes componentes en React.
-- No usar `useEffect` dentro del componente sino moverlo a un custom hook ya sea dentro o fuera del archivo en cuestión.
-- Usar funciones de utilidad o bibliotecas externas para evitar la repetición de código.
-- Evitar uso de funciones impuras.
+- Separate presentation logic and data logic into different components in React.
+- Do not use `useEffect` inside the component but move it to a custom hook either inside or outside the file in question.
+- Use utility functions or external libraries to avoid code repetition.
+- Avoid using impure functions.
 
-## Documentación y comentarios.
+## Documentation and comments.
 
-- Escribir comentarios claros y concisos para explicar el **porqué** y NO el **qué** de las secciones de código, sólo cuando sea realmente necesario. _En líneas generales una buena nomenclatura debería ser suficiente para la comprensión del código._
+- Write clear and concise comments to explain the **why** and NOT the **what** of code sections, only when really necessary. _In general lines, a good nomenclature should be enough to understand the code._
 
-## Pruebas automatizadas.
+## Automation tests.
 
-- Usar el store real al desarrollar las pruebas en la medida de lo posible (evitar el uso de `'redux-mock-store'` ).
-- Escribir pruebas para todas las funciones y componentes del proyecto.
+- Use the real store when developing tests as much as possible (avoid using `'redux-mock-store'` ).
+- Write tests for all functions and components of the project.

@@ -22,7 +22,8 @@
       "@locales/*": ["./src/locales/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@styles/*": ["./src/styles/*"],
-      "@services/*": ["./src/services/*"]
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
