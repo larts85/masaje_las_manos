@@ -28,12 +28,16 @@ jobs:
     runs-on: ubuntu-latest
     # needs: pipeline
     steps:
-      - uses: actions/checkout@v1
-      - run: yarn
-      - name: Run Tests
-        run: "yarn test --json --outputFile=/home/runner/work/_actions/mattallty/jest-github-action/v1/dist/jest.results.json"
-      - uses: mattallty/jest-github-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          changes-only: true
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - name: TestCoverage
+        id: testCoverage
+        uses: anuraag016/Jest-Coverage-Diff@master
+        with:
+          fullCoverageDiff: false // defaults to false, if made true whole coverage report is commented with the diff
+          runCommand: "npx jest --collectCoverageFrom='[\"src/**/*.{js,jsx,ts,tsx}\"]' --coverage --collectCoverage=true --coverageDirectory='./' --coverageReporters='json-summary' --forceExit --detectOpenHandles test/.*test.*"
+          delta: 0.5
 
