@@ -7,7 +7,7 @@ on:
   #   - cron: '30 8 * * *' # Daily
   pull_request:
     branches:
-      - develop
+      - main
   # repository_dispatch:
   #   types: "coverage"
   
@@ -29,7 +29,7 @@ jobs:
         with:
           filename: coverage/index.html
           badge: true
-          format: 'markdown'
+          format: 'html'
           output: 'both'
 
       - name: Add Coverage PR Comment
