@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest --watchAll --coverage",
     "test-file": "jest --watchAll --coverage -- -t $NAME",
-    "test-ci": "jest --coverage --silent --ci"
+    "test-ci": "jest --coverage"
   },
   "dependencies": {
     "@types/node": "18.14.1",
