@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  Deploy:
+  Pipeline:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -26,9 +26,9 @@ jobs:
       - name: Code Coverage Summary Report
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: coverage/index.html
+          filename: coverage/coverage-final.json
           badge: true
-          format: 'html'
+          format: 'json'
           output: 'both'
 
       - name: Add Coverage PR Comment
