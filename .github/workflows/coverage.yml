@@ -9,6 +9,7 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-latest
+    needs: pipeline
     steps:
       - uses: actions/checkout@v3
       - uses: ArtiomTr/jest-coverage-report-action@v2
