@@ -15,11 +15,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.13.0
-      - uses: ArtiomTr/jest-coverage-report-action@v2
-        with:
-          test-script: yarn test-ci
-          coverage-file: ./coverage/coverage-final.json
-          base-coverage-file: ./coverage/coverage-final.json
       - name: Install dependencies
         run: yarn
       - name: Lint
@@ -28,3 +23,8 @@ jobs:
         run: yarn build
       - name: Test
         run: yarn test-ci
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          test-script: yarn test-ci
+          coverage-file: ./coverage/coverage-final.json
+          base-coverage-file: ./coverage/coverage-final.json
