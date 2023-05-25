@@ -20,8 +20,6 @@ jobs:
           test-script: yarn test-ci
           coverage-file: ./coverage/coverage-final.json
           base-coverage-file: ./coverage/coverage-final.json
-          message: ${{ steps.coverage.outputs.report }}
-          ouput: report-markdown
       - name: Install dependencies
         run: yarn
       - name: Lint
