@@ -12,6 +12,7 @@ jobs:
       pull-requests: write
       contents: write
     runs-on: ubuntu-latest
+    needs: pipeline
     steps:
       - uses: actions/checkout@v1g
       - uses: jwalton/gh-find-current-pr@v1
