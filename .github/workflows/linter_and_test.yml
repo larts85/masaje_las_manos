@@ -29,6 +29,6 @@ jobs:
           branch-coverage-report-path: coverage/coverage-final.json
           base-coverage-report-path: coverage/coverage-final.json
           delta: 0.3
-          accessToken: <GITHUB_TOKEN>
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
           fullCoverageDiff: true
           useSameComment: true
