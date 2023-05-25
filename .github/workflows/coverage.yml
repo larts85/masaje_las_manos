@@ -1,15 +1,26 @@
 name: 'coverage'
 
 on:
-  pull_request_target:
+  push:
     branches:
-      - main
-      - develop
+      - "*"
 
 jobs:
   coverage:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: write
     runs-on: ubuntu-latest
     needs: pipeline
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v1g
+      - uses: jwalton/gh-find-current-pr@v1
+        id: findPr
       - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          test-script: yarn test-ci
+          coverage-file: ./coverage/coverage-final.json
+          base-coverage-file: ./coverage/coverage-final.json
+          message: ${{ steps.coverage.outputs.report }}
+          ouput: report-markdown
