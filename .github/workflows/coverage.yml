@@ -1,9 +1,6 @@
 name: 'coverage'
 
-on:
-  push:
-    branches:
-      - develop
+on: [push, pull_request, pull_request_target]
 
 jobs:
   coverage:
