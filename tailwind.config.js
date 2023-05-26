@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        Primary: {
+        primary: {
           base: '#07BAC1',
           light: '#88DBDF',
           lighter: '#C1EDEF',
@@ -34,10 +34,9 @@ module.exports = {
           lighter: '#FFF5E5',
           darker: '#785825',
         },
-        variations: {
-          primaryDisable: '#785825CC',
-          secondaryHover: '#F8D498CC',
-          transparentBorder: 'rgba(0, 0, 0, 0.7)',
+        transparency: {
+          secondaryDarker80: 'rgba(120,88,37,0.8)',
+          secondaryBase80: 'rgba(248,212,152,0.8)',
         },
       },
       fontFamily: {
@@ -61,15 +60,20 @@ module.exports = {
         '92px': '92px',
         '52px': '52px',
       },
+      filter: {
+        dropShadow: 'drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.25))',
+      },
       boxShadow: {
-        predetermined: '4px 4px 2px rgba(0, 0, 0, 0.25)',
-        active: 'inset 4px 4px 1px rgba(0, 0, 0, 0.1)',
-        disabled: 'rgba(120, 88, 37, 0.8)',
-        transparentActive: 'inset 4px 4px 1px #EDE7E7',
+        buttonPrimaryActive: 'inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
+        buttonPrimaryHover: ' 3px 3px 6px rgba(0, 0, 0, 0.25)',
+        buttonSecondaryActive: ' inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
+        buttonSecondaryHover: '3px 3px 6px rgba(0, 0, 0, 0.25)',
+        buttonTransparent: 'inset 3px 3px 6px rgba(248, 212, 152, 0.25)',
       },
       borderWidth: {
         '3px': '3px',
         '0.5px': '0.5px',
+        '1px': '1px',
       },
     },
   },
