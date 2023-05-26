@@ -60,15 +60,12 @@ module.exports = {
         '92px': '92px',
         '52px': '52px',
       },
-      filter: {
-        dropShadow: 'drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.25))',
-      },
       boxShadow: {
-        buttonPrimaryActive: 'inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
-        buttonPrimaryHover: ' 3px 3px 6px rgba(0, 0, 0, 0.25)',
-        buttonSecondaryActive: ' inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
-        buttonSecondaryHover: '3px 3px 6px rgba(0, 0, 0, 0.25)',
-        buttonTransparent: 'inset 3px 3px 6px rgba(248, 212, 152, 0.25)',
+        'button-primary-active': 'inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
+        'button-primary-hover': ' 2px 2px 5px rgba(0, 0, 0, 0.25)',
+        'button-secondary-active': ' inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
+        'button-secondary-hover': '3px 3px 6px rgba(0, 0, 0, 0.25)',
+        'button-transparent': 'inset 3px 3px 6px rgba(248, 212, 152, 0.25)',
       },
       borderWidth: {
         '3px': '3px',
