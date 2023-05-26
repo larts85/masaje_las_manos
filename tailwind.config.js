@@ -61,10 +61,9 @@ module.exports = {
         '52px': '52px',
       },
       boxShadow: {
-        'button-primary-active': 'inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
+        'button-active': 'inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
         'button-primary-hover': ' 2px 2px 5px rgba(0, 0, 0, 0.25)',
-        'button-secondary-active': ' inset 3px 3px 6px rgba(0, 0, 0, 0.25)',
-        'button-secondary-hover': '3px 3px 6px rgba(0, 0, 0, 0.25)',
+        'button-hover': '3px 3px 6px rgba(0, 0, 0, 0.25)',
         'button-transparent': 'inset 3px 3px 6px rgba(248, 212, 152, 0.25)',
       },
       borderWidth: {

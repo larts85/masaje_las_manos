@@ -22,6 +22,10 @@ const StoryBookButtons: FC = () => {
         <Button variant={VARIANT.TRANSPARENT} isDisable={false} />
         <Button variant={VARIANT.TRANSPARENT} isDisable={true} />
       </div>
+      <div className={className.buttonContainer}>
+        <Button variant={VARIANT.NEUTRAL} isDisable={false} />
+        <Button variant={VARIANT.NEUTRAL} isDisable={true} />
+      </div>
     </>
   )
 }
