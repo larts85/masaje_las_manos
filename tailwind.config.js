@@ -59,7 +59,6 @@ module.exports = {
       height: {
         '92px': '92px',
         '52px': '52px',
-        // '200px': '200px',
       },
       boxShadow: {
         'button-active': 'inset 3px 3px 6px rgba(0, 0, 0, 0.25)',

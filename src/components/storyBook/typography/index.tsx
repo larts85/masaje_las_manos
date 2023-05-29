@@ -3,7 +3,7 @@ import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
 
 export const className = {
-  typografyContainer:
+  typographyContainer:
     'bg-Primary-light w-96 rounded-lg p-2 m-16  flex flex-col items-center justify-center',
   title: 'p-3 text-xs text-black italic self-start',
   categoryDiv: 'bg-Primary-lighter w-72 rounded-lg mb-4',
@@ -34,10 +34,10 @@ export const className = {
   },
 }
 
-const Typografy: FC = () => {
+const Typography: FC = () => {
   return (
-    <div className={className.typografyContainer}>
-      <p className={className.title}>Typografys</p>
+    <div className={className.typographyContainer}>
+      <p className={className.title}>Typographys</p>
       <div className={className.categoryDiv}>
         <ul>
           <li className={className.component.textButton}>TextButton</li>
@@ -70,4 +70,4 @@ const Typografy: FC = () => {
   )
 }
 
-export default Typografy
+export default Typography

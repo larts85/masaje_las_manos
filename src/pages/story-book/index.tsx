@@ -1,15 +1,17 @@
 import { FC } from 'react'
 
-import Typografy from '@/components/storyBook/typografy'
+import Typography from '@/components/storyBook/typography'
 import StoryBookButtons from '@/components/storyBook/Button'
-import RadioButtons from '@/components/storyBook/RadioButtons'
+import StoryBookRadioButtons from '@/components/storyBook/RadioButtons'
+import StoryBookLogo from '@/components/storyBook/Logo'
 
 const StoryBook: FC = () => {
   return (
     <>
-      <Typografy />
+      <Typography />
       <StoryBookButtons />
-      <RadioButtons />
+      <StoryBookRadioButtons />
+      <StoryBookLogo />
     </>
   )
 }

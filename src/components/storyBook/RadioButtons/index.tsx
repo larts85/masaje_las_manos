@@ -11,10 +11,10 @@ const StoryRadioButtons: FC = () => {
   return (
     <div className="flex">
       <div className={className.buttonContainer}>
-        <RadioButtons variant={VARIANT.SECONDARY} options={options} />
+        <RadioButtons variant={VARIANT.PRIMARY} options={options} />
       </div>
       <div className={className.buttonContainer}>
-        <RadioButtons variant={VARIANT.PRIMARY} options={options} />
+        <RadioButtons variant={VARIANT.SECONDARY} options={options} />
       </div>
       <div className={className.buttonContainer}>
         <RadioButtons variant={VARIANT.NEUTRAL} options={options} />
