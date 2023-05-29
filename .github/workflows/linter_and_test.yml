@@ -1,15 +1,12 @@
 name: Linter and Tests
 
-on: 
-  pull_request:
-    branches:
-      - develop
+on: [pull_request]
 
 jobs:
-  pipeline:
+  Deploy:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
