@@ -2,7 +2,7 @@ import Button from '@/components/Button'
 import { VARIANT } from '@/types/type'
 import { FC } from 'react'
 
-export const className = {
+const className = {
   buttonContainer:
     'w-815px h-92px border-2 border-dashed border-purple-600 gap-5 flex p-5 m-5',
 }
