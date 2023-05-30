@@ -10,22 +10,21 @@ type ClassName = Record<
 export const className: ClassName = {
   [VARIANT.PRIMARY]: {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
-      'appearance-none w-6 h-6 rounded-full border-2 border-primary-base absolute cursor-pointer ',
+      'appearance-none w-6 h-6 rounded-full border-2 border-primary-base  cursor-pointer ',
     [VARIANT_STATES_RADIO_BUTTONS.CHECKED]:
-      'bg-primary-base w-4 h-4 rounded-full block absolute left-3 top-3',
+      'bg-primary-base w-4 h-4 rounded-full block absolute left-1 top-1',
   },
   [VARIANT.SECONDARY]: {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
-      'appearance-none w-6 h-6 rounded-full border-2 border-secondary-base absolute cursor-pointer',
+      'appearance-none w-6 h-6 rounded-full border-2 border-secondary-base  cursor-pointer',
     [VARIANT_STATES_RADIO_BUTTONS.CHECKED]:
-      ' bg-secondary-base w-4 h-4 rounded-full block absolute left-3 top-3',
+      ' bg-secondary-base w-4 h-4 rounded-full block absolute left-1 top-1',
   },
-
   [VARIANT.NEUTRAL]: {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
-      'appearance-none w-6 h-6 rounded-full border-2 border-nautral-base absolute cursor-pointer ',
+      'appearance-none w-6 h-6 rounded-full border-2 border-nautral-base  cursor-pointer ',
     [VARIANT_STATES_RADIO_BUTTONS.CHECKED]:
-      'bg-nautral-base w-4 h-4 rounded-full block absolute left-3 top-3',
+      'bg-nautral-base w-4 h-4 rounded-full block absolute left-1 top-1',
   },
   [VARIANT.TRANSPARENT]: {},
 }
@@ -44,7 +43,7 @@ const RadioButtons: FC<Variants> = ({ variant, options }) => {
   return (
     <div>
       {options.map((option) => (
-        <label key={option} className="relative m-3 block p-2">
+        <label key={option} className="relative  block">
           <input
             type="radio"
             name={option}

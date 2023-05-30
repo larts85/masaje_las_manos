@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-css-tags */
 import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
 import Headings from '@/components/storyBook/Typography/Headings'
@@ -7,7 +6,7 @@ import Component from '@/components/storyBook/Typography/Component'
 
 const className = {
   typographyContainer:
-    'bg-primary-light w-64 rounded-lg p-1 m-7  flex flex-col place-items-start justify-start',
+    'bg-primary-light w-64 rounded-lg p-1 m-5 flex flex-col place-items-start justify-start',
   title: 'p-3 text-xs text-black italic self-start',
 }
 

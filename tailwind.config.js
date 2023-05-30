@@ -55,10 +55,12 @@ module.exports = {
       width: {
         '815px': '815px',
         '175px': '175px',
+        '400px': '400px',
       },
       height: {
         '92px': '92px',
         '52px': '52px',
+        '89px': '89px',
       },
       boxShadow: {
         'button-active': 'inset 3px 3px 6px rgba(0, 0, 0, 0.25)',

@@ -4,12 +4,12 @@ import { FC } from 'react'
 
 const className = {
   buttonContainer:
-    'w-28 h-200px border-2 border-dashed border-purple-600 flex p-5 m-5',
+    'w-10 h-89px border-2 border-dashed border-purple-600 flex m-5 justify-center items-center p-1',
 }
 const StoryRadioButtons: FC = () => {
-  const options = ['opcion1', 'opcion2', 'option3']
+  const options = ['opcion1', 'opcion2']
   return (
-    <div className="flex">
+    <div>
       <div className={className.buttonContainer}>
         <RadioButtons variant={VARIANT.PRIMARY} options={options} />
       </div>
