@@ -1,8 +1,8 @@
 import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
-import Headings from '@/components/storyBook/Typography/Headings'
-import Content from '@/components/storyBook/Typography/Content'
-import Component from '@/components/storyBook/Typography/Component'
+import Headings from '@/components/storyBook/typography/Headings'
+import Content from '@/components/storyBook/typography/Content'
+import Component from '@/components/storyBook/typography/Component'
 
 const className = {
   typographyContainer:

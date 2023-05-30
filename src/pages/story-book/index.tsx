@@ -1,4 +1,4 @@
-import Typography from '@/components/storyBook/Typography'
+import Typography from '@/components/storyBook/typography'
 import StoryBookButtons from '@/components/storyBook/Button'
 import StoryBookRadioButtons from '@/components/storyBook/RadioButtons'
 import StoryBookLogo from '@/components/storyBook/Logo'
