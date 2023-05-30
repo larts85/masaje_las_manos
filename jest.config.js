@@ -22,8 +22,8 @@ const customJestConfig = {
   moduleNameMapper: {
     '@/(.*)$': '<rootDir>/src/$1',
     '^@/.src/components/(.*)$': '<rootDir>/src/components/$1',
-    '^@/.src/components/storyBook(.*)$':
-      '<rootDir>/src/components/storyBook/$1',
+    '^@/components/storyBook/Typography/Component$':
+      '<rootDir>/src/components/storyBook/Typography/Component',
     '^@/.src/hooks/(.*)$': '<rootDir>/src/hooks/$1',
     '^@/.src/services/(.*)$': '<rootDir>/src/services/$1',
     '^@/.src/pages/(.*)$': '<rootDir>/src/pages/$1',
