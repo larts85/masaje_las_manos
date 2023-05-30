@@ -4,7 +4,7 @@ import { FC } from 'react'
 
 const className = {
   buttonContainer:
-    'w-400px h-89px border-2 border-dashed border-purple-600 gap-2 flex p-2 m-5 justify-center items-center',
+    'w-400px h-89px border-2 border-dashed border-purple-600 gap-2 flex p-2 ml-5 mt-5 mb-5 justify-center items-center',
 }
 
 const StoryBookButtons: FC = () => {
