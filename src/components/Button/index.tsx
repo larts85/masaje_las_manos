@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
-import { className as typografyClassName } from '@/components/storyBook/typography'
+import { className as typografyClassName } from '@/components/storyBook/Typography/Component'
 import { VARIANT, VARIANT_STATES } from '@/types/type'
 
 type ClassName = Record<VARIANT, Record<VARIANT_STATES, string>>

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import Typography from '@/components/storyBook/typography'
+import Typography from '@/components/storyBook/Typography'
 import StoryBookButtons from '@/components/storyBook/Button'
 import StoryBookRadioButtons from '@/components/storyBook/RadioButtons'
 import StoryBookLogo from '@/components/storyBook/Logo'
