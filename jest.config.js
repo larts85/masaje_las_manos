@@ -25,8 +25,8 @@ const customJestConfig = {
     '^@/.src/hooks/(.*)$': '<rootDir>/src/hooks/$1',
     '^@/.src/services/(.*)$': '<rootDir>/src/services/$1',
     '^@/.src/pages/(.*)$': '<rootDir>/src/pages/$1',
-    '^src/components/storyBook/Typography/(.*)$':
-      '<rootDir>/src/components/storyBook/Typography/$1',
+    '^@/components/storyBook/Typography/Component$':
+      '<rootDir>/src/components/storyBook/Typography/Component',
   },
   testEnvironment: 'jest-environment-jsdom',
   collectCoverage: true,
