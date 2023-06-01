@@ -6,7 +6,7 @@ import { NextPage } from 'next'
 
 const StoryBook: NextPage = () => {
   return (
-    <>
+    <div className="p-1">
       <Typography />
       <div className="flex">
         <div>
@@ -19,7 +19,7 @@ const StoryBook: NextPage = () => {
           <StoryBookLogo />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 export default StoryBook
