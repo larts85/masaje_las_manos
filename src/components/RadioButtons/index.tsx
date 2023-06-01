@@ -10,7 +10,7 @@ type ClassName = Record<
 export const className: ClassName = {
   [VARIANT.PRIMARY]: {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
-      'appearance-none w-6 h-6 rounded-full border-2 border-primary-base  cursor-pointer ',
+      'appearance-none w-6 h-6 rounded-full border-2 border-primary-base  cursor-pointer',
     [VARIANT_STATES_RADIO_BUTTONS.CHECKED]:
       'bg-primary-base w-4 h-4 rounded-full block absolute left-1 top-1',
   },
@@ -18,13 +18,13 @@ export const className: ClassName = {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
       'appearance-none w-6 h-6 rounded-full border-2 border-secondary-base  cursor-pointer',
     [VARIANT_STATES_RADIO_BUTTONS.CHECKED]:
-      ' bg-secondary-base w-4 h-4 rounded-full block absolute left-1 top-1',
+      ' bg-secondary-base w-4 h-4 rounded-full block absolute left-1 top-1 hover:opacity-70',
   },
   [VARIANT.NEUTRAL]: {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
       'appearance-none w-6 h-6 rounded-full border-2 border-nautral-base  cursor-pointer ',
     [VARIANT_STATES_RADIO_BUTTONS.CHECKED]:
-      'bg-nautral-base w-4 h-4 rounded-full block absolute left-1 top-1',
+      'bg-nautral-base w-4 h-4 rounded-full block absolute left-1 top-1 hover:opacity-70',
   },
   [VARIANT.TRANSPARENT]: {},
 }
