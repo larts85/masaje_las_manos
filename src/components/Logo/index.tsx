@@ -1,13 +1,21 @@
 import { FC } from 'react'
 import { VARIANT } from '@/types/type'
-interface Variants {
-  variant?: VARIANT
+// interface Variants {
+//   variant?: VARIANT
+// }
+interface StyleVariants {
+  [key: string]: {
+    [key: string]: string
+  }
 }
-
+interface Variants {
+  variant: VARIANT
+  options: Array<string>
+}
 const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
-  const logoStyleVariants = {
+  const logoStyleVariants: StyleVariants = {
     [VARIANT.PRIMARY]: {
-      v1: '#068A8F',
+      v1: '#88DBDF',
       v2: '#07BAC1',
       v4: '#068A8F',
     },
@@ -21,11 +29,11 @@ const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
       v2: '#7B7B7B',
       v4: '#333333',
     },
-    [VARIANT.TRANSPARENT]: {
-      v1: '',
-      v2: '',
-      v4: '',
-    },
+    // [VARIANT.TRANSPARENT]: {
+    //   v1: '',
+    //   v2: '',
+    //   v4: '',
+    // },
   }
   return (
     <div className="p-2">

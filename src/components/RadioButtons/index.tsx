@@ -1,11 +1,12 @@
 import 'tailwindcss/tailwind.css'
 import { FC, useState } from 'react'
 import { VARIANT, VARIANT_STATES_RADIO_BUTTONS } from '@/types/type'
-type ClassName = Record<
-  VARIANT,
-  Record<VARIANT_STATES_RADIO_BUTTONS, string> | Record<string, never>
->
 
+interface ClassName {
+  [key: string]: {
+    [key: string]: string
+  }
+}
 export const className: ClassName = {
   [VARIANT.PRIMARY]: {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
@@ -31,7 +32,6 @@ export const className: ClassName = {
     [VARIANT_STATES_RADIO_BUTTONS.HOVER]:
       'absolute  w-4 h-4 rounded-full bg-nautral-base opacity-0 hover:opacity-100 left-1 top-1',
   },
-  [VARIANT.TRANSPARENT]: {},
 }
 
 interface Variants {
