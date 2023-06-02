@@ -1,8 +1,6 @@
 import { FC } from 'react'
 import { VARIANT } from '@/types/type'
-// interface Variants {
-//   variant?: VARIANT
-// }
+
 interface StyleVariants {
   [key: string]: {
     [key: string]: string
@@ -10,7 +8,6 @@ interface StyleVariants {
 }
 interface Variants {
   variant: VARIANT
-  options: Array<string>
 }
 const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {
