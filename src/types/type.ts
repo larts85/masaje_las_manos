@@ -13,4 +13,5 @@ export enum VARIANT_STATES {
 export enum VARIANT_STATES_RADIO_BUTTONS {
   CHECKED = 'checked',
   NOT_CHECKED = 'notChecked',
+  HOVER = 'hover',
 }
