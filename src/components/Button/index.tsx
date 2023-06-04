@@ -1,9 +1,8 @@
 import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
 import { className as typografyClassName } from '@/components/storyBook/Typography/Component'
-import { VARIANT, VARIANT_STATES } from '@/types/type'
-
-type ClassName = Record<VARIANT, Record<VARIANT_STATES, string>>
+import { VARIANT, VARIANT_STATES } from '@/types'
+import { ClassName, ButtonVariants } from './types'
 
 export const className: ClassName = {
   [VARIANT.NEUTRAL]: {
@@ -26,26 +25,18 @@ export const className: ClassName = {
   },
 }
 
-interface Variants {
-  variant: VARIANT
-  isDisable?: boolean
-}
-
-const Button: FC<Variants> = ({ variant, isDisable }) => {
+const Button: FC<ButtonVariants> = ({ variant, isDisable }) => {
   const currentVariant = isDisable
     ? VARIANT_STATES.DISABLE
     : VARIANT_STATES.NORMAL
 
   return (
-    <>
-      <button
-        className={className[variant][currentVariant]}
-        disabled={isDisable}
-      >
-        {variant}
-      </button>
-    </>
+    <button className={className[variant][currentVariant]} disabled={isDisable}>
+      {variant}
+    </button>
   )
 }
+
+Button.displayName = 'Button'
 
 export default Button

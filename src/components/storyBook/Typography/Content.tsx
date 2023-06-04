@@ -13,18 +13,19 @@ export const className = {
       'p-3 font-jost font-light text-sm leading-5 tracking-wider uppercase text-black',
   },
 }
-const Content: FC = () => {
-  return (
-    <div className={className.categoryDiv}>
-      <ul>
-        <li className={className.content.subtitle}>Subtitle</li>
-        <li className={className.content.subtitle}>Body</li>
-        <li className={className.content.detail}>Detail</li>
-        <li className={className.content.small}>Small</li>
-        <li className={className.content.extraSmall}>ExtraSmall</li>
-        <li className={className.content.eyebrow}>Eyebrow</li>
-      </ul>
-    </div>
-  )
-}
+const Content: FC = () => (
+  <div className={className.categoryDiv}>
+    <ul>
+      <li className={className.content.subtitle}>Subtitle</li>
+      <li className={className.content.subtitle}>Body</li>
+      <li className={className.content.detail}>Detail</li>
+      <li className={className.content.small}>Small</li>
+      <li className={className.content.extraSmall}>ExtraSmall</li>
+      <li className={className.content.eyebrow}>Eyebrow</li>
+    </ul>
+  </div>
+)
+
+Content.displayName = 'Content'
+
 export default Content

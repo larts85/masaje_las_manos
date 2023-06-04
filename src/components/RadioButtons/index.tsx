@@ -1,12 +1,8 @@
 import 'tailwindcss/tailwind.css'
 import { FC, useState } from 'react'
-import { VARIANT, VARIANT_STATES_RADIO_BUTTONS } from '@/types/type'
+import { VARIANT, VARIANT_STATES_RADIO_BUTTONS } from '@/types'
+import { ClassName, RadioButtonVariants } from './types'
 
-interface ClassName {
-  [key: string]: {
-    [key: string]: string
-  }
-}
 export const className: ClassName = {
   [VARIANT.PRIMARY]: {
     [VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]:
@@ -34,12 +30,7 @@ export const className: ClassName = {
   },
 }
 
-interface Variants {
-  variant: VARIANT
-  options: Array<string>
-}
-
-const RadioButtons: FC<Variants> = ({ variant, options }) => {
+const RadioButtons: FC<RadioButtonVariants> = ({ variant, options }) => {
   const [selectOption, setSelectOption] = useState('')
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -73,5 +64,7 @@ const RadioButtons: FC<Variants> = ({ variant, options }) => {
     </div>
   )
 }
+
+RadioButtons.displayName = 'RadioButtons'
 
 export default RadioButtons

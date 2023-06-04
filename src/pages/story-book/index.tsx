@@ -4,22 +4,15 @@ import StoryBookRadioButtons from '@/components/storyBook/RadioButtons'
 import StoryBookLogo from '@/components/storyBook/Logo'
 import { NextPage } from 'next'
 
-const StoryBook: NextPage = () => {
-  return (
-    <div className="p-1">
-      <Typography />
-      <div className="flex">
-        <div>
-          <StoryBookButtons />
-        </div>
-        <div>
-          <StoryBookRadioButtons />
-        </div>
-        <div>
-          <StoryBookLogo />
-        </div>
-      </div>
+const StoryBook: NextPage = () => (
+  <div className="p-1">
+    <Typography />
+    <div className="flex">
+      <StoryBookButtons />
+      <StoryBookRadioButtons />
+      <StoryBookLogo />
     </div>
-  )
-}
+  </div>
+)
+
 export default StoryBook

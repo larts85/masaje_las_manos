@@ -13,19 +13,19 @@ export const className = {
   },
 }
 
-const Headings: FC = () => {
-  return (
-    <div className={className.categoryDiv}>
-      <ul>
-        <li className={className.headings.head1}> Head1</li>
-        <li className={className.headings.head2}> Head2</li>
-        <li className={className.headings.head3}> Head3</li>
-        <li className={className.headings.head4}> Head4</li>
-        <li className={className.headings.head5}> Head5</li>
-        <li className={className.headings.head6}> Head6</li>
-      </ul>
-    </div>
-  )
-}
+const Headings: FC = () => (
+  <div className={className.categoryDiv}>
+    <ul>
+      <li className={className.headings.head1}> Head1</li>
+      <li className={className.headings.head2}> Head2</li>
+      <li className={className.headings.head3}> Head3</li>
+      <li className={className.headings.head4}> Head4</li>
+      <li className={className.headings.head5}> Head5</li>
+      <li className={className.headings.head6}> Head6</li>
+    </ul>
+  </div>
+)
+
+Headings.displayName = 'Headings'
 
 export default Headings

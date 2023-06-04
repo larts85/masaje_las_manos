@@ -1,14 +1,7 @@
 import { FC } from 'react'
-import { VARIANT } from '@/types/type'
+import { VARIANT } from '@/types'
+import { StyleVariants, Variants } from './types'
 
-interface StyleVariants {
-  [key: string]: {
-    [key: string]: string
-  }
-}
-interface Variants {
-  variant: VARIANT
-}
 const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {
     [VARIANT.PRIMARY]: {
@@ -26,12 +19,8 @@ const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
       v2: '#7B7B7B',
       v4: '#333333',
     },
-    // [VARIANT.TRANSPARENT]: {
-    //   v1: '',
-    //   v2: '',
-    //   v4: '',
-    // },
   }
+
   return (
     <div className="p-2">
       <svg width="73" height="43" viewBox="0 0 73 43" fill="none">
@@ -59,4 +48,7 @@ const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
     </div>
   )
 }
+
+Logo.displayName = 'Logo'
+
 export default Logo

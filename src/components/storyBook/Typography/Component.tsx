@@ -13,17 +13,17 @@ export const className = {
   },
 }
 
-const Component: FC = () => {
-  return (
-    <div className={className.categoryDiv}>
-      <ul>
-        <li className={className.component.textButton}>TextButton</li>
-        <li className={className.component.button}>Button</li>
-        <li className={className.component.textField}>TextField</li>
-        <li className={className.component.textField2}>TextField2</li>
-      </ul>
-    </div>
-  )
-}
+const Components: FC = () => (
+  <div className={className.categoryDiv}>
+    <ul>
+      <li className={className.component.textButton}>TextButton</li>
+      <li className={className.component.button}>Button</li>
+      <li className={className.component.textField}>TextField</li>
+      <li className={className.component.textField2}>TextField2</li>
+    </ul>
+  </div>
+)
 
-export default Component
+Components.displayName = 'Components'
+
+export default Components
