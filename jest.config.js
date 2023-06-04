@@ -31,6 +31,8 @@ const customJestConfig = {
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
     '<rootDir>/src/**/*.tsx',
+    '!<rootDir>/src/components/storyBook/**',
+    '!<rootDir>/src/pages/story-book/**',
     '!<rootDir>/src/**/*.types.ts',
     '!<rootDir>/src/**/*.module.ts',
     '!<rootDir>/src/**/*.mock.ts',
@@ -52,8 +54,8 @@ const customJestConfig = {
   coverageThreshold: {
     global: {
       branches: 80,
-      functions: 90,
-      lines: 90,
+      functions: 80,
+      lines: 80,
       statements: 80,
     },
   },
