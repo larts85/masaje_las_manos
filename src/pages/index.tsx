@@ -22,4 +22,6 @@ const Home: NextPage = () => {
   )
 }
 
+Home.displayName = 'Home'
+
 export default Home

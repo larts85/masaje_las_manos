@@ -15,4 +15,6 @@ const StoryBook: NextPage = () => (
   </div>
 )
 
+StoryBook.displayName = 'StoryBook'
+
 export default StoryBook
