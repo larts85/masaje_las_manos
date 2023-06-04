@@ -28,6 +28,18 @@ const customJestConfig = {
   },
   testEnvironment: 'jest-environment-jsdom',
   collectCoverage: true,
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '<rootDir>/src/**/*.tsx',
+    '!<rootDir>/src/**/*.types.ts',
+    '!<rootDir>/src/**/*.module.ts',
+    '!<rootDir>/src/**/*.mock.ts',
+    '!<rootDir>/src/**/*.spec.ts',
+    '!<rootDir>/src/**/*.test.ts',
+    '!<rootDir>/src/**/*.d.ts',
+    '!<rootDir>/src/types/*.ts',
+    '!<rootDir>/src/styles/*.ts',
+  ],
   coveragePathIgnorePatterns: [
     '<rootDir>/jest.*',
     '<rootDir>/src/__tests__',

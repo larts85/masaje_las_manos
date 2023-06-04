@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { VARIANT } from '@/types'
-import { StyleVariants, Variants } from './types'
+import { VARIANT } from '@/types/globals.types'
+import { StyleVariants, Variants } from './logo.types'
 
 const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {

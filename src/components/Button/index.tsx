@@ -1,8 +1,8 @@
 import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
 import { className as typografyClassName } from '@/components/storyBook/Typography/Component'
-import { VARIANT, VARIANT_STATES } from '@/types'
-import { ClassName, ButtonVariants } from './types'
+import { VARIANT, VARIANT_STATES } from '@/types/globals.types'
+import { ClassName, ButtonVariants } from './button.types'
 
 export const className: ClassName = {
   [VARIANT.NEUTRAL]: {

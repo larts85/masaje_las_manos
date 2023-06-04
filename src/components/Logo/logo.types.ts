@@ -1,4 +1,4 @@
-import { VARIANT } from '@/types'
+import { VARIANT } from '@/types/globals.types'
 
 export interface StyleVariants {
   [key: string]: {

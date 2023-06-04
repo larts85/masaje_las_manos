@@ -1,7 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import { FC, useState } from 'react'
-import { VARIANT, VARIANT_STATES_RADIO_BUTTONS } from '@/types'
-import { ClassName, RadioButtonVariants } from './types'
+import { VARIANT, VARIANT_STATES_RADIO_BUTTONS } from '@/types/globals.types'
+import { ClassName, RadioButtonVariants } from './radioButton.types'
 
 export const className: ClassName = {
   [VARIANT.PRIMARY]: {

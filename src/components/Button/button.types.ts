@@ -1,4 +1,4 @@
-import { VARIANT, VARIANT_STATES } from '@/types'
+import { VARIANT, VARIANT_STATES } from '@/types/globals.types'
 
 export type ClassName = Record<VARIANT, Record<VARIANT_STATES, string>>
 

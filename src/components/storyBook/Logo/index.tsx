@@ -1,5 +1,5 @@
 import Logo from '@/components/Logo'
-import { VARIANT } from '@/types'
+import { VARIANT } from '@/types/globals.types'
 import { FC } from 'react'
 
 const className = {
