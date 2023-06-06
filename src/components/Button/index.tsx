@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css'
 import { FC } from 'react'
 import { className as typografyClassName } from '@/components/storyBook/Typography/Component'
 import { VARIANT, VARIANT_STATES } from '@/types/globals.types'
-import { ClassName, ButtonVariants } from './button.types'
+import { ClassName, ButtonProps } from './button.types'
 
 export const className: ClassName = {
   [VARIANT.NEUTRAL]: {
@@ -25,7 +25,7 @@ export const className: ClassName = {
   },
 }
 
-const Button: FC<ButtonVariants> = ({
+const Button: FC<ButtonProps> = ({
   variant,
   isDisable,
   name,

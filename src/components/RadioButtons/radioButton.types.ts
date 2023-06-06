@@ -6,7 +6,7 @@ export interface ClassName {
   }
 }
 
-export interface RadioButtonVariants {
+export interface RadioButtonProps {
   variant: VARIANT
   options: Array<string>
 }

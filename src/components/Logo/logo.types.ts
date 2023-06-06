@@ -6,6 +6,6 @@ export interface StyleVariants {
   }
 }
 
-export interface Variants {
+export interface LogoProps {
   variant: VARIANT
 }

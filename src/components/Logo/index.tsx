@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import { VARIANT } from '@/types/globals.types'
-import { StyleVariants, Variants } from './logo.types'
+import { StyleVariants, LogoProps } from './logo.types'
 
-const Logo: FC<Variants> = ({ variant = VARIANT.PRIMARY }) => {
+const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {
     [VARIANT.PRIMARY]: {
       v1: '#88DBDF',

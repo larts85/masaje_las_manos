@@ -1,7 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import { FC, useState } from 'react'
 import { VARIANT, VARIANT_STATES_RADIO_BUTTONS } from '@/types/globals.types'
-import { ClassName, RadioButtonVariants } from './radioButton.types'
+import { ClassName, RadioButtonProps } from './radioButton.types'
 
 export const className: ClassName = {
   [VARIANT.PRIMARY]: {
@@ -30,16 +30,17 @@ export const className: ClassName = {
   },
 }
 
-const RadioButtons: FC<RadioButtonVariants> = ({ variant, options }) => {
+const RadioButtons: FC<RadioButtonProps> = ({ variant, options }) => {
   const [selectOption, setSelectOption] = useState('')
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectOption(event.target.name)
   }
+
   return (
     <div>
       {options.map((option) => (
-        <label key={option} className="relative  block">
+        <label key={option} className="relative block">
           <input
             type="radio"
             name={option}
