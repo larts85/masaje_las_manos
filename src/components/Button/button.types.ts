@@ -5,4 +5,6 @@ export type ClassName = Record<VARIANT, Record<VARIANT_STATES, string>>
 export interface ButtonVariants {
   variant: VARIANT
   isDisable?: boolean
+  name: string
+  handleOnClick?: () => void
 }

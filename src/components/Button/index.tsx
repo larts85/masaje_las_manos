@@ -25,14 +25,23 @@ export const className: ClassName = {
   },
 }
 
-const Button: FC<ButtonVariants> = ({ variant, isDisable }) => {
+const Button: FC<ButtonVariants> = ({
+  variant,
+  isDisable,
+  name,
+  handleOnClick,
+}) => {
   const currentVariant = isDisable
     ? VARIANT_STATES.DISABLE
     : VARIANT_STATES.NORMAL
 
   return (
-    <button className={className[variant][currentVariant]} disabled={isDisable}>
-      {variant}
+    <button
+      className={className[variant][currentVariant]}
+      disabled={isDisable}
+      onClick={handleOnClick}
+    >
+      {name}
     </button>
   )
 }
