@@ -40,22 +40,23 @@ const RadioButtons: FC<RadioButtonProps> = ({ variant, options }) => {
   return (
     <div>
       {options.map((option) => (
-        <label key={option} className="relative block">
+        <label key={option.opcion} className="relative block">
           <input
             type="radio"
-            name={option}
+            name={option.opcion}
             className={
               className[variant][VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]
             }
-            checked={selectOption === option}
+            checked={selectOption === option.opcion}
             onChange={handleOptionChange}
+            value={option.opcion}
           />
           <div
             className={className[variant][VARIANT_STATES_RADIO_BUTTONS.HOVER]}
           ></div>
           <div
             className={
-              selectOption === option
+              selectOption === option.opcion
                 ? className[variant][VARIANT_STATES_RADIO_BUTTONS.CHECKED]
                 : 'hidden'
             }

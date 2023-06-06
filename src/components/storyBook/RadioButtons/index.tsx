@@ -7,7 +7,7 @@ const className = {
     'w-10 h-89px border-2 border-dashed border-stone-500 flex ml-5 mt-5 mb-5 justify-center items-center p-1',
 }
 
-const options = ['opcion1', 'opcion2']
+const options = [{ opcion: 'opcion1' }, { opcion: 'opcion2' }]
 
 const StoryRadioButtons: FC = () => (
   <div>

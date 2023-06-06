@@ -5,8 +5,11 @@ export interface ClassName {
     [key: string]: string
   }
 }
+interface Opction {
+  opcion: string
+}
 
 export interface RadioButtonProps {
   variant: VARIANT
-  options: Array<string>
+  options: Opction[]
 }
