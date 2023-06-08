@@ -6,9 +6,8 @@ export interface ClassName {
   }
 }
 interface Opction {
-  opcion: string
+  option: string
 }
-
 export interface RadioButtonProps {
   variant: VARIANT
   options: Opction[]

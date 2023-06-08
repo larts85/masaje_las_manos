@@ -3,8 +3,8 @@ import '@testing-library/jest-dom'
 import Button from '.'
 import { VARIANT } from '@/types/globals.types'
 
-describe('Button', () => {
-  it('renders correctly with the given name and variant', () => {
+describe('Button Component', () => {
+  it('should render correctly with the given name and variant', () => {
     const { debug } = render(
       <Button
         variant={VARIANT.PRIMARY}
@@ -17,7 +17,7 @@ describe('Button', () => {
     expect(button).toHaveClass('bg-primary-base')
     debug(button)
   })
-  it('calls the handleOnClick function when clicked', () => {
+  it('should call handleOnClick function when clicked', () => {
     const handleOnClick = jest.fn()
     render(
       <Button
@@ -31,7 +31,7 @@ describe('Button', () => {
     fireEvent.click(button)
     expect(handleOnClick).toHaveBeenCalled()
   })
-  it('disables the button when isDisable prop is true', () => {
+  it('should disable button when disable prop is', () => {
     render(
       <Button
         variant={VARIANT.SECONDARY}
