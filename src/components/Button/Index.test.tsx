@@ -1,0 +1,46 @@
+import { render, fireEvent, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
+import Button from '.'
+import { VARIANT } from '@/types/globals.types'
+
+describe('Button', () => {
+  it('renders correctly with the given name and variant', () => {
+    const { debug } = render(
+      <Button
+        variant={VARIANT.PRIMARY}
+        isDisable={false}
+        name={VARIANT.PRIMARY}
+      />,
+    )
+    const button = screen.getByText(VARIANT.PRIMARY)
+    expect(button).toBeInTheDocument()
+    expect(button).toHaveClass('bg-primary-base')
+    debug(button)
+  })
+  it('calls the handleOnClick function when clicked', () => {
+    const handleOnClick = jest.fn()
+    render(
+      <Button
+        variant={VARIANT.PRIMARY}
+        isDisable={false}
+        name={VARIANT.PRIMARY}
+        handleOnClick={handleOnClick}
+      />,
+    )
+    const button = screen.getByText(VARIANT.PRIMARY)
+    fireEvent.click(button)
+    expect(handleOnClick).toHaveBeenCalled()
+  })
+  it('disables the button when isDisable prop is true', () => {
+    render(
+      <Button
+        variant={VARIANT.SECONDARY}
+        isDisable={true}
+        name={VARIANT.SECONDARY}
+      />,
+    )
+    const button = screen.getByText(VARIANT.SECONDARY)
+    expect(button).toBeDisabled()
+    expect(button).toHaveClass('cursor-not-allowed')
+  })
+})
