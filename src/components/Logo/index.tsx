@@ -1,15 +1,11 @@
 import { FC } from 'react'
 import { VARIANT } from '@/types/globals.types'
 import { StyleVariants, LogoProps } from './logo.types'
-import { theme } from '../../../tailwind.config'
-
-const colors = theme?.extend?.colors
 
 const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {
     [VARIANT.PRIMARY]: {
-      // v1: '#88DBDF',
-      v1: colors?.primary?.light,
+      v1: '#88DBDF',
       v2: '#07BAC1',
       v3: '#068A8F',
     },
