@@ -53,6 +53,7 @@ const RadioButtons: FC<RadioButtonProps> = ({ variant, options }) => {
           />
           <div
             className={className[variant][VARIANT_STATES_RADIO_BUTTONS.HOVER]}
+            role="hover-radio"
           ></div>
           <div
             className={

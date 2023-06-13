@@ -9,7 +9,7 @@ describe('Button Component', () => {
       <Button
         variant={VARIANT.PRIMARY}
         isDisable={false}
-        name={VARIANT.PRIMARY}
+        text={VARIANT.PRIMARY}
       />,
     )
     const button = screen.getByText(VARIANT.PRIMARY)
@@ -23,7 +23,7 @@ describe('Button Component', () => {
       <Button
         variant={VARIANT.PRIMARY}
         isDisable={false}
-        name={VARIANT.PRIMARY}
+        text={VARIANT.PRIMARY}
         handleOnClick={handleOnClick}
       />,
     )
@@ -37,7 +37,7 @@ describe('Button Component', () => {
       <Button
         variant={VARIANT.SECONDARY}
         isDisable={true}
-        name={VARIANT.SECONDARY}
+        text={VARIANT.SECONDARY}
       />,
     )
     const button = screen.getByText(VARIANT.SECONDARY)

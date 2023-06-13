@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, getByTestId, render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import RadioButton from '.'
 import { VARIANT } from '@/types/globals.types'
@@ -30,5 +30,12 @@ describe('RadioButtons Component', () => {
     const radioButtons = screen.getAllByRole('radio')
     expect(radioButtons[0]).toHaveClass('border-secondary-base')
     expect(radioButtons[1]).not.toHaveClass('border-primary-base')
+  })
+
+  it('should change style when hovering', () => {
+    render(<RadioButton options={options} variant={VARIANT.NEUTRAL} />)
+    const radioButton = screen.getAllByRole('hover-radio')
+    fireEvent.mouseEnter(radioButton[0])
+    expect(radioButton[0]).toHaveClass('hover:opacity-60')
   })
 })
