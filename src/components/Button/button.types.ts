@@ -1,10 +1,11 @@
 import { VARIANT, VARIANT_STATES } from '@/types/globals.types'
+import { ButtonHTMLAttributes } from 'react'
 
 export type ClassName = Record<VARIANT, Record<VARIANT_STATES, string>>
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: VARIANT
   isDisable?: boolean
-  name: string
+  text: string
   handleOnClick?: () => void
 }

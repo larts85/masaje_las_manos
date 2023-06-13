@@ -5,7 +5,7 @@ import { VARIANT } from '@/types/globals.types'
 
 describe('Button Component', () => {
   it('should render correctly with the given name and variant', () => {
-    const { debug } = render(
+    render(
       <Button
         variant={VARIANT.PRIMARY}
         isDisable={false}
@@ -15,8 +15,8 @@ describe('Button Component', () => {
     const button = screen.getByText(VARIANT.PRIMARY)
     expect(button).toBeInTheDocument()
     expect(button).toHaveClass('bg-primary-base')
-    debug(button)
   })
+
   it('should call handleOnClick function when clicked', () => {
     const handleOnClick = jest.fn()
     render(
@@ -31,7 +31,8 @@ describe('Button Component', () => {
     fireEvent.click(button)
     expect(handleOnClick).toHaveBeenCalled()
   })
-  it('should disable button when disable prop is', () => {
+
+  it('should disable button when disable prop is false', () => {
     render(
       <Button
         variant={VARIANT.SECONDARY}

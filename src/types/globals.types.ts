@@ -2,7 +2,7 @@ export enum VARIANT {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
   TRANSPARENT = 'transparent',
-  NEUTRAL = ' neutral',
+  NEUTRAL = 'neutral',
 }
 
 export enum VARIANT_STATES {

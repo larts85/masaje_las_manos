@@ -73,6 +73,9 @@ module.exports = {
         '0.5px': '0.5px',
         '1px': '1px',
       },
+      borderRadius: {
+        '8px': '8px',
+      },
     },
   },
   plugins: [],

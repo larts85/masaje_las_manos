@@ -28,7 +28,7 @@ export const className: ClassName = {
 const Button: FC<ButtonProps> = ({
   variant,
   isDisable,
-  name,
+  text,
   handleOnClick,
 }) => {
   const currentVariant = isDisable
@@ -41,7 +41,7 @@ const Button: FC<ButtonProps> = ({
       disabled={isDisable}
       onClick={handleOnClick}
     >
-      {name}
+      {text}
     </button>
   )
 }

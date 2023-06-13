@@ -4,7 +4,7 @@ import { FC } from 'react'
 
 const className = {
   buttonContainer:
-    'w-10 h-89px border-2 border-dashed border-stone-500 flex ml-5 mt-5 mb-5 justify-center items-center p-1',
+    'w-10 h-89px border-2 border-dashed border-neutral-base flex ml-5 mt-5 mb-5 justify-center items-center p-1',
 }
 
 const options = [{ option: 'opcion1' }, { option: 'opcion2' }]
