@@ -1,4 +1,4 @@
-import { fireEvent, getByTestId, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import RadioButton from '.'
 import { VARIANT } from '@/types/globals.types'
