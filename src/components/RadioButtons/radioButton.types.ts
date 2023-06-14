@@ -6,9 +6,10 @@ export interface ClassName {
   }
 }
 interface Opction {
-  option: string
+  [key: string]: string
 }
 export interface RadioButtonProps {
   variant: VARIANT
   options: Opction[]
+  handleOnClick?: (optionValue: string) => void
 }

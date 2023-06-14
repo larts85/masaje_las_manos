@@ -38,4 +38,22 @@ describe('RadioButtons Component', () => {
     fireEvent.mouseEnter(radioButton[0])
     expect(radioButton[0]).toHaveClass('hover:opacity-60')
   })
+
+  it('should call handleOnClick when a radio button is clicked', () => {
+    const handleOnClick = jest.fn()
+    render(
+      <RadioButton
+        variant={VARIANT.PRIMARY}
+        options={options}
+        handleOnClick={handleOnClick}
+      />,
+    )
+    const radioButtons = screen.getAllByRole('radio')
+    fireEvent.click(radioButtons[0])
+
+    if (handleOnClick) {
+      expect(handleOnClick).toBeCalledTimes(1)
+      expect(handleOnClick).toBeCalledWith('option1')
+    }
+  })
 })

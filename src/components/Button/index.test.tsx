@@ -44,4 +44,21 @@ describe('Button Component', () => {
     expect(button).toBeDisabled()
     expect(button).toHaveClass('cursor-not-allowed')
   })
+  it('should call HandleOnCLick function on click', () => {
+    const handleClick = jest.fn()
+    render(
+      <Button
+        variant={VARIANT.SECONDARY}
+        isDisable={false}
+        text={VARIANT.SECONDARY}
+        handleOnClick={handleClick}
+      />,
+    )
+    const button = screen.getByText(VARIANT.SECONDARY)
+    fireEvent.click(button)
+
+    if (handleClick) {
+      expect(handleClick).toBeCalledTimes(1)
+    }
+  })
 })

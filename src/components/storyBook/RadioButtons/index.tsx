@@ -9,16 +9,32 @@ const className = {
 
 const options = [{ option: 'opcion1' }, { option: 'opcion2' }]
 
+const handleOnClick = (optionValue: string) => {
+  console.info(`The selected option corresponds to:${optionValue}`)
+}
+
 const StoryRadioButtons: FC = () => (
   <div>
     <div className={className.buttonContainer}>
-      <RadioButtons variant={VARIANT.PRIMARY} options={options} />
+      <RadioButtons
+        variant={VARIANT.PRIMARY}
+        options={options}
+        handleOnClick={handleOnClick}
+      />
     </div>
     <div className={className.buttonContainer}>
-      <RadioButtons variant={VARIANT.SECONDARY} options={options} />
+      <RadioButtons
+        variant={VARIANT.SECONDARY}
+        options={options}
+        handleOnClick={handleOnClick}
+      />
     </div>
     <div className={className.buttonContainer}>
-      <RadioButtons variant={VARIANT.NEUTRAL} options={options} />
+      <RadioButtons
+        variant={VARIANT.NEUTRAL}
+        options={options}
+        handleOnClick={handleOnClick}
+      />
     </div>
   </div>
 )

@@ -30,7 +30,11 @@ export const className: ClassName = {
   },
 }
 
-const RadioButtons: FC<RadioButtonProps> = ({ variant, options }) => {
+const RadioButtons: FC<RadioButtonProps> = ({
+  variant,
+  options,
+  handleOnClick,
+}) => {
   const [selectOption, setSelectOption] = useState('')
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -39,31 +43,37 @@ const RadioButtons: FC<RadioButtonProps> = ({ variant, options }) => {
 
   return (
     <div>
-      {options.map((option) => (
-        <label key={option.option} className="relative block">
-          <input
-            type="radio"
-            name={option.option}
-            className={
-              className[variant][VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]
-            }
-            checked={selectOption === option.option}
-            onChange={handleOptionChange}
-            value={option.option}
-          />
-          <div
-            className={className[variant][VARIANT_STATES_RADIO_BUTTONS.HOVER]}
-            role="hover-radio"
-          ></div>
-          <div
-            className={
-              selectOption === option.option
-                ? className[variant][VARIANT_STATES_RADIO_BUTTONS.CHECKED]
-                : 'hidden'
-            }
-          ></div>
-        </label>
-      ))}
+      {options.map((option) => {
+        const optionName = Object.keys(option)[0]
+        return (
+          <label key={option[optionName]} className="relative block">
+            <input
+              type="radio"
+              name={option[optionName]}
+              className={
+                className[variant][VARIANT_STATES_RADIO_BUTTONS.NOT_CHECKED]
+              }
+              checked={selectOption === option[optionName]}
+              onChange={handleOptionChange}
+              value={option[optionName]}
+              onClick={() =>
+                handleOnClick && handleOnClick(option[optionName] as string)
+              }
+            />
+            <div
+              className={className[variant][VARIANT_STATES_RADIO_BUTTONS.HOVER]}
+              role="hover-radio"
+            ></div>
+            <div
+              className={
+                selectOption === option[optionName]
+                  ? className[variant][VARIANT_STATES_RADIO_BUTTONS.CHECKED]
+                  : 'hidden'
+              }
+            ></div>
+          </label>
+        )
+      })}
     </div>
   )
 }
