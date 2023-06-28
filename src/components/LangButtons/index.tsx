@@ -20,4 +20,6 @@ const LangButtons = () => {
   )
 }
 
+LangButtons.displayName = 'LangButtons'
+
 export default LangButtons

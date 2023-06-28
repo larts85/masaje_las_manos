@@ -7,6 +7,7 @@ import Header from '../components/Header'
 
 const Home: NextPage = () => {
   const { translations } = useTranslations()
+
   return (
     <>
       <Head>
@@ -15,11 +16,12 @@ const Home: NextPage = () => {
         <link rel="stylesheet" href="/favicon.ico" />
       </Head>
       <Header />
-      <h1 className="text-1xl font-bold underline">
-        {translations.home.greeting}
-      </h1>
+      <h1>{translations.home.greeting}</h1>
+      <button className="btn-primary">Save changes</button>
     </>
   )
 }
+
+Home.displayName = 'Home'
 
 export default Home

@@ -18,7 +18,8 @@
         "trailingComma": "all",
         "tabWidth": 2,
         "useTabs": false,
-        "semi": false
+        "semi": false,
+        "endOfLine": "auto"
       }
     ],
     "react/jsx-max-props-per-line": [
