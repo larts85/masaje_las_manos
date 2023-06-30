@@ -10,7 +10,7 @@ const className = {
 const StoryBookLogo: FC = () => (
   <div>
     <div className={className.buttonContainer}>
-      <Logo variant={VARIANT.PRIMARY} text={false} />
+      <Logo variant={VARIANT.PRIMARY} />
     </div>
     <div className={className.buttonContainer}>
       <Logo variant={VARIANT.SECONDARY} />
