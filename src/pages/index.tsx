@@ -13,7 +13,6 @@ const Home: NextPage = () => {
       <Head>
         <title>{translations.home.pageTitle}</title>
         <meta name="description" content={translations.home.metaDescription} />
-        <link rel="stylesheet" href="/favicon.ico" />
       </Head>
       <Header />
       <h1>{translations.home.greeting}</h1>
