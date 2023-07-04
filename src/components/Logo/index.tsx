@@ -27,7 +27,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY, text = true }) => {
     } else return 'base'
   }
   return (
-    <div className="p-2 flex justify-start items-button gap-2">
+    <div className="p-2 flex items-button gap-2">
       <svg width="73" height="43" viewBox="0 0 73 43" role="svg" fill="none">
         <path
           d="M36.192 0C34.0056 2.4272 27.7672 10.1356 27.7672 19.0921C27.7672 28.047 34.0048 35.757 36.192 38.1842C38.3784 35.7562 44.6168 28.047 44.6168 19.0921C44.6168 10.1356 38.3784 2.4272 36.192 0Z"
