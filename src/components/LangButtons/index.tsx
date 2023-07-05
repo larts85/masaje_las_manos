@@ -1,7 +1,7 @@
 import useTranslations from '@/hooks/useTranslations'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { menu, ul } from './langButtonsStyle'
+import { menu, ul, tilde } from './langButtonsStyle'
 import { ReactNode } from 'react'
 
 const LangButtons = () => {
@@ -26,6 +26,7 @@ const LangButtons = () => {
                 viewBox="0 0 17 14"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className={tilde}
               >
                 <path
                   d="M1.95894 9.33858L5.29962 11.5569"
