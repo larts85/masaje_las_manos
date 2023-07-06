@@ -43,7 +43,7 @@ const Header: FC = () => {
                 viewBox="0 0 45 45"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="p-1"
+                className="p-1.5"
               >
                 <path
                   d="M43.2585 22.4748C43.2585 34.2748 33.7894 43.8237 22.1293 43.8237C10.4692 43.8237 1 34.2748 1 22.4748C1 10.6748 10.4692 1.12592 22.1293 1.12592C33.7894 1.12592 43.2585 10.6748 43.2585 22.4748Z"
@@ -92,6 +92,7 @@ const Header: FC = () => {
                 viewBox="0 0 14 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="p-0.5"
               >
                 <line
                   y1="-1"
