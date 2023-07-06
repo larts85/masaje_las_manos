@@ -85,11 +85,11 @@ const Header: FC = () => {
             <div className="text-secondary-darker font-semibold">
               {currentLang?.split('-')[0].toUpperCase()}
             </div>
-            <div>
+            <div className={showMenu ? 'rotate-90' : ''}>
               <svg
                 width="14"
-                height="14"
-                viewBox="0 0 18 14"
+                height="18"
+                viewBox="0 0 14 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -97,17 +97,17 @@ const Header: FC = () => {
                   y1="-1"
                   x2="14.1047"
                   y2="-1"
-                  transform="matrix(0.605913 0.795531 -0.449218 0.893422 0.943359 2.00006)"
+                  transform="matrix(0.795531 -0.605913 0.893422 0.449218 1.82581 17.1743)"
                   stroke="#785825"
-                  strokeWidth="2"
+                  stroke-width="2"
                 />
                 <line
                   y1="-1"
                   x2="14.1398"
                   y2="-1"
-                  transform="matrix(0.601865 -0.798598 0.453009 0.891506 9.48975 13.2919)"
+                  transform="matrix(-0.798598 -0.601865 0.891506 -0.453009 13.1177 8.62793)"
                   stroke="#785825"
-                  strokeWidth="2"
+                  stroke-width="2"
                 />
               </svg>
             </div>
