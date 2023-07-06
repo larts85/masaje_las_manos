@@ -26,6 +26,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY, text = true }) => {
       return 'darker'
     } else return 'base'
   }
+  const colorName = logoColor()
   return (
     <div className="p-2 flex justify-start items-button gap-2">
       <svg width="73" height="43" viewBox="0 0 73 43" role="svg" fill="none">
@@ -52,7 +53,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY, text = true }) => {
       </svg>
       {text && (
         <h1
-          className={`font-jost font-normal text-xl leading-8 text-${variant}-${logoColor()}`}
+          className={`font-jost font-normal text-xl leading-8 text-${variant}-${colorName}`}
         >
           THE HANDS MASSAGE
         </h1>

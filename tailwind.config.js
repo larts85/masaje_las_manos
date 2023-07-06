@@ -78,9 +78,6 @@ module.exports = {
         '8px': '8px',
         '12px': '12px',
       },
-      transform: {
-        rotate: '90deg',
-      },
     },
   },
   plugins: [],
