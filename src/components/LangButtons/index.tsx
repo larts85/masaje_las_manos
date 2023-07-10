@@ -1,10 +1,20 @@
 import useTranslations from '@/hooks/useTranslations'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { menu, ul, tilde } from './langButtonsStyle'
+import {
+  menu,
+  ul,
+  tilde,
+  menuMobile,
+  linkMenuMobile,
+  linkMenu,
+  ulMobile,
+} from './langButtonsStyle'
 import { ReactNode } from 'react'
+import { LanguageButtonProps } from './langButtons.types'
+import { FC } from 'react'
 
-const LangButtons = () => {
+const LangButtons: FC<LanguageButtonProps> = ({ mobile = false }) => {
   const { asPath } = useRouter()
   const { currentLang, langs } = useTranslations()
 
@@ -15,11 +25,11 @@ const LangButtons = () => {
   }
 
   return (
-    <div className={menu}>
-      <ul className={ul}>
+    <div className={mobile ? menuMobile : menu}>
+      <ul className={mobile ? ulMobile : ul}>
         {langs!.map((lang) => (
-          <li key={lang} className="flex items-center justify-start">
-            {currentLang === lang && (
+          <li key={lang} className={mobile ? linkMenuMobile : linkMenu}>
+            {currentLang === lang && !mobile && (
               <svg
                 width="17"
                 height="14"
@@ -40,17 +50,25 @@ const LangButtons = () => {
                 />
               </svg>
             )}
-            <Link
-              locale={lang}
-              href={asPath}
-              className={
-                currentLang === lang
-                  ? `text-neutral-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
-                  : `text-secondary-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
-              }
-            >
-              {fullLanguages[lang.split('-')[0]]}
-            </Link>
+            {!mobile && (
+              <Link
+                locale={lang}
+                href={asPath}
+                className={
+                  currentLang === lang
+                    ? `text-neutral-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
+                    : `text-secondary-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
+                }
+              >
+                {fullLanguages[lang.split('-')[0]]}
+              </Link>
+            )}
+            {currentLang != lang && mobile && (
+              <Link locale={lang} href={asPath}>
+                {' '}
+                {lang.split('-')[0].toUpperCase()}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

@@ -3,3 +3,7 @@ export interface TypeLanguage {
     [key: string]: string
   }
 }
+
+export interface LanguageButtonProps {
+  mobile: boolean
+}

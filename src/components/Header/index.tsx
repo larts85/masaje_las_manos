@@ -27,6 +27,7 @@ const Header: FC = () => {
     <header className={header}>
       <div>
         <Logo variant={VARIANT.PRIMARY} text={false} />
+        <LangButtons mobile={true} />
       </div>
       <nav className={nav}>
         <ul className={ul}>
