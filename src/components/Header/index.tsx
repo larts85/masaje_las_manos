@@ -25,7 +25,7 @@ const Header: FC = () => {
   return (
     <header className={header}>
       <Logo variant={VARIANT.PRIMARY} />
-      <nav className={nav}>
+      <nav className="bg-blue-50 xs:bg-red sm:bg-transparent-secondaryDarker80 md:bg-slate-800 lg:bg-red-500 xl:bg-orange-500">
         <ul className={ul}>
           <li className={li}>{translations.navLinks.home}</li>
           <li className={li}>{translations.navLinks.services}</li>
@@ -38,77 +38,75 @@ const Header: FC = () => {
           <div className={buttonContainer}>
             <div>
               <svg
-                width="45"
-                height="45"
-                viewBox="0 0 45 45"
+                width="26"
+                height="28"
+                viewBox="0 0 26 28"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="p-1.5"
               >
                 <path
-                  d="M43.2585 22.4748C43.2585 34.2748 33.7894 43.8237 22.1293 43.8237C10.4692 43.8237 1 34.2748 1 22.4748C1 10.6748 10.4692 1.12592 22.1293 1.12592C33.7894 1.12592 43.2585 10.6748 43.2585 22.4748Z"
+                  d="M25.25 13.9303C25.25 20.774 19.7585 26.3093 13 26.3093C6.24148 26.3093 0.75 20.774 0.75 13.9303C0.75 7.08655 6.24148 1.55127 13 1.55127C19.7585 1.55127 25.25 7.08655 25.25 13.9303Z"
                   stroke="#785825"
-                  strokeWidth="2"
+                  strokeWidth="1.5"
                 />
                 <path
-                  d="M34.5098 22.4748C34.5098 28.4966 33.0464 33.8998 30.7327 37.7642C28.407 41.6488 25.3339 43.8237 22.1293 43.8237C18.9247 43.8237 15.8516 41.6488 13.5258 37.7642C11.2122 33.8998 9.74878 28.4966 9.74878 22.4748C9.74878 16.453 11.2122 11.0498 13.5258 7.18544C15.8516 3.30083 18.9247 1.12592 22.1293 1.12592C25.3339 1.12592 28.407 3.30083 30.7327 7.18544C33.0464 11.0498 34.5098 16.453 34.5098 22.4748Z"
+                  d="M20.1106 13.9303C20.1106 17.4435 19.2565 20.5878 17.9148 22.8287C16.5641 25.0847 14.803 26.3093 13.0001 26.3093C11.1973 26.3093 9.43614 25.0847 8.08541 22.8287C6.74377 20.5878 5.88965 17.4435 5.88965 13.9303C5.88965 10.4171 6.74377 7.27283 8.08541 5.03193C9.43614 2.77586 11.1973 1.55127 13.0001 1.55127C14.803 1.55127 16.5641 2.77586 17.9148 5.03193C19.2565 7.27283 20.1106 10.4171 20.1106 13.9303Z"
                   stroke="#785825"
-                  strokeWidth="2"
+                  strokeWidth="1.5"
                 />
                 <line
-                  y1="23.1101"
-                  x2="44.2585"
-                  y2="23.1101"
+                  y1="14.1409"
+                  x2="26"
+                  y2="14.1409"
                   stroke="#785825"
-                  strokeWidth="2"
+                  strokeWidth="1.5"
                 />
                 <line
-                  y1="-1"
-                  x2="44.1561"
-                  y2="-1"
-                  transform="matrix(0.011655 0.999932 -0.999915 0.0130753 21.0999 0.670959)"
+                  y1="-0.75"
+                  x2="25.9398"
+                  y2="-0.75"
+                  transform="matrix(0.011655 0.999932 -0.999915 0.0130753 12.3953 1.12146)"
                   stroke="#785825"
-                  strokeWidth="2"
+                  strokeWidth="1.5"
                 />
                 <path
-                  d="M6.35498 8.64569C22.55 13.8812 28.5731 11.3819 38.1728 8.11911"
+                  d="M3.7334 5.80627C13.2473 8.88194 16.7856 7.41367 22.425 5.49693"
                   stroke="#785825"
-                  strokeWidth="2"
+                  strokeWidth="1.5"
                 />
                 <path
-                  d="M39.3719 35.6808C24.5233 32.3927 17.242 33.3057 6.21834 36.3493"
+                  d="M23.1294 21.6882C14.4064 19.7566 10.129 20.2929 3.65307 22.0809"
                   stroke="#785825"
-                  strokeWidth="2"
+                  strokeWidth="1.5"
                 />
               </svg>
             </div>
             <div className="text-secondary-darker font-semibold">
               {currentLang?.split('-')[0].toUpperCase()}
             </div>
-            <div className={showMenu ? 'rotate-90' : ''}>
+            <div className={showMenu ? 'rotate-180' : ''}>
               <svg
-                width="14"
-                height="18"
-                viewBox="0 0 14 18"
+                width="13"
+                height="11"
+                viewBox="0 0 13 11"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="p-0.5"
               >
                 <line
                   y1="-1"
-                  x2="14.1047"
+                  x2="10.0673"
                   y2="-1"
-                  transform="matrix(0.795531 -0.605913 0.893422 0.449218 1.82581 17.1743)"
+                  transform="matrix(0.605913 0.795531 -0.449218 0.893422 0.558838 2.05737)"
                   stroke="#785825"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
                 <line
                   y1="-1"
-                  x2="14.1398"
+                  x2="10.0923"
                   y2="-1"
-                  transform="matrix(-0.798598 -0.601865 0.891506 -0.453009 13.1177 8.62793)"
+                  transform="matrix(0.601865 -0.798598 0.453009 0.891506 6.65894 10.1169)"
                   stroke="#785825"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
               </svg>
             </div>

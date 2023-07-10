@@ -31,12 +31,12 @@ const LangButtons = () => {
                 <path
                   d="M1.95894 9.33858L5.29962 11.5569"
                   stroke="#333333"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
                 <path
                   d="M5.37172 12.7846L11.6997 1.12467"
                   stroke="#333333"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
               </svg>
             )}
