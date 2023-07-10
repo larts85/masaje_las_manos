@@ -11,6 +11,7 @@ import {
   nav,
   ul,
   buttonContainer,
+  wrapButton,
 } from './headStyle'
 
 const Header: FC = () => {
@@ -24,8 +25,10 @@ const Header: FC = () => {
 
   return (
     <header className={header}>
-      <Logo variant={VARIANT.PRIMARY} />
-      <nav className="bg-blue-50 xs:bg-red sm:bg-transparent-secondaryDarker80 md:bg-slate-800 lg:bg-red-500 xl:bg-orange-500">
+      <div>
+        <Logo variant={VARIANT.PRIMARY} text={false} />
+      </div>
+      <nav className={nav}>
         <ul className={ul}>
           <li className={li}>{translations.navLinks.home}</li>
           <li className={li}>{translations.navLinks.services}</li>
@@ -33,7 +36,7 @@ const Header: FC = () => {
           <li className={li}>{translations.navLinks.aboutUs}</li>
         </ul>
       </nav>
-      <div className="absolute w-[134px] h-[45px] left-[900px]">
+      <div className={wrapButton}>
         <div className={languageButton} onClick={handleClick}>
           <div className={buttonContainer}>
             <div>
