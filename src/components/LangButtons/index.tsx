@@ -29,7 +29,7 @@ const LangButtons: FC<LanguageButtonProps> = ({ mobile = false }) => {
       <ul className={mobile ? ulMobile : ul}>
         {langs!.map((lang) => (
           <li key={lang} className={mobile ? linkMenuMobile : linkMenu}>
-            {currentLang === lang && !mobile && (
+            {!mobile && currentLang === lang && (
               <svg
                 width="17"
                 height="14"
@@ -63,9 +63,12 @@ const LangButtons: FC<LanguageButtonProps> = ({ mobile = false }) => {
                 {fullLanguages[lang.split('-')[0]]}
               </Link>
             )}
-            {currentLang != lang && mobile && (
-              <Link locale={lang} href={asPath}>
-                {' '}
+            {mobile && currentLang !== lang && (
+              <Link
+                locale={lang}
+                href={asPath}
+                className="text-secondary-darker hover:text-neutral-darker  ml-2 w-[30px]"
+              >
                 {lang.split('-')[0].toUpperCase()}
               </Link>
             )}
