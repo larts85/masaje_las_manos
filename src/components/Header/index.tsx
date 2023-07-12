@@ -6,11 +6,12 @@ import { VARIANT } from '@/types/globals.types'
 
 import {
   header,
+  mobileLogoButton,
   languageButton,
   li,
   nav,
   ul,
-  languageButtonMobile,
+  mobilelanguageButton,
 } from './headStyle'
 
 const Header: FC = () => {
@@ -23,11 +24,18 @@ const Header: FC = () => {
   }
 
   return (
-    <header className={header}>
-      <div className="flex pt-5 pl-3 gap-5">
-        <Logo variant={VARIANT.PRIMARY} text={false} />
-        <div className={languageButtonMobile} onClick={handleClick}>
-          <div className="text-secondary-darker font-semibold text-xl">
+    <header className={`lg:flex lg:${header} `}>
+      <div className={mobileLogoButton}>
+        <div>
+          <div className="sm:hidden">
+            <Logo variant={VARIANT.PRIMARY} text={false} />
+          </div>
+          <div className="hidden sm:block">
+            <Logo variant={VARIANT.PRIMARY} />
+          </div>
+        </div>
+        <div className={mobilelanguageButton} onClick={handleClick}>
+          <div className="text-secondary-darker font-semibold text-xl pb-0.5">
             {currentLang?.split('-')[0].toUpperCase()}
           </div>
           <div className={showMenu ? 'rotate-180' : ''}>
@@ -59,6 +67,9 @@ const Header: FC = () => {
         </div>
         {showMenu && <LangButtons mobile={true} />}
       </div>
+      <div className="hidden lg:block">
+        <Logo variant={VARIANT.PRIMARY} />
+      </div>
       <nav className={nav}>
         <ul className={ul}>
           <li className={li}>{translations.navLinks.home}</li>
@@ -67,9 +78,7 @@ const Header: FC = () => {
           <li className={li}>{translations.navLinks.aboutUs}</li>
         </ul>
       </nav>
-      {/* <div className={wrapButton}> */}
-      {/* <div className={languageButton} onClick={handleClick}> */}
-      <div className={languageButton} onClick={handleClick}>
+      <div className={`hidden lg:${languageButton}`} onClick={handleClick}>
         <div>
           <svg
             width="26"
@@ -145,13 +154,11 @@ const Header: FC = () => {
           </svg>
         </div>
       </div>
-      {/* </div> */}
       {showMenu && (
-        <div className="hidden">
+        <div className="hidden lg:flex">
           <LangButtons />
         </div>
       )}
-      {/* </div> */}
     </header>
   )
 }
