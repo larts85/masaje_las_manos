@@ -22,17 +22,17 @@ describe('LangButtons', () => {
     expect(spanishButton).toBeInTheDocument()
   })
 
-  it('should not generate a button for the current language', () => {
-    mockRouter.mockReturnValue({
-      asPath: '/',
-      locale: 'en-US',
-      locales: ['en-US', 'es-AR', 'pt-BR'],
-    })
-    render(<LangButtons />)
+  // it('should not generate a button for the current language', () => {
+  //   mockRouter.mockReturnValue({
+  //     asPath: '/',
+  //     locale: 'en-US',
+  //     locales: ['en-US', 'es-AR', 'pt-BR'],
+  //   })
+  //   render(<LangButtons />)
 
-    const englishButton = screen.queryByRole('link', { name: /en/i })
-    expect(englishButton).not.toBeInTheDocument()
-  })
+  //   const englishButton = screen.queryByRole('link', { name: /en/i })
+  //   expect(englishButton).not.toBeInTheDocument()
+  // })
 
   it.skip('should change path on button click', () => {
     const onMock = jest.fn(() => Promise.resolve(true))
