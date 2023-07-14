@@ -3,17 +3,8 @@ const className = {
   menuMobile:
     'bg-primary-light w-[135px] h-[45px] rounded-tl-[30px] rounded-tr-[30px] rounded-bl-[30px] rounded-br-[30px]    flex items-center ',
   ul: 'm-1 pt-12 pb-1',
-  tilde: 'absolute left-2',
   linkMenuMobile: '',
   linkMenu: 'flex items-center justify-start',
   ulMobile: ' inline-flex ml-16 ',
 }
-export const {
-  menu,
-  ul,
-  tilde,
-  menuMobile,
-  linkMenuMobile,
-  linkMenu,
-  ulMobile,
-} = className
+export default className
