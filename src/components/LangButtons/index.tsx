@@ -9,7 +9,7 @@ import MenuCheck from '@/components/MenuCheck'
 
 const { menu, ul, menuMobile, linkMenuMobile, linkMenu, ulMobile } = className
 
-const LangButtons: FC<LanguageButtonProps> = ({ mobile = false }) => {
+const LangButtons: FC<LanguageButtonProps> = ({ isMobile = false }) => {
   const { asPath } = useRouter()
   const { currentLang, langs } = useTranslations()
 
@@ -20,12 +20,12 @@ const LangButtons: FC<LanguageButtonProps> = ({ mobile = false }) => {
   }
 
   return (
-    <div className={mobile ? menuMobile : menu}>
-      <ul className={mobile ? ulMobile : ul}>
+    <div className={isMobile ? menuMobile : menu}>
+      <ul className={isMobile ? ulMobile : ul}>
         {langs!.map((lang) => (
-          <li key={lang} className={mobile ? linkMenuMobile : linkMenu}>
-            {!mobile && currentLang === lang && <MenuCheck />}
-            {!mobile && (
+          <li key={lang} className={isMobile ? linkMenuMobile : linkMenu}>
+            {!isMobile && currentLang === lang && <MenuCheck />}
+            {!isMobile && (
               <Link
                 locale={lang}
                 href={asPath}
@@ -38,7 +38,7 @@ const LangButtons: FC<LanguageButtonProps> = ({ mobile = false }) => {
                 {fullLanguages[lang.split('-')[0]]}
               </Link>
             )}
-            {mobile && currentLang !== lang && (
+            {isMobile && currentLang !== lang && (
               <Link
                 locale={lang}
                 href={asPath}

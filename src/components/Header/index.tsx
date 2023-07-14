@@ -32,7 +32,6 @@ const Header: FC = () => {
   return (
     <header className={`${mobileHeader} ${header} `}>
       <div className={mobileLogoButton}>
-        {/* logo */}
         <div>
           <div className="sm:hidden">
             <Logo variant={VARIANT.PRIMARY} text={false} />
@@ -41,7 +40,6 @@ const Header: FC = () => {
             <Logo variant={VARIANT.PRIMARY} />
           </div>
         </div>
-        {/* mobilebutton mobilemenu */}
         <div className="flex relative pl-5">
           <div className={mobilelanguageButton} onClick={handleClick}>
             <div className={mobileLanguagetext}>
@@ -52,17 +50,15 @@ const Header: FC = () => {
             </div>
           </div>
           <div className={mobileMenuHeder}>
-            {isOpenMenu && <LangButtons mobile={true} />}
+            {isOpenMenu && <LangButtons isMobile={true} />}
           </div>
         </div>
       </div>
       <div className="hidden lg:block">
         <Logo variant={VARIANT.PRIMARY} />
       </div>
-      {/* container  nav button */}
       <div className="relative flex items-center justify-around">
         <Navbar />
-        {/* languageBuuton [ language text flecha]  menu*/}
         <div className="flex relative pl-5 ">
           <div className={`hidden lg:${languageButton}`} onClick={handleClick}>
             <div>

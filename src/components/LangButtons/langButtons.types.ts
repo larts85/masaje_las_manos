@@ -5,5 +5,5 @@ export interface TypeLanguage {
 }
 
 export interface LanguageButtonProps {
-  mobile?: boolean
+  isMobile?: boolean
 }
