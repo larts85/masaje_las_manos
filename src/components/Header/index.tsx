@@ -49,7 +49,11 @@ const Header: FC = () => {
               <MenuArrowNext />
             </div>
           </div>
-          <div className={mobileMenuHeder}>
+          <div
+            className={
+              isOpenMenu ? `${mobileMenuHeder} animate-pulse-once` : ''
+            }
+          >
             {isOpenMenu && <LangButtons isMobile={true} />}
           </div>
         </div>
@@ -71,7 +75,13 @@ const Header: FC = () => {
               <MenuArrowDown />
             </div>
           </div>
-          <div className={`hidden lg:${menuHeader}`}>
+          <div
+            className={
+              isOpenMenu
+                ? `hidden lg:flex lg:${menuHeader} animate-pulse-once`
+                : ''
+            }
+          >
             {isOpenMenu && <LangButtons />}
           </div>
         </div>

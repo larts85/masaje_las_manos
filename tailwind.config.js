@@ -78,6 +78,23 @@ module.exports = {
         '8px': '8px',
         '12px': '12px',
       },
+      animation: {
+        'pulse-once': 'pulse 1s  1',
+        opacity0: ' 1',
+      },
+      keyframes: {
+        'pulse-once': {
+          '0%': {
+            opacity: 0,
+          },
+          '100%': {
+            opacity: 1,
+          },
+        },
+        opacity0: {
+          opacity: 0,
+        },
+      },
     },
   },
   plugins: [],
