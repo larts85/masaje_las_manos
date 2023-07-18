@@ -24,9 +24,12 @@ const {
 const Header: FC = () => {
   const { currentLang } = useTranslations()
   const [isOpenMenu, setIsOpenMenu] = useState(false)
-
+  const [isClicked, setIsClicked] = useState(false)
+  const [animationKey, setAnimationKey] = useState(0)
   const handleClick = () => {
     setIsOpenMenu(!isOpenMenu)
+    setIsClicked(true)
+    setAnimationKey(animationKey + 1)
   }
 
   return (
@@ -41,7 +44,13 @@ const Header: FC = () => {
           </div>
         </div>
         <div className="flex relative pl-5">
-          <div className={mobilelanguageButton} onClick={handleClick}>
+          <div
+            onClick={handleClick}
+            key={animationKey}
+            className={`${mobilelanguageButton} ${
+              isClicked ? 'animate-pulse-once' : ''
+            }`}
+          >
             <div className={mobileLanguagetext}>
               {currentLang?.split('-')[0].toUpperCase()}
             </div>
@@ -64,7 +73,13 @@ const Header: FC = () => {
       <div className="relative flex items-center justify-around">
         <Navbar />
         <div className="flex relative pl-5 ">
-          <div className={`hidden lg:${languageButton}`} onClick={handleClick}>
+          <div
+            key={animationKey}
+            className={`hidden lg:${languageButton} ${
+              isClicked ? 'animate-pulse-once' : ''
+            }`}
+            onClick={handleClick}
+          >
             <div>
               <Orbe />
             </div>
