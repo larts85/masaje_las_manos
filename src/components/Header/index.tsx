@@ -4,9 +4,9 @@ import LangButtons from '@/components/LangButtons'
 import Logo from '../Logo'
 import { VARIANT } from '@/types/globals.types'
 import className from './headStyles'
-import MenuArrowNext from '@/components/MenuArrowNext'
-import MenuArrowDown from '@/components/MenuArrowDown'
-import Orbe from '@/components/Orbe'
+import MenuArrowNext from '@/components/ImagesComponents/MenuArrowNext'
+import MenuArrowDown from '@/components/ImagesComponents/MenuArrowDown'
+import Orbe from '@/components/ImagesComponents/Orbe'
 import Navbar from '@/components/Navbar/index'
 
 const {
@@ -16,9 +16,14 @@ const {
   languageButton,
   mobileMenuHeder,
   menuHeader,
+  containerMobileLanguageButton,
   mobilelanguageButton,
   mobileLanguagetext,
+  containerLanguageButtons,
   languageText,
+  logoImage,
+  logoImageTextSm,
+  logoImageTextLg,
 } = className
 
 const Header: FC = () => {
@@ -36,18 +41,19 @@ const Header: FC = () => {
     <header className={`${mobileHeader} ${header} `}>
       <div className={mobileLogoButton}>
         <div>
-          <div className="sm:hidden">
+          <div data-testid="logoImage" className={logoImage}>
             <Logo variant={VARIANT.PRIMARY} text={false} />
           </div>
-          <div className="hidden sm:block">
+          <div data-testid="logoImageTextSm" className={logoImageTextSm}>
             <Logo variant={VARIANT.PRIMARY} />
           </div>
         </div>
-        <div className="flex relative pl-5">
+        <div className={containerMobileLanguageButton}>
           <div
             onClick={handleClick}
+            data-testid="mobileLanguageButton"
             key={animationKey}
-            className={`${mobilelanguageButton} ${
+            className={`mobileLanguageButton ${mobilelanguageButton} ${
               isClicked ? 'animate-pulse-once' : ''
             }`}
           >
@@ -59,20 +65,19 @@ const Header: FC = () => {
             </div>
           </div>
           <div
-            className={
-              isOpenMenu ? `${mobileMenuHeder} animate-pulse-once` : ''
-            }
+            className={`mobilelanguageButton
+              ${isOpenMenu} ? ${mobileMenuHeder} animate-pulse-once : ''`}
           >
             {isOpenMenu && <LangButtons isMobile={true} />}
           </div>
         </div>
       </div>
-      <div className="hidden lg:block">
+      <div data-testid="logoImageTextLg" className={logoImageTextLg}>
         <Logo variant={VARIANT.PRIMARY} />
       </div>
       <div className="relative flex items-center justify-around">
         <Navbar />
-        <div className="flex relative pl-5 ">
+        <div className={containerLanguageButtons}>
           <div
             key={animationKey}
             className={`hidden lg:${languageButton} ${
@@ -91,11 +96,11 @@ const Header: FC = () => {
             </div>
           </div>
           <div
-            className={
-              isOpenMenu
-                ? `hidden lg:flex lg:${menuHeader} animate-pulse-once`
-                : ''
-            }
+            data-testid="languageButton"
+            className={`languageButton
+              ${isOpenMenu}
+                ? hidden lg:flex lg:${menuHeader} animate-pulse-once
+                : ''`}
           >
             {isOpenMenu && <LangButtons />}
           </div>

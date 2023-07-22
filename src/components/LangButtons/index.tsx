@@ -5,7 +5,7 @@ import className from './langButtonsStyles'
 import { ReactNode } from 'react'
 import { LanguageButtonProps } from './langButtons.types'
 import { FC } from 'react'
-import MenuCheck from '@/components/MenuCheck'
+import MenuCheck from '@/components/ImagesComponents/MenuCheck'
 
 const { menu, ul, menuMobile, linkMenuMobile, linkMenu, ulMobile } = className
 
@@ -20,7 +20,7 @@ const LangButtons: FC<LanguageButtonProps> = ({ isMobile = false }) => {
   }
 
   return (
-    <div className={isMobile ? menuMobile : menu}>
+    <div className={isMobile ? menuMobile : menu} data-testid="langButtons">
       <ul className={isMobile ? ulMobile : ul}>
         {langs!.map((lang) => (
           <li key={lang} className={isMobile ? linkMenuMobile : linkMenu}>
