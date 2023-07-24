@@ -1,16 +1,17 @@
 import useTranslations from '@/hooks/useTranslations'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import className from './langButtonsStyles'
+import className from './languagesMenuStyles'
 import { ReactNode } from 'react'
-import { LanguageButtonProps } from './langButtons.types'
+import { LangMenuProps } from './languagesMenu.types'
 import { FC } from 'react'
 import MenuCheck from '@/components/ImagesComponents/MenuCheck'
 
 const { menu, ul, menuMobile, linkMenuMobile, linkMenu, ulMobile } = className
 
-const LangButtons: FC<LanguageButtonProps> = ({ isMobile = false }) => {
+const LangMenu: FC<LangMenuProps> = ({ isMobile = false }) => {
   const { asPath } = useRouter()
+
   const { currentLang, langs } = useTranslations()
 
   const fullLanguages: { [key: string]: ReactNode } = {
@@ -54,6 +55,6 @@ const LangButtons: FC<LanguageButtonProps> = ({ isMobile = false }) => {
   )
 }
 
-LangButtons.displayName = 'LangButtons'
+LangMenu.displayName = 'LangMenu'
 
-export default LangButtons
+export default LangMenu

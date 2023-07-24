@@ -6,5 +6,6 @@ const className = {
   linkMenuMobile: '',
   linkMenu: 'flex items-center justify-start',
   ulMobile: ' inline-flex ml-16 ',
+  containerLanguageButtons: 'flex relative pl-5 ',
 }
 export default className
