@@ -10,5 +10,14 @@
     "contact": "Contacto",
     "aboutUs": "Nosotros",
     "anchorTitle": "Página"
+  },
+  "services": {
+    "title": "Servicio"
+  },
+  "contact": {
+    "title": "Contacto"
+  },
+  "about": {
+    "title": "Nosotros"
   }
 }

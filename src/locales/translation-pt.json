@@ -8,7 +8,16 @@
     "home": "Começar",
     "services": "Serviços",
     "contact": "Contato",
-    "aboutUs": "Sobre nós",
+    "aboutUs": "Nós",
     "anchorTitle": "Página"
+  },
+  "services": {
+    "title": "Serviços"
+  },
+  "contact": {
+    "title": "Contato"
+  },
+  "about": {
+    "title": "Nós"
   }
 }

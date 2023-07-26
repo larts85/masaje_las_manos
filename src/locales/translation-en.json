@@ -8,7 +8,16 @@
     "home": "Home",
     "services": "Services",
     "contact": "Contact",
-    "aboutUs": "about us",
+    "aboutUs": "about",
     "anchorTitle": "Page"
+  },
+  "services": {
+    "title": "Services"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "about": {
+    "title": "About"
   }
 }
