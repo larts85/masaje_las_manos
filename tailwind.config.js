@@ -79,20 +79,12 @@ module.exports = {
         '12px': '12px',
       },
       animation: {
-        'pulse-once': 'pulse 1s  1',
-        opacity0: ' 1',
+        fadeIn: 'fadeIn 1s',
       },
       keyframes: {
-        'pulse-once': {
-          '0%': {
-            opacity: 0,
-          },
-          '100%': {
-            opacity: 1,
-          },
-        },
-        opacity0: {
-          opacity: 0,
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
       },
     },

@@ -39,9 +39,8 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             onClick={handleClick}
             data-testid="mobileLanguageButton"
             key={animationKey}
-            className={`mobileLanguageButton ${mobilelanguageButton} ${
-              isClicked ? 'animate-pulse-once' : ''
-            }`}
+            className={`mobileLanguageButton ${mobilelanguageButton} 
+            `}
           >
             <div className={mobileLanguagetext}>
               {currentLang?.split('-')[0].toUpperCase()}
@@ -52,7 +51,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
           </div>
           <div
             className={`mobilelanguageButton
-      ${isOpenMenu} ? ${mobileMenuHeder} animate-pulse-once : ''`}
+      ${isOpenMenu} ? ${mobileMenuHeder} : ''`}
           >
             {isOpenMenu && <LanguageMenu isMobile={true} />}
           </div>
@@ -63,7 +62,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
           <div
             key={animationKey}
             className={`hidden lg:${languageButton} ${
-              isClicked ? 'animate-pulse-once' : ''
+              isClicked ? 'transition-opacity duration-300 ease-in-out' : ''
             }`}
             onClick={handleClick}
           >
@@ -81,7 +80,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             data-testid="languageButton"
             className={`languageButton
               ${isOpenMenu}
-                ? hidden lg:flex lg:${menuHeader} animate-pulse-once
+                ? hidden lg:flex lg:${menuHeader} animate-fadeIn
                 : ''`}
           >
             {isOpenMenu && <LanguageMenu />}
