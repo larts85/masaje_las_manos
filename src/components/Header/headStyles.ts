@@ -1,10 +1,15 @@
 const className = {
-  header: 'flex lg:flex-row lg:justify-evenly lg:items-center',
-  mobileHeader: 'flex flex-col pt-5 items-center',
-  mobileLogoButton: 'flex  lg:hidden items-center',
-  logoImage: 'logoImage sm:hidden',
-  logoImageTextSm: 'logoImageTextSm hidden sm:block',
-  logoImageTextLg: 'logoImageTextLg hidden lg:block',
+  mobileLogoButton: 'grid grid-cols-2 lg:hidden items-center',
+  mobileLanguageButton:
+    'mobileLanguageButton flex justify-end pr-[135px] lg:hidden',
+  logoImage: 'logoImage sm:hidden mx-auto pl-5',
+  logoImageTextSm: 'logoImageTextSm hidden w-[350px] sm:block sm:pl-5',
+  mobileNavbar: 'lg:hidden',
+  containerLogoNavButton:
+    ' containerLogoNavButton hidden lg:flex items-center justify-between',
+  logoImageTextLg: 'logoImageTextLg w-1/3 pl-5',
+  navbar: 'flex-1',
+  languagesButton: 'flex justify-end pr-10 w-1/5',
 }
 
 export default className

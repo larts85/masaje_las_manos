@@ -1,6 +1,5 @@
 const className = {
-  containerMobileLanguageButton:
-    'ontainerMobilelanguageButton flex relative pl-5',
+  containerMobileLanguageButton: 'containerMobilelanguageButton flex relative',
   mobilelanguageButton:
     'w-[60px] h-[45px] bg-primary-base hover:cursor-pointer rounded-[100px]  relative z-10  flex items-center justify-around',
   mobileLanguagetext: 'text-secondary-darker font-semibold text-xl pb-0.5',

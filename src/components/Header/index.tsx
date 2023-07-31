@@ -6,19 +6,22 @@ import Navbar from '@/components/Navbar/index'
 import LanguagesButton from '../LanguagesButton'
 
 const {
-  header,
-  mobileHeader,
   mobileLogoButton,
+  mobileLanguageButton,
+  mobileNavbar,
   logoImage,
   logoImageTextSm,
   logoImageTextLg,
+  containerLogoNavButton,
+  navbar,
+  languagesButton,
 } = className
 
 const Header: FC = () => {
   return (
-    <header className={`${mobileHeader} ${header} `}>
+    <header>
       <div className={mobileLogoButton}>
-        <div>
+        <div className="logo justify-start">
           <div data-testid="logoImage" className={logoImage}>
             <Logo variant={VARIANT.PRIMARY} text={false} />
           </div>
@@ -26,15 +29,21 @@ const Header: FC = () => {
             <Logo variant={VARIANT.PRIMARY} />
           </div>
         </div>
-        <LanguagesButton isMobile={true} />
+        <div className={mobileLanguageButton}>
+          <LanguagesButton isMobile={true} />
+        </div>
       </div>
-      <div data-testid="logoImageTextLg" className={logoImageTextLg}>
-        <Logo variant={VARIANT.PRIMARY} />
-      </div>
-      <div className="relative flex items-center justify-around">
+      <div className={mobileNavbar}>
         <Navbar />
-
-        <div className="hideen lg:flex">
+      </div>
+      <div className={containerLogoNavButton}>
+        <div className={logoImageTextLg}>
+          <Logo variant={VARIANT.PRIMARY} />
+        </div>
+        <div className={navbar}>
+          <Navbar />
+        </div>
+        <div className={languagesButton}>
           <LanguagesButton />
         </div>
       </div>
