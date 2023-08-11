@@ -8,33 +8,44 @@ import Orbe from '../ImagesComponents/Orbe'
 import MenuArrowDown from '../ImagesComponents/MenuArrowDown'
 
 const {
-  containerMobileLanguageButton,
+  containerMobileLanguageButtonMenu,
   mobilelanguageButton,
   mobileLanguagetext,
-  mobileMenuHeder,
+  mobileLanguageButtonMenu,
   containerLanguageButtons,
   languageButton,
   languageText,
-  menuHeader,
+  languageButtonMenu,
 } = className
 
 const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
-  const [isClicked, setIsClicked] = useState(false)
+  const [isClicked, setIsClicked] = useState(0)
   const [animationKey, setAnimationKey] = useState(0)
 
   const { currentLang } = useTranslations()
 
   const handleClick = () => {
-    setIsOpenMenu(!isOpenMenu)
-    setIsClicked(true)
     setAnimationKey(animationKey + 1)
+    setIsClicked((prevState) => {
+      if (prevState === 0 || prevState === 2) {
+        return 1
+      } else {
+        return 2
+      }
+    })
+    setIsOpenMenu(!isOpenMenu)
   }
 
+  const handleAnimationEnd = () => {
+    if (isClicked === 2) {
+      setIsClicked(0)
+    }
+  }
   return (
     <div>
       {isMobile && (
-        <div className={containerMobileLanguageButton}>
+        <div className={containerMobileLanguageButtonMenu}>
           <div
             onClick={handleClick}
             data-testid="mobileLanguageButton"
@@ -50,20 +61,31 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             </div>
           </div>
           <div
-            className={`mobilelanguageButton
-      ${isOpenMenu} ? ${mobileMenuHeder} : ''`}
+            className={`
+            ${isClicked === 0 ? ` hidden` : ''}
+           ${
+             isClicked === 1
+               ? `  ${mobileLanguageButtonMenu} animate-fadeIn`
+               : ''
+           }
+           ${
+             isClicked === 2
+               ? `${mobileLanguageButtonMenu} animate-fadeOut`
+               : ''
+           }
+         `}
+            onAnimationEnd={handleAnimationEnd}
           >
-            {isOpenMenu && <LanguageMenu isMobile={true} />}
+            <LanguageMenu isMobile={true} />
           </div>
         </div>
       )}
       {!isMobile && (
         <div className={containerLanguageButtons}>
           <div
+            data-testid="lamguageButton"
             key={animationKey}
-            className={`hidden lg:${languageButton} ${
-              isClicked ? 'transition-opacity duration-300 ease-in-out' : ''
-            }`}
+            className={`hidden lg:flex lg:${languageButton}`}
             onClick={handleClick}
           >
             <div>
@@ -77,17 +99,27 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             </div>
           </div>
           <div
-            data-testid="languageButton"
-            className={`languageButton
-              ${isOpenMenu}
-                ? hidden lg:flex lg:${menuHeader} animate-fadeIn
-                : ''`}
+            data-testid="languageButtonMenu"
+            className={`hidden
+              ${
+                isClicked === 1
+                  ? ` lg:flex lg:${languageButtonMenu} lg:animate-fadeIn`
+                  : ''
+              }
+              ${
+                isClicked === 2
+                  ? ` lg:flex lg:${languageButtonMenu} lg:animate-fadeOut`
+                  : ''
+              }
+            `}
+            onAnimationEnd={handleAnimationEnd}
           >
-            {isOpenMenu && <LanguageMenu />}
+            <LanguageMenu />
           </div>
         </div>
       )}
     </div>
   )
 }
+
 export default LanguagesButton

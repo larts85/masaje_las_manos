@@ -37,7 +37,7 @@ const Header: FC = () => {
         <Navbar />
       </div>
       <div className={containerLogoNavButton}>
-        <div className={logoImageTextLg}>
+        <div data-testid="logoImageTextLg" className={logoImageTextLg}>
           <Logo variant={VARIANT.PRIMARY} />
         </div>
         <div className={navbar}>
