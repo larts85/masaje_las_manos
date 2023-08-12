@@ -29,7 +29,10 @@ const Header: FC = () => {
             <Logo variant={VARIANT.PRIMARY} />
           </div>
         </div>
-        <div className={mobileLanguageButton}>
+        <div
+          className={mobileLanguageButton}
+          data-testid="mobileLanguageButtonHeader"
+        >
           <LanguagesButton isMobile={true} />
         </div>
       </div>
@@ -43,7 +46,7 @@ const Header: FC = () => {
         <div className={navbar}>
           <Navbar />
         </div>
-        <div className={languagesButton}>
+        <div className={languagesButton} data-testid="languageButton">
           <LanguagesButton />
         </div>
       </div>
