@@ -36,7 +36,7 @@ const Header: FC = () => {
           <LanguagesButton isMobile={true} />
         </div>
       </div>
-      <div className={mobileNavbar}>
+      <div className={mobileNavbar} data-testid="navbar">
         <Navbar />
       </div>
       <div className={containerLogoNavButton}>

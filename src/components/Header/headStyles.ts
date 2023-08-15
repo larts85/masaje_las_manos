@@ -1,7 +1,7 @@
 const className = {
   mobileLogoButton: 'grid grid-cols-2 lg:hidden items-center',
   mobileLanguageButton:
-    'mobileLanguageButton flex justify-end pr-[135px] lg:hidden',
+    'mobileLanguageButtonHeader flex justify-end pr-[135px] lg:hidden',
   logoImage: 'logoImage sm:hidden mx-auto pl-5',
   logoImageTextSm: 'logoImageTextSm hidden w-[350px] sm:block sm:pl-5',
   mobileNavbar: 'lg:hidden',

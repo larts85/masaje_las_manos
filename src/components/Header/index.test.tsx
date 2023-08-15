@@ -35,21 +35,24 @@ describe('Header Component', () => {
     expect(logoImageTextLg).toBeInTheDocument()
     expect(logoImageTextLg).toHaveClass('logoImageTextLg')
   })
-  it('should render the language button according to screen size', () => {
+
+  it('should render the LanguageButton according to screen size', () => {
     renderHeader()
-    const mobilelanguageButton = screen.getByTestId(
+    const mobileLanguageButtonHeader = screen.getByTestId(
       'mobileLanguageButtonHeader',
     )
-    expect(mobilelanguageButton).toBeInTheDocument()
-    expect(mobilelanguageButton).toHaveClass('mobileLanguageButton')
+    expect(mobileLanguageButtonHeader).toBeInTheDocument()
+    expect(mobileLanguageButtonHeader).toHaveClass('mobileLanguageButtonHeader')
+
     const languageButton = screen.getByTestId('languageButton')
     expect(languageButton).toBeInTheDocument()
     expect(languageButton).toHaveClass('languageButton')
   })
-  // it('should be rendered when clicking on the language button, the LanButtons component', () => {
-  //   renderHeader()
 
-  //   const languageButtons = screen.queryByTestId('languageButton')
-  //   expect(languageButtons).not.toBeInTheDocument()
-  // })
+  it('It should render the Navbar component', () => {
+    renderHeader()
+
+    const navbar = screen.getByTestId('navbar')
+    expect(navbar).toBeInTheDocument()
+  })
 })

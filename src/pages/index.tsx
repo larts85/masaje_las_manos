@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const { translations } = useTranslations()
 
   return (
-    <>
+    <div data-testid="home">
       <Head>
         <title>{translations.home.pageTitle}</title>
         <meta name="description" content={translations.home.metaDescription} />
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Header />
       <h1>{translations.home.greeting}</h1>
       <button className="btn-primary">Save changes</button>
-    </>
+    </div>
   )
 }
 

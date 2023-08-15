@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import className from './languagesButtonStyles'
 import useTranslations from '@/hooks/useTranslations'
 import MenuArrowNext from '../ImagesComponents/MenuArrowNext'
-import LanguageMenu from './LanguagesMenu'
+import LanguagesMenu from './LanguagesMenu'
 import { LanguagesButtonsProps } from './languagesButton.types'
 import Orbe from '../ImagesComponents/Orbe'
 import MenuArrowDown from '../ImagesComponents/MenuArrowDown'
@@ -43,7 +43,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
     }
   }
   return (
-    <div>
+    <div data-testid="languagesButton">
       {isMobile && (
         <div className={containerMobileLanguageButtonMenu}>
           <div
@@ -76,7 +76,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
          `}
             onAnimationEnd={handleAnimationEnd}
           >
-            <LanguageMenu isMobile={true} />
+            <LanguagesMenu isMobile={true} />
           </div>
         </div>
       )}
@@ -114,7 +114,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             `}
             onAnimationEnd={handleAnimationEnd}
           >
-            <LanguageMenu />
+            <LanguagesMenu />
           </div>
         </div>
       )}

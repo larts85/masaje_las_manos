@@ -1,4 +1,5 @@
-import { render } from '@testing-library/react'
+import { screen, render } from '@testing-library/react'
+import '@testing-library/jest-dom'
 import Navbar from './index'
 
 jest.mock('next/router', () => {
@@ -13,26 +14,21 @@ jest.mock('next/router', () => {
     },
   }
 })
-describe('Navbar', () => {
+
+describe('Navbar Componnet', () => {
   it('It should render all browser elements according to the selected language', () => {
     render(<Navbar />)
+
+    const home = screen.getByText('Home')
+    expect(home).toBeInTheDocument()
+
+    const services = screen.getByText('Services')
+    expect(services).toBeInTheDocument()
+
+    const contact = screen.getByText('Contact')
+    expect(contact).toBeInTheDocument()
+
+    const about = screen.getByText('About')
+    expect(about).toBeInTheDocument()
   })
 })
-
-// describe('Navbar', () => {
-//   it('should redirect to the correct page when a link is clicked', () => {
-//     render(<Navbar />)
-
-//     fireEvent.click(screen.getByText('home'))
-//     expect(useRouter().push).toHaveBeenCalledWith('/')
-
-// fireEvent.click(screen.getByText('Servicios'))
-// expect(mockPush).toHaveBeenCalledWith('/services')
-
-// fireEvent.click(screen.getByText('Contacto'))
-// expect(mockPush).toHaveBeenCalledWith('/contact')
-
-// fireEvent.click(screen.getByText('Acerca de Nosotros'))
-// expect(mockPush).toHaveBeenCalledWith('/about')
-//   })
-// })

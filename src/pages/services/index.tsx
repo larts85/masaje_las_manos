@@ -6,7 +6,7 @@ const Services: NextPage = () => {
   const { translations } = useTranslations()
 
   return (
-    <div>
+    <div data-testid="services">
       <Header />
       <div>{translations.services.title}</div>
     </div>
