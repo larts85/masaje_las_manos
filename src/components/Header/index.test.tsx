@@ -49,10 +49,15 @@ describe('Header Component', () => {
     expect(languageButton).toHaveClass('languageButton')
   })
 
-  it('It should render the Navbar component', () => {
+  it('Should render the Navbar component according to screen size', () => {
     renderHeader()
+
+    const mobileNavbar = screen.getByTestId('mobileNavbar')
+    expect(mobileNavbar).toBeInTheDocument()
+    expect(mobileNavbar).toHaveClass('mobileNavbar')
 
     const navbar = screen.getByTestId('navbar')
     expect(navbar).toBeInTheDocument()
+    expect(navbar).toHaveClass('navbar')
   })
 })

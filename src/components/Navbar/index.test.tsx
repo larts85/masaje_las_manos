@@ -1,4 +1,4 @@
-import { screen, render } from '@testing-library/react'
+import { screen, render, fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Navbar from './index'
 
@@ -9,26 +9,32 @@ jest.mock('next/router', () => {
       return {
         locale: 'en-US',
         locales: ['en-US', 'es-AR', 'pt-BR'],
-        asPath: '',
+        asPath: '/',
       }
     },
   }
 })
 
-describe('Navbar Componnet', () => {
-  it('It should render all browser elements according to the selected language', () => {
+describe('Navbar Component', () => {
+  it('Navigation links redirect to the correct pages', () => {
     render(<Navbar />)
 
-    const home = screen.getByText('Home')
-    expect(home).toBeInTheDocument()
+    const aboutLink = screen.getByText('About')
+    expect(aboutLink).toBeInTheDocument()
+    fireEvent.click(aboutLink)
+    const Aboutpage = screen.getByText('Contact')
+    expect(Aboutpage).toBeInTheDocument()
 
-    const services = screen.getByText('Services')
-    expect(services).toBeInTheDocument()
+    const contactLink = screen.getByText('About')
+    expect(contactLink).toBeInTheDocument()
+    fireEvent.click(aboutLink)
+    const contactPage = screen.getByText('About')
+    expect(contactPage).toBeInTheDocument()
 
-    const contact = screen.getByText('Contact')
-    expect(contact).toBeInTheDocument()
-
-    const about = screen.getByText('About')
-    expect(about).toBeInTheDocument()
+    const servicesLink = screen.getByText('Services')
+    expect(servicesLink).toBeInTheDocument()
+    fireEvent.click(aboutLink)
+    const servicesPage = screen.getByText('About')
+    expect(servicesPage).toBeInTheDocument()
   })
 })

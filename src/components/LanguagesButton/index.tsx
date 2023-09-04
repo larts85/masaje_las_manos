@@ -19,9 +19,9 @@ const {
 } = className
 
 const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
+  const [animationKey, setAnimationKey] = useState(0)
   const [isOpenMenu, setIsOpenMenu] = useState(false)
   const [isClicked, setIsClicked] = useState(0)
-  const [animationKey, setAnimationKey] = useState(0)
 
   const { currentLang } = useTranslations()
 
@@ -83,9 +83,9 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
       {!isMobile && (
         <div className={containerLanguageButtons}>
           <div
-            data-testid="lamguageButton"
+            data-testid="languageButtonlg"
             key={animationKey}
-            className={`hidden lg:flex lg:${languageButton}`}
+            className={`languageButtonlg hidden lg:flex lg:${languageButton}`}
             onClick={handleClick}
           >
             <div>

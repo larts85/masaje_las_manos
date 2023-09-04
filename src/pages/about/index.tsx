@@ -6,9 +6,9 @@ const About: NextPage = () => {
   const { translations } = useTranslations()
 
   return (
-    <div data-testid="about">
+    <div>
       <Header />
-      <div>{translations.about.title}</div>
+      <div data-testid="about">{translations.about.title}</div>
     </div>
   )
 }
