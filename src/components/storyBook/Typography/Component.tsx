@@ -5,7 +5,7 @@ export const className = {
   categoryDiv: 'bg-Primary-lighter w-72 rounded-lg mb-4',
   component: {
     textButton:
-      'p-3 font-jost font-medium text-xl leading-7 tracking-tighter text-black  ',
+      'p-3 font-jost font-medium text-xl leading-7 tracking-tighter text-black ',
     button:
       'p-3 font-jost font-medium text-sm leading-5 capitalize text-black ',
     textField: 'p-3 font-jost font-medium text-sm leading-6 text-black',

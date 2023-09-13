@@ -18,7 +18,7 @@ export const className: ClassName = {
     [VARIANT_STATES.DISABLE]: `w-175px h-52px bg-secondary-light text-neutral-base rounded-md text-${typografyClassName.component.textButton} uppercase cursor-not-allowed`,
   },
   [VARIANT.TRANSPARENT]: {
-    [VARIANT_STATES.NORMAL]: `w-175px h-52px cursor-auto text-secondary-base rounded-md  text-${typografyClassName.component.textButton} uppercase hover:shadow-button-hover active:shadow-button-primary-active active:scale-95`,
-    [VARIANT_STATES.DISABLE]: `w-175px h-52px  text-neutral-light rounded-md text-${typografyClassName.component.textButton} uppercase cursor-not-allowed`,
+    [VARIANT_STATES.NORMAL]: `w-175px h-52px cursor-auto text-secondary-base rounded-md text-${typografyClassName.component.textButton} uppercase hover:shadow-button-hover active:shadow-button-primary-active active:scale-95`,
+    [VARIANT_STATES.DISABLE]: `w-175px h-52px text-neutral-light rounded-md text-${typografyClassName.component.textButton} uppercase cursor-not-allowed`,
   },
 }

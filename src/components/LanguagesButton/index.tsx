@@ -56,7 +56,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
         <div className={containerLanguageButtons}>
           <div
             data-testid="language-button-lg"
-            className={`languageButton hidden lg:flex lg:${languageButton}`}
+            className={`languageButton lg:${languageButton}`}
             onClick={handleClick}
           >
             <div>
