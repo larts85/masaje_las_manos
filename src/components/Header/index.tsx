@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Logo from '../Logo'
 import { VARIANT } from '@/types/globals.types'
-import className from './headStyles'
+import className from './head.styles'
 import Navbar from '@/components/Navbar/index'
 import LanguagesButton from '../LanguagesButton'
 

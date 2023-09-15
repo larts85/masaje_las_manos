@@ -1,11 +1,10 @@
 import { FC, useState } from 'react'
 import className from './languagesButtonStyles'
 import useTranslations from '@/hooks/useTranslations'
-import MenuArrowNext from '../ImagesComponents/MenuArrowNext'
+import MenuArrow from '../IconsComponents/MenuArrow'
 import LanguagesMenu from './LanguagesMenu'
 import { LanguagesButtonsProps } from './languagesButton.types'
-import Orbe from '../ImagesComponents/Orbe'
-import MenuArrowDown from '../ImagesComponents/MenuArrowDown'
+import Orbe from '../IconsComponents/Orbe'
 
 const {
   containerMobileLanguageButtonMenu,
@@ -39,7 +38,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
               {currentLang?.split('-')[0].toUpperCase()}
             </div>
             <div className={isOpenMenu ? 'rotate-180' : ''}>
-              <MenuArrowNext />
+              <MenuArrow />
             </div>
           </div>
           <div
@@ -65,8 +64,8 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             <div className={languageText}>
               {currentLang?.split('-')[0].toUpperCase()}
             </div>
-            <div className={isOpenMenu ? 'rotate-180' : ''}>
-              <MenuArrowDown />
+            <div className={isOpenMenu ? '-rotate-90' : 'rotate-90'}>
+              <MenuArrow />
             </div>
           </div>
           <div

@@ -1,4 +1,4 @@
-const MenuArrowNext = () => {
+const MenuArrow = () => {
   return (
     <svg
       width="11"
@@ -26,4 +26,4 @@ const MenuArrowNext = () => {
     </svg>
   )
 }
-export default MenuArrowNext
+export default MenuArrow

@@ -1,4 +1,4 @@
-import className from './navbarStyles'
+import className from './navbar.styles'
 import Link from 'next/link'
 import useTranslations from '../../hooks/useTranslations'
 

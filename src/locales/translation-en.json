@@ -12,12 +12,15 @@
     "anchorTitle": "Page"
   },
   "services": {
-    "title": "Services"
+    "pageTitle": "Services",
+    "metaDescription": ""
   },
   "contact": {
-    "title": "Contact"
+    "pageTitle": "Contact",
+    "metaDescription": ""
   },
   "about": {
-    "title": "About"
+    "pageTitle": "About",
+    "metaDescription": ""
   }
 }

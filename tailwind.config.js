@@ -78,20 +78,6 @@ module.exports = {
         '8px': '8px',
         '12px': '12px',
       },
-      animation: {
-        fadeIn: 'fadeIn 1.5s',
-        fadeOut: 'fadeOut 1.5s',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        fadeOut: {
-          '0%': { opacity: '1' },
-          '100%': { opacity: '0' },
-        },
-      },
     },
   },
   plugins: [],
