@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import LangButtons from '.'
+import LanguagesMenu from '.'
 
 const mockRouter = jest.fn()
 
@@ -9,27 +9,31 @@ jest.mock('next/router', () => ({
   useRouter: () => mockRouter(),
 }))
 
-describe('LangButtons', () => {
-  it('should renders a button for each available language', () => {
+describe('LanguagesMenu', () => {
+  it('should display a button for each available language if the isMobile property is false', () => {
     mockRouter.mockReturnValue({
       asPath: '/',
       locale: 'en-US',
       locales: ['en-US', 'es-AR', 'pt-BR'],
     })
-    render(<LangButtons />)
+    render(<LanguagesMenu isMobile={false} />)
 
     const spanishButton = screen.getByRole('link', { name: /es/i })
     expect(spanishButton).toBeInTheDocument()
+    const englishButton = screen.queryByRole('link', { name: /en/i })
+    expect(englishButton).toBeInTheDocument()
   })
 
-  it('should not generate a button for the current language', () => {
+  it('should display a button for each non-current language if the isMobile property is true', () => {
     mockRouter.mockReturnValue({
       asPath: '/',
       locale: 'en-US',
       locales: ['en-US', 'es-AR', 'pt-BR'],
     })
-    render(<LangButtons />)
+    render(<LanguagesMenu isMobile={true} />)
 
+    const spanishButton = screen.getByRole('link', { name: /es/i })
+    expect(spanishButton).toBeInTheDocument()
     const englishButton = screen.queryByRole('link', { name: /en/i })
     expect(englishButton).not.toBeInTheDocument()
   })
@@ -50,7 +54,7 @@ describe('LangButtons', () => {
       },
     }))
 
-    render(<LangButtons />)
+    render(<LanguagesMenu />)
 
     const portugueseButton = screen.getByRole('button', { name: /pt/i })
     fireEvent.click(portugueseButton)

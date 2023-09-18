@@ -8,4 +8,5 @@ export interface StyleVariants {
 
 export interface LogoProps {
   variant: VARIANT
+  text?: true | false
 }

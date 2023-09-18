@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-css-tags */
+import 'tailwindcss/tailwind.css'
 import Typography from '@/components/storyBook/Typography'
 import StoryBookButtons from '@/components/storyBook/Button'
 import StoryBookRadioButtons from '@/components/storyBook/RadioButtons'

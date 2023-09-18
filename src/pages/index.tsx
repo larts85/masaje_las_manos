@@ -9,16 +9,18 @@ const Home: NextPage = () => {
   const { translations } = useTranslations()
 
   return (
-    <>
+    <div>
       <Head>
         <title>{translations.home.pageTitle}</title>
         <meta name="description" content={translations.home.metaDescription} />
-        <link rel="stylesheet" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Header />
+      <header>
+        <Header />
+      </header>
       <h1>{translations.home.greeting}</h1>
       <button className="btn-primary">Save changes</button>
-    </>
+    </div>
   )
 }
 

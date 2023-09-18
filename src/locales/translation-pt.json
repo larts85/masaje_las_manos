@@ -6,7 +6,21 @@
   },
   "navLinks": {
     "home": "Começar",
+    "services": "Serviços",
     "contact": "Contato",
+    "aboutUs": "Nós",
     "anchorTitle": "Página"
+  },
+  "services": {
+    "pageTitle": "Serviços",
+    "metaDescription": ""
+  },
+  "contact": {
+    "pageTitle": "Contato",
+    "metaDescription": ""
+  },
+  "about": {
+    "pageTitle": "Nós",
+    "metaDescription": ""
   }
 }

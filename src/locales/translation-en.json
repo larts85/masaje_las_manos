@@ -6,7 +6,21 @@
   },
   "navLinks": {
     "home": "Home",
+    "services": "Services",
     "contact": "Contact",
+    "aboutUs": "About",
     "anchorTitle": "Page"
+  },
+  "services": {
+    "pageTitle": "Services",
+    "metaDescription": ""
+  },
+  "contact": {
+    "pageTitle": "Contact",
+    "metaDescription": ""
+  },
+  "about": {
+    "pageTitle": "About",
+    "metaDescription": ""
   }
 }
