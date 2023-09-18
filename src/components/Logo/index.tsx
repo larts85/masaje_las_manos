@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { VARIANT } from '@/types/globals.types'
 import { StyleVariants, LogoProps } from './logo.types'
 
-const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY, text = true }) => {
+const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {
     [VARIANT.PRIMARY]: {
       light: '#88DBDF',
@@ -28,7 +28,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY, text = true }) => {
   }
   const colorName = logoColor()
   return (
-    <div className="p-2 flex justify-start items-button gap-2">
+    <div className="p-2 flex justify-start gap-2">
       <svg
         width="73"
         height="43"
@@ -58,13 +58,12 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY, text = true }) => {
           fill={logoStyleVariants[variant].darker}
         />
       </svg>
-      {text && (
-        <h1
-          className={`font-jost font-normal text-xl leading-8 text-${variant}-${colorName}`}
-        >
-          THE HANDS MASSAGE
-        </h1>
-      )}
+
+      <h1
+        className={`hidden sm:block font-jost font-normal text-xl leading-8 text-${variant}-${colorName} mx-auto pl-5 `}
+      >
+        THE HANDS MASSAGE
+      </h1>
     </div>
   )
 }

@@ -16,15 +16,6 @@ jest.mock('next/router', () => {
   }
 })
 
-// Mock useState globally
-// jest.mock('react', () => {
-//   const moduloOriginal = jest.requireActual('react')
-//   return {
-//     ...moduloOriginal,
-//     useState: jest.fn(),
-//   }
-// })
-
 describe('LanguagesButon', () => {
   it('should show the LanguagesButtonMenu component on click', () => {
     render(<LanguagesButton />)

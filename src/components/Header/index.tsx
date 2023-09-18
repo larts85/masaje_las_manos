@@ -9,8 +9,6 @@ const {
   mobileLogoButton,
   mobileLanguageButton,
   mobileNavbar,
-  logoImage,
-  logoImageTextSm,
   logoImageTextLg,
   containerLogoNavButton,
   navbar,
@@ -21,14 +19,7 @@ const Header: FC = () => {
   return (
     <header>
       <div className={mobileLogoButton}>
-        <div className="logo justify-start">
-          <div data-testid="logoImage" className={logoImage}>
-            <Logo variant={VARIANT.PRIMARY} text={false} />
-          </div>
-          <div data-testid="logoImageTextSm" className={logoImageTextSm}>
-            <Logo variant={VARIANT.PRIMARY} />
-          </div>
-        </div>
+        <Logo variant={VARIANT.PRIMARY} />
         <div
           className={mobileLanguageButton}
           data-testid="mobileLanguageButtonHeader"
