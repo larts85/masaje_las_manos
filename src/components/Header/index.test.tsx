@@ -23,12 +23,12 @@ describe('Header Component', () => {
   it('should render the LanguageButton according to screen size', () => {
     renderHeader()
     const mobileLanguageButtonHeader = screen.getByTestId(
-      'mobileLanguageButtonHeader',
+      'mobile-language-button-header',
     )
     expect(mobileLanguageButtonHeader).toBeInTheDocument()
     expect(mobileLanguageButtonHeader).toHaveClass('flex')
 
-    const languageButton = screen.getByTestId('languageButton')
+    const languageButton = screen.getByTestId('language-button')
     expect(languageButton).toBeInTheDocument()
     expect(languageButton).toHaveClass('flex')
   })
@@ -36,7 +36,7 @@ describe('Header Component', () => {
   it('Should render the Navbar component according to screen size', () => {
     renderHeader()
 
-    const mobileNavbar = screen.getByTestId('mobileNavbar')
+    const mobileNavbar = screen.getByTestId('mobile-navbar')
     expect(mobileNavbar).toBeInTheDocument()
     expect(mobileNavbar).toHaveClass(`lg:hidden`)
 

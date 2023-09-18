@@ -22,12 +22,12 @@ const Header: FC = () => {
         <Logo variant={VARIANT.PRIMARY} />
         <div
           className={mobileLanguageButton}
-          data-testid="mobileLanguageButtonHeader"
+          data-testid="mobile-language-button-header"
         >
           <LanguagesButton isMobile={true} />
         </div>
       </div>
-      <div className={mobileNavbar} data-testid="mobileNavbar">
+      <div className={mobileNavbar} data-testid="mobile-navbar">
         <Navbar />
       </div>
       <div className={containerLogoNavButton}>
@@ -37,7 +37,7 @@ const Header: FC = () => {
         <div className={navbar} data-testid="navbar">
           <Navbar />
         </div>
-        <div className={languagesButton} data-testid="languageButton">
+        <div className={languagesButton} data-testid="language-button">
           <LanguagesButton />
         </div>
       </div>
