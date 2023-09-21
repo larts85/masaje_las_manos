@@ -1,8 +1,8 @@
 import { FC } from 'react'
-import Logo from '../Logo'
+import Logo from './Logo'
 import { VARIANT } from '@/types/globals.types'
 import className from './head.styles'
-import Navbar from '@/components/Navbar/index'
+import Navbar from '@/components/Header/Navbar/index'
 import LanguagesButton from '../LanguagesButton'
 
 const {

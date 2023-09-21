@@ -5,7 +5,7 @@ import className from './languagesMenuStyles'
 import { ReactNode } from 'react'
 import { LangMenuProps } from './languagesMenu.types'
 import { FC } from 'react'
-import MenuCheck from '@/components/IconsComponents/MenuCheck'
+import MenuCheck from '@/components/LanguagesButton/IconsComponents/MenuCheck'
 
 const { menu, ul, menuMobile, linkMenuMobile, linkMenu, ulMobile } = className
 

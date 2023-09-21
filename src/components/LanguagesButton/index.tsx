@@ -1,10 +1,10 @@
 import { FC, useState } from 'react'
 import className from './languagesButtonStyles'
 import useTranslations from '@/hooks/useTranslations'
-import MenuArrow from '../IconsComponents/MenuArrow'
+import MenuArrow from './IconsComponents/MenuArrow'
 import LanguagesMenu from './LanguagesMenu'
 import { LanguagesButtonsProps } from './languagesButton.types'
-import Orbe from '../IconsComponents/Orbe'
+import Orbe from './IconsComponents/Orbe'
 
 const {
   containerMobileLanguageButtonMenu,
