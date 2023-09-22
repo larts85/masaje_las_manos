@@ -7,7 +7,7 @@ import LineTwo from './LineTwo'
 
 const Banner: FC = () => {
   return (
-    <div>
+    <div className="absolute top-0 z-10 left-0 ">
       <div className=" relative">
         <Background />
         <div className="flex flex-col items-center justify-centerfont-cormorant text-[20px] text-neutral-darker whitespace-nowrap  sm:text-[25px]  lg:text-[30px] xl:text-[35px] absolute top-[15%] left-[50vW]  transform -translate-x-1/2">
@@ -24,11 +24,11 @@ const Banner: FC = () => {
         </div>
       </div>
 
-      <div className=" absolute z-100 top-[150px] left-0 ">
+      <div className=" absolute z-100 top-[30%] left-0 ">
         <ImageOne />
       </div>
 
-      <div className=" absolute z-100 top-[65px] right-0">
+      <div className=" absolute z-100 top-[2%] right-[2%]">
         <ImageTwo />
       </div>
     </div>
