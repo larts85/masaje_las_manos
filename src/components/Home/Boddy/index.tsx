@@ -41,7 +41,7 @@ const HomeBoddy: FC = () => {
         - Aliviar dolor e inflamación. <br />- Mejorar la recuperación.
         <br />- Reduce el estrés.
       </p>
-      <div className="absolute z-10 top-[260vw] right-[1vw]">
+      <div className="absolute z-10 top-[263vw] right-[1vw]">
         <BoddyImageThree />
       </div>
       <p className="absolute z-10 top-[230vw] left-[5vw] w-[200px] h-[381px] flex-shrink-0 font-jost text-left text-[8px] font-normal leading-4">

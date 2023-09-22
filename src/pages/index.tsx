@@ -6,6 +6,7 @@ import useTranslations from '@/hooks/useTranslations'
 import Header from '../components/Header'
 import Banner from '@/components/Home/Banner'
 import HomeBoddy from '@components/Home/Boddy'
+import Footer from '@/components/Home/Footer'
 
 const Home: NextPage = () => {
   const { translations } = useTranslations()
@@ -24,6 +25,9 @@ const Home: NextPage = () => {
         <Banner />
         <HomeBoddy />
       </main>
+      <footer className="relative">
+        <Footer />
+      </footer>
     </div>
   )
 }
