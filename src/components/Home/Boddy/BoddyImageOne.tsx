@@ -3,7 +3,7 @@ import { FC } from 'react'
 const BoddyImageOne: FC = () => {
   return (
     <svg
-      width="18vw"
+      width="25vw"
       height="auto"
       viewBox="0 0 272 330"
       fill="none"
