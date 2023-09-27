@@ -12,7 +12,7 @@ const FooterLineTwo: FC = () => {
       <path
         d="M-167.783 341.217C-161.868 332.823 223.805 183.285 882.653 387.215C1541.5 591.144 1908.17 41.509 1997.49 0.830385"
         stroke="#785825"
-        stroke-width="1.11256"
+        strokeWidth="1.11256"
         stroke-miterlimit="10"
       />
     </svg>
