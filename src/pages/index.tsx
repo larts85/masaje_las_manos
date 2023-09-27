@@ -5,29 +5,25 @@ import Head from 'next/head'
 import useTranslations from '@/hooks/useTranslations'
 import Header from '../components/Header'
 import Banner from '@/components/Home/Banner'
-import HomeBoddy from '@components/Home/Boddy'
+import Content from '@/components/Home/Content'
 import Footer from '@/components/Home/Footer'
 
 const Home: NextPage = () => {
   const { translations } = useTranslations()
 
   return (
-    <div className="min-w-[360px] max-h-[740px]">
+    <div className="max-h-[740px]">
       <Head>
         <title>{translations.home.pageTitle}</title>
         <meta name="description" content={translations.home.metaDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <header>
-        <Header />
-      </header>
-      <main className="relative">
+      <Header />
+      <main>
         <Banner />
-        <HomeBoddy />
+        <Content />
       </main>
-      <footer className="relative">
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   )
 }

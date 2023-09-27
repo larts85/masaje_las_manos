@@ -1,9 +1,9 @@
 import { FC } from 'react'
 
-const BoddyImageThree: FC = () => {
+const ContentImageThree: FC = () => {
   return (
     <svg
-      width="40vw"
+      width="45vw"
       height="auto"
       viewBox="0 0 600 374"
       fill="none"
@@ -144,4 +144,4 @@ const BoddyImageThree: FC = () => {
     </svg>
   )
 }
-export default BoddyImageThree
+export default ContentImageThree

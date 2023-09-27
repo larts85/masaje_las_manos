@@ -43,7 +43,7 @@ const LanguagesMenu: FC<LangMenuProps> = ({ isMobile = false }) => {
               <Link
                 locale={lang}
                 href={asPath}
-                className="text-secondary-darker hover:text-neutral-darker ml-2 w-[30px]"
+                className="text-secondary-darker text-[12px] hover:text-neutral-darker ml-2 w-[30px]"
               >
                 {lang.split('-')[0].toUpperCase()}
               </Link>

@@ -17,7 +17,7 @@ const {
 
 const Header: FC = () => {
   return (
-    <header className="min-w-[360px]">
+    <header>
       <div className={mobileLogoButton}>
         <Logo variant={VARIANT.PRIMARY} />
         <div

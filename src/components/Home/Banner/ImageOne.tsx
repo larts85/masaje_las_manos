@@ -3,7 +3,7 @@ import { FC } from 'react'
 const ImageOne: FC = () => {
   return (
     <svg
-      width="30vW"
+      width="43vW"
       height="auto"
       viewBox="0 0 396 335"
       fill="none"

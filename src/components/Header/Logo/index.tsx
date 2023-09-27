@@ -30,8 +30,8 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   return (
     <div className="p-2 flex justify-start gap-2">
       <svg
-        width="73"
-        height="43"
+        width="10vw"
+        height="auto"
         viewBox="0 0 73 43"
         role="svg"
         fill="none"

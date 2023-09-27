@@ -2,8 +2,9 @@ const className = {
   containerMobileLanguageButtonMenu:
     'containerMobilelanguageButton flex relative',
   mobilelanguageButton:
-    'w-[60px] h-[45px] bg-primary-base hover:cursor-pointer rounded-[100px] relative z-10 flex items-center justify-evenly',
-  mobileLanguagetext: 'text-secondary-darker font-semibold text-xl pb-0.5',
+    'w-[10vw] h-[8vw] sm:w-[60px] sm:h-[45px] bg-primary-base hover:cursor-pointer rounded-[100px] relative z-10 flex items-center justify-evenly',
+  mobileLanguagetext:
+    'text-secondary-darker font-semibold text-[12px] sm:text-xl pb-0.5',
   languageButtonMenu:
     'flex absolute z-0 transition-opacity duration-1000 ease-in-out',
   containerLanguageButtons: 'flex relative pl-5',

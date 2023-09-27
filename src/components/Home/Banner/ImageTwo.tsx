@@ -3,7 +3,7 @@ import { FC } from 'react'
 const ImageTwo: FC = () => {
   return (
     <svg
-      width="20vw"
+      width="30vw"
       height="auto"
       viewBox="0 0 139 131"
       fill="none"
