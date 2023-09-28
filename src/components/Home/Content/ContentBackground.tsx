@@ -30,8 +30,8 @@ const ContentBackground: FC = () => {
           y2="3041.63"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.046875" stop-color="#FFF5E5" />
-          <stop offset="0.755208" stop-color="#C1EDEF" />
+          <stop offset="0.046875" stopColor="#FFF5E5" />
+          <stop offset="0.755208" stopColor="#C1EDEF" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_210_7204"
@@ -41,8 +41,8 @@ const ContentBackground: FC = () => {
           y2="1778.38"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.046875" stop-color="#FFF5E5" />
-          <stop offset="0.755208" stop-color="#C1EDEF" />
+          <stop offset="0.046875" stopColor="#FFF5E5" />
+          <stop offset="0.755208" stopColor="#C1EDEF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_210_7204"
@@ -52,8 +52,8 @@ const ContentBackground: FC = () => {
           y2="665"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.046875" stop-color="#FFF5E5" />
-          <stop offset="0.755208" stop-color="#C1EDEF" />
+          <stop offset="0.046875" stopColor="#FFF5E5" />
+          <stop offset="0.755208" stopColor="#C1EDEF" />
         </linearGradient>
       </defs>
     </svg>

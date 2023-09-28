@@ -146,8 +146,8 @@ const ImageOne: FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(247.517 108.267) rotate(114.259) scale(260.961 463.767)"
         >
-          <stop stop-color="#C1EDEF" />
-          <stop offset="1" stop-color="#C1EDEF" stop-opacity="0" />
+          <stop stopColor="#C1EDEF" />
+          <stop offset="1" stopColor="#C1EDEF" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>

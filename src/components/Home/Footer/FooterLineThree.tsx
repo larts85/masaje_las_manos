@@ -12,7 +12,7 @@ const FooterLineThree: FC = () => {
       <path
         d="M-186.396 330.682C-176.894 316.057 209.384 48.2069 836.901 214.185C1464.42 380.162 1799.56 76.0843 1955.12 1.2408"
         stroke="#FFF5E6"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
       />
     </svg>
   )
