@@ -8,19 +8,19 @@ import FooterLineThree from './FooterLineThree'
 const Footer: FC = () => {
   return (
     <footer className="relative">
-      <div className="absolute top-[180vh] z-10">
+      <div className="absolute top-[271.5vw] z-10">
         <FooterLineOne />
       </div>
-      <div className="absolute top-[168.2vh] z-10">
+      <div className="absolute top-[255vw] z-10">
         <FooterLineTwo />
       </div>
-      <div className="absolute top-[175vh] z-10">
+      <div className="absolute top-[265vw] z-10">
         <FooterLineThree />
       </div>
-      <div className="absolute top-[195vh] right-[2vw] z-10">
+      <div className="absolute top-[295vw] right-[2vw] z-10">
         <FooterWhatsapp />
       </div>
-      <div className="absolute top-[181.5vh] z-5">
+      <div className="absolute top-[274vw] z-5">
         <FooterBackground />
         <div className=" w-[100vw] bg-secondary-darker h-[7vw] flex items-center justify-center">
           <p className="text-secondary-lighter text-[7px] text-center ">
