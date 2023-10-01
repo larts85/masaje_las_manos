@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 import className from './languagesButtonStyles'
 import useTranslations from '@/hooks/useTranslations'
-import MenuArrow from './IconsComponents/MenuArrow'
+import Arrow from './IconsComponents/Arrow'
 import LanguagesMenu from './LanguagesMenu'
 import { LanguagesButtonsProps } from './languagesButton.types'
 import Orbe from './IconsComponents/Orbe'
@@ -31,14 +31,13 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
           <div
             onClick={handleClick}
             data-testid="mobile-language-button"
-            className={`mobileLanguageButton ${mobilelanguageButton} 
-            `}
+            className={mobilelanguageButton}
           >
-            <div className={mobileLanguagetext}>
+            <p className={mobileLanguagetext}>
               {currentLang?.split('-')[0].toUpperCase()}
-            </div>
-            <div className={isOpenMenu ? 'rotate-180' : ''}>
-              <MenuArrow />
+            </p>
+            <div id="arrow" className={isOpenMenu ? 'rotate-180' : ''}>
+              <Arrow />
             </div>
           </div>
           <div
@@ -55,7 +54,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
         <div className={containerLanguageButtons}>
           <div
             data-testid="language-button-lg"
-            className={`languageButton lg:${languageButton}`}
+            className={` lg:${languageButton}`}
             onClick={handleClick}
           >
             <div>
@@ -65,7 +64,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
               {currentLang?.split('-')[0].toUpperCase()}
             </div>
             <div className={isOpenMenu ? '-rotate-90' : 'rotate-90'}>
-              <MenuArrow />
+              <Arrow />
             </div>
           </div>
           <div
