@@ -44,7 +44,7 @@ const HomeBoddy: FC = () => {
       <div className="absolute z-10 top-[253vw] right-[1vw]">
         <ContentImageThree />
       </div>
-      <p className="absolute z-10 top-[230vw] left-[5vw] w-[55vw] flex-shrink-0 font-jost text-left text-[2.5vw] font-normal leading-tight">
+      <p className="absolute z-10 top-[230vw] left-[7vw] w-[55vw] flex-shrink-0 font-jost text-left text-[2.5vw] font-normal leading-tight">
         Nuestro equipo de terapeutas se encuentran altamente capacitados y
         listos para brindarle la atención personalizada que usted merece.
         <br /> Lo invitamos a descubrir todos los servicios y locales que

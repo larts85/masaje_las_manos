@@ -22,5 +22,14 @@
   "about": {
     "pageTitle": "About",
     "metaDescription": ""
+  },
+  "bannerHomePage": {
+    "title": "THE HANDS MASSAGE",
+    "slogan": "YOUR WELL-BEING IN OUR HANDS"
+  },
+  "contentHomePage": {
+    "sesionOne": "",
+    "sesionTwo": "",
+    "sesionThree": ""
   }
 }

@@ -22,5 +22,14 @@
   "about": {
     "pageTitle": "Nosotros",
     "metaDescription": ""
+  },
+  "bannerHomePage": {
+    "title": "MASAJE LAS MANOS",
+    "slogan": "TU BIENESTAR EN NUESTRAS MANOS"
+  },
+  "contentHomePage": {
+    "sesionOne": "",
+    "sesionTwo": "",
+    "sesionThree": ""
   }
 }
