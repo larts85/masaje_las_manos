@@ -25,10 +25,10 @@ const Banner: FC = () => {
       </div>
       <div
         id="titleAndSlogan"
-        className="flex flex-col items-center justify-centerfont-cormorant text-[16px] text-neutral-darker whitespace-nowrap  sm:text-[20px]  lg:text-[25px] xl:text-[33px] absolute top-[4vw] left-[50vW]  transform -translate-x-1/2"
+        className="flex flex-col items-center justify-centerfont-cormorant text-neutral-darker whitespace-nowrap text-[5vw] absolute top-[4vw] left-[50vW]  transform -translate-x-1/2"
       >
         THE HANDS MASSAGE
-        <p className="font-jost border-[1px] font-normal border-neutral-darker border-r p-1 items-center whitespace-nowrap text-[7px] sm:text-[15px] lg:text-[20px] xl:text:[25px] mt-1">
+        <p className="font-jost border-[1px] font-normal border-neutral-darker border-r p-1 items-center whitespace-nowrap text-[2.5vw] mt-1">
           YOUR WELL-BEING IN OUR HANDS
         </p>
       </div>
