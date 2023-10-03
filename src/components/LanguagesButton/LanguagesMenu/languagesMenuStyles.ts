@@ -1,11 +1,11 @@
 const className = {
-  menu: 'bg-primary-light w-[135px] h-[174px] rounded-tl-[30px] rounded-tr-[30px] rounded-bl-[40px] rounded-br-[40px] flex justify-around items-center relative',
+  menu: 'bg-primary-light  rounded-tl-[2.5vw] rounded-tr-[2.5vw] rounded-bl-[2.5vw] rounded-br-[2.5vw] flex justify-around items-center',
   menuMobile:
     'bg-primary-light w-max h-max rounded-tl-[30px] rounded-tr-[30px] rounded-bl-[30px] rounded-br-[30px] flex items-center',
-  ul: 'm-1 pt-12 pb-1',
+  ul: 'm-1 pt-[6vw] pb-[0.5vw]',
   linkMenuMobile:
     'text-secondary-darker font-semibold text-[3vw] hover:text-neutral-darker ml-[0.5vw] px-[0.5vw]',
-  linkMenu: 'flex items-center justify-start',
+  linkMenu: 'flex items-center  justify-start gap-[2px]',
   ulMobile: 'inline-flex ml-[6vw] p-[2px]',
 }
 

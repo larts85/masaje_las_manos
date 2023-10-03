@@ -1,7 +1,7 @@
 const MenuArrow = () => {
   return (
     <svg
-      width="2vw"
+      width="0.7vh"
       height="auto"
       viewBox="0 0 11 13"
       fill="none"

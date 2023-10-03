@@ -7,20 +7,20 @@ import LineTwo from './LineTwo'
 
 const Banner: FC = () => {
   return (
-    <div className="relative">
-      <div id="lineOne" className="absolute z-50 top-[8vw]">
+    <div className="relative ">
+      <div id="lineOne" className="absolute z-10 top-[8vw]">
         <LineOne />
       </div>
-      <div id="lineTwo" className="absolute z-50 top-[25vw]">
+      <div id="lineTwo" className="absolute z-10 top-[25vw]">
         <LineTwo />
       </div>
-      <div id="imageOne" className="absolute z-50 top-[8vw] left-[1vw]">
+      <div id="imageOne" className="absolute z-10 top-[8vw] left-[1vw]">
         <ImageOne />
       </div>
-      <div className="absolute z-50 top-[10vw] right-[2vw]">
+      <div className="absolute z-10 top-[10vw] right-[2vw]">
         <ImageTwo />
       </div>
-      <div className="absolute z-100">
+      <div className="absolute z-0">
         <Background />
       </div>
       <div

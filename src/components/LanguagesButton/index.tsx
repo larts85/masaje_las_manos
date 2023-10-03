@@ -10,7 +10,7 @@ const {
   containerMobileLanguageButtonMenu,
   mobilelanguageButton,
   mobileLanguagetext,
-  containerLanguageButtons,
+  containerLanguageButtonsMenu,
   languageButton,
   languageText,
   languageButtonMenu,
@@ -51,15 +51,13 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
         </div>
       )}
       {!isMobile && (
-        <div className={containerLanguageButtons}>
+        <div className={containerLanguageButtonsMenu}>
           <div
             data-testid="language-button-lg"
-            className={` lg:${languageButton}`}
+            className={languageButton}
             onClick={handleClick}
           >
-            <div>
-              <Orbe />
-            </div>
+            <Orbe />
             <div className={languageText}>
               {currentLang?.split('-')[0].toUpperCase()}
             </div>

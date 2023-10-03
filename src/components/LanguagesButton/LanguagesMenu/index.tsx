@@ -32,8 +32,8 @@ const LanguagesMenu: FC<LangMenuProps> = ({ isMobile = false }) => {
                 href={asPath}
                 className={
                   currentLang === lang
-                    ? `text-neutral-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
-                    : `text-secondary-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
+                    ? `text-neutral-darker font-jost font-medium text-[2vw] leading-[4vw] tracking-tighter`
+                    : `text-secondary-darker font-jost  text-[2vw] leading-[4vw]  tracking-tighter`
                 }
               >
                 {fullLanguages[lang.split('-')[0]]}
