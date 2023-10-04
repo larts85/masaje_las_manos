@@ -24,12 +24,34 @@
     "metaDescription": ""
   },
   "bannerHomePage": {
-    "title": "MASAJE LAS MANOS",
+    "title": "THE HANDS MASSAGE",
     "slogan": "TU BIENESTAR EN NUESTRAS MANOS"
   },
   "contentHomePage": {
-    "sesionOne": "",
-    "sesionTwo": "",
-    "sesionThree": ""
+    "sesionOne": [
+      "Bienvenidos a The Hands Massage, donde le brindamos un profesional servicio de masaje que puede ser en local y a domicilio, segun su preferencia.",
+      "Ofrecemos una amplia variedad de tratamientos de masaje diseñados para satisfacer sus necesidades."
+    ],
+    "sesionTwoTitle": " ¿Por qué es importante tener una rutina de masaje?",
+    "sesionTwoContent": [
+      "- Mejora la circulación sanguínea.",
+      "- Aumentar la flexibilidad.",
+      "- Mejora la movilidad de las articulaciones.",
+      "- Mejora la circulación sanguínea.",
+      "- Aumentar la flexibilidad.",
+      "- Mejora la movilidad de las articulaciones.",
+      "- Mejorar el sistema inmunológico.",
+      "- Promueve un mejor sueño.",
+      "- Reduce la tensión muscular.",
+      "- Se puede trataar lesiones deportivas.",
+      "- Mejora condiciones musculares crónicas.",
+      "- Aliviar dolor e inflamación.",
+      "- Mejorar la recuperación.",
+      "- Reduce el estrés."
+    ],
+    "sesionThree": [
+      "Nuestro equipo de terapeutas se encuentran altamente capacitados y listos para brindarle la atención personalizada que usted merece.",
+      "Lo invitamos a descubrir todos los servicios y locales que tenemos y no dude en contactarnos para aclarar cualquier duda o para coordiral un turno."
+    ]
   }
 }
