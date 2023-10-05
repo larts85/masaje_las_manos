@@ -10,9 +10,9 @@ const { hederContainer } = className
 const Header: FC = () => {
   return (
     <header className={hederContainer}>
-      <Logo variant={VARIANT.PRIMARY} />
-      <Navbar />
-      <LanguagesButton />
+      <Logo variant={VARIANT.PRIMARY} data-testid="logo-component" />
+      <Navbar data-testid="navbar-component" />
+      <LanguagesButton data-testid="languages-button-component" />
     </header>
   )
 }

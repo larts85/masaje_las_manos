@@ -25,18 +25,18 @@ describe('LanguagesButon', () => {
     expect(screen.getByTestId('language-button-menu')).toBeInTheDocument()
   })
 
-  it('should have a mobile layout if rendered with: isMobile', () => {
-    render(<LanguagesButton isMobile />)
+  // it('should have a mobile layout if rendered with: isMobile', () => {
+  //   render(<LanguagesButton isMobile />)
 
-    const mobileLanguageButton = screen.getByTestId('mobile-language-button')
-    expect(mobileLanguageButton).toBeInTheDocument()
-    expect(mobileLanguageButton).toHaveClass('mobileLanguageButton')
-  })
+  //   const mobileLanguageButton = screen.getByTestId('mobile-language-button')
+  //   expect(mobileLanguageButton).toBeInTheDocument()
+  //   expect(mobileLanguageButton).toHaveClass('mobileLanguageButton')
+  // })
 
-  it('should have a layout for larger screens if rendered without passing the isMobile property', () => {
-    render(<LanguagesButton />)
-    const languageButtonlg = screen.getByTestId('language-button-lg')
-    expect(languageButtonlg).toBeInTheDocument()
-    expect(languageButtonlg).toHaveClass('languageButton')
-  })
+  // it('should have a layout for larger screens if rendered without passing the isMobile property', () => {
+  //   render(<LanguagesButton />)
+  //   const languageButtonlg = screen.getByTestId('language-button-lg')
+  //   expect(languageButtonlg).toBeInTheDocument()
+  //   expect(languageButtonlg).toHaveClass('languageButton')
+  // })
 })

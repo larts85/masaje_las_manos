@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   const { translations } = useTranslations()
 
   return (
-    <div className="max-h-[740px]">
+    <div>
       <Head>
         <title>{translations.home.pageTitle}</title>
         <meta name="description" content={translations.home.metaDescription} />

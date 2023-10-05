@@ -32,9 +32,11 @@ const HomeBoddy: FC = () => {
         {translations.contentHomePage.sesionTwoTitle}
       </p>
       <ul className="absolute z-10 top-[145vw] left-[45vw] w-[60vw] flex-shrink-0 text-left text-[2.7vw] font-normal leading-tight overflow-hidden text-ellipsis">
-        {translations.contentHomePage.sesionTwoContent.map((vantagem) => (
-          <li key={vantagem}>{vantagem}</li>
-        ))}
+        {translations.contentHomePage.sesionTwoContent.map(
+          (vantagem, index) => (
+            <li key={index}>{vantagem}</li>
+          ),
+        )}
       </ul>
       <div className="absolute z-10 top-[253vw] right-[1vw]">
         <ContentImageThree />
