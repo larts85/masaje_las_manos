@@ -4,8 +4,10 @@ import FooterLineOne from './FooterLineOne'
 import FooterLineTwo from './FooterLineTwo'
 import FooterWhatsapp from './FooterWhatsapp'
 import FooterLineThree from './FooterLineThree'
+import useTranslations from '@/hooks/useTranslations'
 
 const Footer: FC = () => {
+  const { translations } = useTranslations()
   return (
     <footer className="relative">
       <div className="absolute top-[271.5vw] z-10">
@@ -23,9 +25,8 @@ const Footer: FC = () => {
       <div className="absolute top-[274vw] z-5">
         <FooterBackground />
         <div className=" w-[100vw] bg-secondary-darker h-[7vw] flex items-center justify-center">
-          <p className="text-secondary-lighter text-[7px] text-center ">
-            The Hands Massage 2023, Todos los derechos reservados, Desarrollado
-            por lucesitaliss e imadev
+          <p className="text-secondary-lighter text-[2vw] text-center ">
+            {translations.footerHomePage.Copyright}
           </p>
         </div>
       </div>

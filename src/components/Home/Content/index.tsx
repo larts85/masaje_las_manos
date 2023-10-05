@@ -9,7 +9,7 @@ const HomeBoddy: FC = () => {
   const { translations } = useTranslations()
   return (
     <div className="relative">
-      <div className="absolute top-[40vw] z-200">
+      <div className="absolute top-[40vw] z-0">
         <ContentBackground />
       </div>
       <div className="absolute z-10 top-[67vw] right-[0.5vw]">
@@ -28,10 +28,10 @@ const HomeBoddy: FC = () => {
       <div className="absolute z-10 top-[150vw] left-[5vw]">
         <ContentImageTwo />
       </div>
-      <p className="absolute z-10 top-[130vw] right-[2vw] w-[55vw] flex flex-col font-jost text-left text-[3.2vw] font-bold leading-4 ">
+      <p className="absolute z-10 top-[130vw] right-[2vw] w-[55vw] flex flex-col font-jost text-left text-[3.2vw] font-bold leading-[3vw]] ">
         {translations.contentHomePage.sesionTwoTitle}
       </p>
-      <ul className="absolute z-10 top-[145vw] left-[45vw] w-[60vw] flex-shrink-0 text-left text-[2.7vw] font-normal leading-tight overflow-hidden text-ellipsis">
+      <ul className="absolute z-10 top-[145vw] left-[45vw] flex-shrink-0 text-left text-[2.2vw] font-normal leading-tight overflow-hidden text-ellipsis">
         {translations.contentHomePage.sesionTwoContent.map(
           (vantagem, index) => (
             <li key={index}>{vantagem}</li>
@@ -41,7 +41,7 @@ const HomeBoddy: FC = () => {
       <div className="absolute z-10 top-[253vw] right-[1vw]">
         <ContentImageThree />
       </div>
-      <div className="absolute z-10 top-[230vw] left-[7vw] w-[55vw] flex-shrink-0 font-jost text-left text-[2.5vw] font-normal leading-tight">
+      <div className="absolute z-10 top-[230vw] left-[7vw] w-[55vw] flex-shrink-0 font-jost text-left text-[2.2vw] font-normal leading-tight">
         {translations.contentHomePage.sesionThree.map((sesion) => (
           <p key={sesion}>
             {sesion}
