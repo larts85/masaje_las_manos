@@ -10,7 +10,7 @@ const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
     <footer className="relative">
-      <div className="absolute top-[271.5vw] z-10">
+      <div className="absolute top-[272.5vw] z-10">
         <FooterLineOne />
       </div>
       <div className="absolute top-[255vw] z-10">
