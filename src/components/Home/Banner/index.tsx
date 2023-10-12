@@ -10,13 +10,12 @@ const Banner: FC = () => {
   const { translations } = useTranslations()
   return (
     <div className="relative ">
-      <div id="lineOne" className="absolute z-10 top-[7vw]">
-        {/* <LineOne /> */}
+      <div id="lineOne" className="absolute z-10 top-[8vw]">
         <LineOneAnimate />
       </div>
-      {/* <div id="lineTwo" className="absolute z-10 top-[25vw]">
+      <div id="lineTwo" className="absolute z-10 top-[26vw]">
         <LineTwo />
-      </div> */}
+      </div>
       <div id="imageOne" className="absolute z-10 top-[8vw] left-[1vw]">
         <ImageOne />
       </div>
