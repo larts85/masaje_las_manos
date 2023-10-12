@@ -1,10 +1,11 @@
 import { FC } from 'react'
+// import styles from './banner.module.css'
 
 const LineOne: FC = () => {
   return (
+    // <div className={styles.moveLineOne}>
     <svg
       width="100vw"
-      height="auto"
       viewBox="0 0 1440 656"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +17,7 @@ const LineOne: FC = () => {
         strokeMiterlimit="10"
       />
     </svg>
+    // </div>
   )
 }
 export default LineOne

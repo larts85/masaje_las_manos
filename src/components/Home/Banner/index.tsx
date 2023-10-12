@@ -2,7 +2,7 @@ import { FC } from 'react'
 import ImageOne from './ImageOne'
 import Background from './Background'
 import ImageTwo from './ImageTwo'
-import LineOne from './LineOne'
+import LineOneAnimate from './LineOneAnimate'
 import LineTwo from './LineTwo'
 import useTranslations from '@/hooks/useTranslations'
 
@@ -10,12 +10,13 @@ const Banner: FC = () => {
   const { translations } = useTranslations()
   return (
     <div className="relative ">
-      <div id="lineOne" className="absolute z-10 top-[8vw]">
-        <LineOne />
+      <div id="lineOne" className="absolute z-10 top-[7vw]">
+        {/* <LineOne /> */}
+        <LineOneAnimate />
       </div>
-      <div id="lineTwo" className="absolute z-10 top-[25vw]">
+      {/* <div id="lineTwo" className="absolute z-10 top-[25vw]">
         <LineTwo />
-      </div>
+      </div> */}
       <div id="imageOne" className="absolute z-10 top-[8vw] left-[1vw]">
         <ImageOne />
       </div>

@@ -1,0 +1,17 @@
+@keyframes invert {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.line {
+  fill: none;
+  stroke: #07bac1;
+  stroke-width: 1.11256;
+  stroke-miterlimit: 10;
+  animation: invert 3s ease-in-out alternate;
+  mask: url(#mask);
+}
