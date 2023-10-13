@@ -14,7 +14,7 @@ const Footer: FC = () => {
         <FooterLineOne />
       </div>
       <div className="absolute top-[255vw] z-10">
-        <FooterLineTwo />
+        <FooterLineTwo />{' '}
       </div>
       <div className="absolute top-[265vw] z-10">
         <FooterLineThree />
