@@ -7,9 +7,9 @@ import { LangMenuProps } from './languagesMenu.types'
 import { FC } from 'react'
 import MenuCheck from '@/components/LanguagesButton/IconsComponents/MenuCheck'
 
-const { menu, ul, menuMobile, linkMenuMobile, linkMenu, ulMobile } = className
+const { menu, ul, liMenu, linkMenu } = className
 
-const LanguagesMenu: FC<LangMenuProps> = ({ isMobile = false }) => {
+const LanguagesMenu: FC<LangMenuProps> = () => {
   const { asPath } = useRouter()
 
   const { currentLang, langs } = useTranslations()
@@ -21,29 +21,26 @@ const LanguagesMenu: FC<LangMenuProps> = ({ isMobile = false }) => {
   }
 
   return (
-    <div className={isMobile ? menuMobile : menu} data-testid="langButtonsMenu">
-      <ul className={isMobile ? ulMobile : ul}>
+    <div className={menu} data-testid="langButtonsMenu">
+      <ul className={ul}>
         {langs!.map((lang) => (
-          <li key={lang} className={isMobile ? linkMenuMobile : linkMenu}>
-            {!isMobile && currentLang === lang && <MenuCheck />}
-            {!isMobile && (
+          <li key={lang} className={liMenu}>
+            {currentLang === lang && <MenuCheck />}
+            {
               <Link
                 locale={lang}
                 href={asPath}
-                className={
-                  currentLang === lang
-                    ? `text-neutral-darker font-jost font-medium text-[9px] sm:text-[1.5vw] leading-[2.5vw] tracking-tighter`
-                    : `text-secondary-darker font-jost  text-[9px] sm:text-[1.5vw] leading-[2.5vw]  tracking-tighter`
-                }
+                className={`${linkMenu}
+                  ${
+                    currentLang === lang
+                      ? 'text-neutral-darker'
+                      : 'text-secondary-darker'
+                  }
+                `}
               >
                 {fullLanguages[lang.split('-')[0]]}
               </Link>
-            )}
-            {isMobile && currentLang !== lang && (
-              <Link locale={lang} href={asPath}>
-                {lang.split('-')[0].toUpperCase()}
-              </Link>
-            )}
+            }
           </li>
         ))}
       </ul>

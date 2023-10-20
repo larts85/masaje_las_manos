@@ -16,6 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "react": ["./node_modules/@types/react"],
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@images/*": ["./src/public/images/*"],
