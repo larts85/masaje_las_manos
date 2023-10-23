@@ -14,10 +14,10 @@ const Banner: FC = () => {
         <ImageOne />
         <div
           id="titleAndSlogan"
-          className="flex flex-col items-center justify-centerfont-cormorant text-neutral-darker whitespace-nowrap mt-[5vw] text-[10px] sm:text-[15px] sm:mt-[5vw] md:text-[17px] lg:text-[25px] xl:text-[1.8vw]"
+          className="flex flex-col items-center justify-center font-cormorant text-neutral-darker whitespace-nowrap mt-[5vw] text-[10px] sm:text-[15px] sm:mt-[5vw] md:text-[17px] lg:text-[25px] xl:text-[1.8vw]"
         >
           {translations.bannerHomePage.title}
-          <p className="font-jost border-[1px] font-normal border-neutral-darker border-r p-1 items-center whitespace-nowrap mt-[1vw] text-[6px] sm:text-[8px]md:text-[9px] lg:text-[11px] xl:text[0.8vw]">
+          <p className="font-jost border-[1px] font-normal border-neutral-darker border-r p-1 items-center whitespace-nowrap mt-[1vw] text-[6px] sm:text-[8px] md:text-[9px] lg:text-[11px] xl:text-[0.8vw]">
             {translations.bannerHomePage.slogan}
           </p>
         </div>
