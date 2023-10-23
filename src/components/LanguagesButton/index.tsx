@@ -7,16 +7,13 @@ import { LanguagesButtonsProps } from './languagesButton.types'
 import Orbe from './IconsComponents/Orbe'
 
 const {
-  containerMobileLanguageButtonMenu,
-  mobilelanguageButton,
-  mobileLanguagetext,
   containerLanguageButtonsMenu,
   languageButton,
   languageText,
   languageButtonMenu,
 } = className
 
-const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
+const LanguagesButton: FC<LanguagesButtonsProps> = () => {
   const { currentLang } = useTranslations()
 
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -26,31 +23,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
   }
   return (
     <div data-testid="languagesButton">
-      {isMobile && (
-        <div className={containerMobileLanguageButtonMenu}>
-          <div
-            onClick={handleClick}
-            data-testid="mobile-language-button"
-            className={mobilelanguageButton}
-          >
-            <p className={mobileLanguagetext}>
-              {currentLang?.split('-')[0].toUpperCase()}
-            </p>
-            <div id="arrow" className={isOpenMenu ? 'rotate-180' : ''}>
-              <Arrow />
-            </div>
-          </div>
-          <div
-            data-testid="lange-buttons-menu"
-            className={`${languageButtonMenu} ${
-              isOpenMenu ? `opacity-100` : `opacity-0`
-            }`}
-          >
-            <LanguagesMenu isMobile />
-          </div>
-        </div>
-      )}
-      {!isMobile && (
+      {
         <div className={containerLanguageButtonsMenu}>
           <div
             data-testid="language-button-lg"
@@ -74,7 +47,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             <LanguagesMenu />
           </div>
         </div>
-      )}
+      }
     </div>
   )
 }

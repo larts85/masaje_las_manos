@@ -1,6 +1,6 @@
 const MenuArrow = () => {
   return (
-    <div className="max-w-[35px] max-h-[35px] w-[1vw]">
+    <div className="max-w-[10px] max-h-[10px] w-[3px] sm:w-[5px] md:w-[6px] lg:w-[7px] xl:w-[10px]">
       <svg
         className="w-full h-auto"
         viewBox="0 0 11 13"

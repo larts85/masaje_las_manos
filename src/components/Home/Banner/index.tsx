@@ -9,30 +9,28 @@ import useTranslations from '@/hooks/useTranslations'
 const Banner: FC = () => {
   const { translations } = useTranslations()
   return (
-    <div className="relative ">
-      <div id="lineOne" className="absolute z-10 top-[8vw]">
-        <LineOne />
-      </div>
-      <div id="lineTwo" className="absolute z-10 top-[27vw]">
-        <LineTwo />
-      </div>
-      <div id="imageOne" className="absolute z-10 top-[8vw] left-[1vw]">
+    <div id="container" className=" relative flex flex-col">
+      <div id="content" className="flex relative z-10 justify-around">
         <ImageOne />
-      </div>
-      <div className="absolute z-10 top-[10vw] right-[2vw]">
+        <div
+          id="titleAndSlogan"
+          className="flex flex-col items-center justify-centerfont-cormorant text-neutral-darker whitespace-nowrap mt-[5vw] text-[10px] sm:text-[15px] sm:mt-[5vw] md:text-[17px] lg:text-[25px] xl:text-[1.8vw]"
+        >
+          {translations.bannerHomePage.title}
+          <p className="font-jost border-[1px] font-normal border-neutral-darker border-r p-1 items-center whitespace-nowrap mt-[1vw] text-[6px] sm:text-[8px]md:text-[9px] lg:text-[11px] xl:text[0.8vw]">
+            {translations.bannerHomePage.slogan}
+          </p>
+        </div>
         <ImageTwo />
       </div>
-      <div className="absolute z-0">
+      <div id="backgound" className="flex flex-col absolute top-0 z-0">
+        <div
+          id="rectangleBackGround"
+          className=" flex bg-secondary-lighter w-[100vw] h-[20vw] relative"
+        ></div>
         <Background />
-      </div>
-      <div
-        id="titleAndSlogan"
-        className="flex flex-col items-center justify-centerfont-cormorant text-neutral-darker whitespace-nowrap text-[5vw] absolute top-[4vw] left-[50vW]  transform -translate-x-1/2"
-      >
-        {translations.bannerHomePage.title}
-        <p className="font-jost border-[1px] font-normal border-neutral-darker border-r p-1 items-center whitespace-nowrap text-[2.5vw] mt-1">
-          {translations.bannerHomePage.slogan}
-        </p>
+        <LineOne />
+        <LineTwo />
       </div>
     </div>
   )

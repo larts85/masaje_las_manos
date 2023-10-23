@@ -3,8 +3,6 @@ const MenuCheck = () => {
     <div className="max-w-[40px] max-h-[60px] w-[1vw]">
       <svg
         className="w-full h-auto"
-        width="1.5vw"
-        height="auto"
         viewBox="0 0 17 14"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

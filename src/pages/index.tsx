@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   const { translations } = useTranslations()
 
   return (
-    <div>
+    <div className="grid col-span-12">
       <Head>
         <title>{translations.home.pageTitle}</title>
         <meta name="description" content={translations.home.metaDescription} />

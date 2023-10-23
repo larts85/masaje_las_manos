@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const LineOneAnimate: FC = () => {
   return (
-    <div>
+    <div className="relative top-[-43.2vw]">
       <svg
         width="100vw"
         height="auto"
@@ -26,12 +26,6 @@ const LineOneAnimate: FC = () => {
             repeatCount="indefinite"
           />
         </path>
-        {/* <path
-          d="M1840.32 91.168C1207.5 850.072 1166.67 260 607 620.552C147.33 897.921 -524.263 100.3985 -60.84038 500.74235"
-          stroke="#07BAC1"
-          strokeWidth="5.11256"
-          strokeMiterlimit="10"
-        ></path> */}
       </svg>
     </div>
   )
