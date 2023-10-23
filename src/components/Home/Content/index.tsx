@@ -9,7 +9,7 @@ const HomeBoddy: FC = () => {
   const { translations } = useTranslations()
   return (
     <div className="relative">
-      <div className="absolute top-[40vw] z-0">
+      <div className="relative z-0">
         <ContentBackground />
       </div>
       <div className="absolute z-10 top-[67vw] right-[0.5vw]">

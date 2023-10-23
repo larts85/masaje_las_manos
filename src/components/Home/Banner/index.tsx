@@ -10,7 +10,7 @@ const Banner: FC = () => {
   const { translations } = useTranslations()
   return (
     <div id="container" className=" relative flex flex-col">
-      <div id="content" className="flex relative z-10 justify-around">
+      <div id="content" className="flex relative z-20 justify-around">
         <ImageOne />
         <div
           id="titleAndSlogan"
@@ -23,7 +23,7 @@ const Banner: FC = () => {
         </div>
         <ImageTwo />
       </div>
-      <div id="backgound" className="flex flex-col absolute top-0 z-0">
+      <div id="backgound" className="flex flex-col absolute top-0 z-10">
         <div
           id="rectangleBackGround"
           className=" flex bg-secondary-lighter w-[100vw] h-[20vw] relative"

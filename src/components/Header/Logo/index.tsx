@@ -60,7 +60,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
       </svg>
 
       <h1
-        className={`whitespace-nowrap font-jost text-[7px] text-${variant}-${colorName} sm:text-[9px] md:text-[9px] lg:text-[10px] xl:text-[0.8vw]`}
+        className={`whitespace-nowrap font-jost text-primary-base text-[7px] text-${variant}-${colorName} sm:text-[9px] md:text-[9px] lg:text-[10px] xl:text-[0.8vw]`}
       >
         THE HANDS MASSAGE
       </h1>
