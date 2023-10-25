@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 const ImageTwo: FC = () => {
   return (
-    <div className="relative top-[1.8vw]">
+    <div className="relative top-[3vw] right-[4vw]">
       <svg
-        width="18vw"
+        width="15vw"
         height="auto"
         viewBox="0 0 139 131"
         fill="none"
