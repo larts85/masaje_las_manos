@@ -10,7 +10,7 @@ const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
     <footer className="relative">
-      <div className="absolute top-[272.5vw] z-10">
+      {/* <div className="absolute top-[272.5vw] z-10">
         <FooterLineOne />
       </div>
       <div className="absolute top-[255vw] z-10">
@@ -28,8 +28,8 @@ const Footer: FC = () => {
           <p className="text-secondary-lighter text-[2vw] text-center ">
             {translations.footerHomePage.Copyright}
           </p>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </footer>
   )
 }

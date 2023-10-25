@@ -8,47 +8,63 @@ import useTranslations from '@/hooks/useTranslations'
 const HomeBoddy: FC = () => {
   const { translations } = useTranslations()
   return (
-    <div className="relative">
-      <div className="relative z-0">
-        <ContentBackground />
-      </div>
-      <div className="absolute z-10 top-[67vw] right-[0.5vw]">
-        <ContentImageOne />
-      </div>
-      <div className="absolute z-10 top-[70vw] left-[3vw] w-[65vw] font-jost text-right text-[2.2vw] font-normal leading-tight">
-        {translations.contentHomePage.sesionOne.map((sesion) => (
-          <p key={sesion}>
-            {sesion}
-            <br></br>
-            <br></br>
+    <div id="contentContainer" className="relative">
+      <div
+        id="contentCotainer"
+        className="z-20 h-[100vh] w-[100vw] items-center flex flex-col"
+      >
+        <div
+          id="sesionOne"
+          className=" font-jost text-right font-normal leading-tight relative top-[22vw] right-[15vw] text-[9px] w-[200px] sm:text-[12px] sm:w-[300px] sm:top-[30vw] md:text-[15px] md:w-[400px] lg:text-[20px] lg:w-[600px] xl:text-[25px] xl:w-[700px]"
+        >
+          {translations.contentHomePage.sesionOne.map((sesion) => (
+            <p key={sesion}>
+              {sesion}
+              <br></br>
+              <br></br>
+            </p>
+          ))}
+        </div>
+        <div
+          id="sesionTwo"
+          className="relative left-[20vw] top-[57vw] sm:top-[80vw]"
+        >
+          <p
+            id="title"
+            className="flex flex-col font-jost text-left font-bold pb-[4vw] text-[12px] w-[150px] leading-[15px] sm:text-[15px] sm:w-[200px] sm:leading-[20px] md:text-[18px] md:w-[250px] md:leading-[25px] lg:text-[21px] lg:w-[350px] lg:leading-[35px] xl:text-[25px] xl:w-[400px] xl:leading-[45px] "
+          >
+            {translations.contentHomePage.sesionTwoTitle}
           </p>
-        ))}
+          <ul
+            id="list"
+            className="flex-shrink-0 text-left font-normal leading-tight overflow-hidden text-ellipsis text-[9px] sm:text-[12px] md:text-[15px] lg:text-[20px] xl:text-[25px]"
+          >
+            {translations.contentHomePage.sesionTwoContent.map(
+              (vantagem, index) => (
+                <li key={index}>{vantagem}</li>
+              ),
+            )}
+          </ul>
+        </div>
+        <div
+          id="sesionThree"
+          className="relative top-[92vw] sm:top-[130vw] md:top-[135vw] right-[15vw]"
+        >
+          <div className="flex-shrink-0 font-jost text-left font-normal leading-tight text-[9px] w-[160px] sm:text-[12px] sm:w-[255px] md:text-[15px] md:w-[300px] lg:text-[20px] lg:w-[400px] xl:text-[25px] xl:w-[550px]">
+            {translations.contentHomePage.sesionThree.map((sesion) => (
+              <p key={sesion}>
+                {sesion}
+                <br />
+              </p>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <div className="absolute z-10 top-[150vw] left-[5vw]">
-        <ContentImageTwo />
-      </div>
-      <p className="absolute z-10 top-[130vw] right-[2vw] w-[55vw] flex flex-col font-jost text-left text-[3.2vw] font-bold leading-[3vw]] ">
-        {translations.contentHomePage.sesionTwoTitle}
-      </p>
-      <ul className="absolute z-10 top-[145vw] left-[45vw] flex-shrink-0 text-left text-[2.2vw] font-normal leading-tight overflow-hidden text-ellipsis">
-        {translations.contentHomePage.sesionTwoContent.map(
-          (vantagem, index) => (
-            <li key={index}>{vantagem}</li>
-          ),
-        )}
-      </ul>
-      <div className="absolute z-10 top-[253vw] right-[1vw]">
-        <ContentImageThree />
-      </div>
-      <div className="absolute z-10 top-[230vw] left-[7vw] w-[55vw] flex-shrink-0 font-jost text-left text-[2.2vw] font-normal leading-tight">
-        {translations.contentHomePage.sesionThree.map((sesion) => (
-          <p key={sesion}>
-            {sesion}
-            <br />
-          </p>
-        ))}
-      </div>
+      <ContentImageOne />
+      <ContentImageTwo />
+      <ContentImageThree />
+      <ContentBackground />
     </div>
   )
 }

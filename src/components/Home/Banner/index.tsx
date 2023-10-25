@@ -9,7 +9,7 @@ import useTranslations from '@/hooks/useTranslations'
 const Banner: FC = () => {
   const { translations } = useTranslations()
   return (
-    <div id="container" className=" relative flex flex-col">
+    <div id="banerContainer" className=" relative flex flex-col">
       <div id="content" className="flex relative z-20 justify-around">
         <ImageOne />
         <div
