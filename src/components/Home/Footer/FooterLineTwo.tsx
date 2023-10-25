@@ -2,36 +2,32 @@ import { FC } from 'react'
 
 const FooterLineTwo: FC = () => {
   return (
-    <svg
-      width="100vw"
-      height="auto"
-      viewBox="0 5 1440 433"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M-167.783 341.217C-161.868 332.823 223.805 183.285 882.653 387.215C1541.5 591.144 1908.17 41.509 1997.49 0.830385"
-        stroke="#785825"
-        strokeWidth="1.11256"
-        strokeMiterlimit="10"
+    <div className="absolute top-[-13vw]">
+      <svg
+        width="100vw"
+        height="auto"
+        viewBox="0 0 1740 433"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <animate
-          attributeName="d"
-          values="
+        <path
+          d="M-167.783 341.217C-161.868 332.823 223.805 183.285 882.653 387.215C1541.5 591.144 1908.17 41.509 1997.49 0.830385"
+          stroke="#785825"
+          strokeWidth="1.11256"
+          strokeMiterlimit="10"
+        >
+          <animate
+            attributeName="d"
+            values="
           M-167.783 341.217C-161.868 332.823 223.805 183.285 882.653 387.215C1541.5 591.144 1908.17 41.509 1997.49 0.830385;
           M0.783 301.217C-161.868 125.823 223.805 350.285 882.653 380.215C1541.5 400.144 1908.17 600.509 1997.49 0.830385;
           M-167.783 341.217C-161.868 332.823 223.805 183.285 882.653 387.215C1541.5 591.144 1908.17 41.509 1997.49 0.830385"
-          dur="6s"
-          repeatCount="indefinite"
-        />
-      </path>
-      {/* <path
-        d="M0.783 301.217C-161.868 125.823 223.805 350.285 882.653 380.215C1541.5 400.144 1908.17 600.509 1997.49 0.830385"
-        stroke="#785825"
-        strokeWidth="5.11256"
-        strokeMiterlimit="10"
-      /> */}
-    </svg>
+            dur="6s"
+            repeatCount="indefinite"
+          />
+        </path>
+      </svg>
+    </div>
   )
 }
 export default FooterLineTwo
