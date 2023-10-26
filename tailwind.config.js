@@ -41,7 +41,7 @@ module.exports = {
       },
       fontFamily: {
         jost: ['Jost', 'sans-serif'],
-        cormorant: ['Cormorant Garamond', 'serif'],
+        cormorant: ['Cormorant Garamond', 'serif', 'normal'],
       },
       fontSize: {
         '10px': '10px',
