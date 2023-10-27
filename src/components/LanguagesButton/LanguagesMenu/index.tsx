@@ -7,7 +7,7 @@ import { LangMenuProps } from './languagesMenu.types'
 import { FC } from 'react'
 import MenuCheck from '@/components/LanguagesButton/IconsComponents/MenuCheck'
 
-const { menu, ul, liMenu, linkMenu } = className
+const { menu, liMenu, linkMenu } = className
 
 const LanguagesMenu: FC<LangMenuProps> = () => {
   const { asPath } = useRouter()
@@ -22,7 +22,7 @@ const LanguagesMenu: FC<LangMenuProps> = () => {
 
   return (
     <div className={menu} data-testid="langButtonsMenu">
-      <ul className={ul}>
+      <ul>
         {langs!.map((lang) => (
           <li key={lang} className={liMenu}>
             {currentLang === lang && <MenuCheck />}

@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { VARIANT } from '@/types/globals.types'
 import { StyleVariants, LogoProps } from './logo.types'
+import className from './logo.style'
 
 const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {
@@ -59,11 +60,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
         />
       </svg>
 
-      <h1
-        className={`whitespace-nowrap font-jost text-primary-base text-[7px] text-${variant}-${colorName} sm:text-[9px] md:text-[12px] lg:text-[15px] xl:text-[20px]`}
-      >
-        THE HANDS MASSAGE
-      </h1>
+      <h1 className={className.logo}>THE HANDS MASSAGE</h1>
     </div>
   )
 }

@@ -1,10 +1,28 @@
+const containerSize = {
+  movile: 'w-[34px]',
+  sm: 'sm:w-[42px]',
+  md: 'md:w-[65px]',
+  lg: 'lg:w-[70px]',
+  xl: 'xl:w-[85px]',
+}
+const languageButtonSize = {
+  movile: 'h-[10px]',
+  sm: 'sm:h-[15px]',
+  md: ' md:h-[20px]',
+  lg: 'lg:h-[22px]',
+  xl: 'xl:h-[25px]',
+}
+const languageTextsize = {
+  movile: 'text-[5px]',
+  sm: 'sm:text-[7px]',
+  md: 'md:text-[9px]',
+  xl: 'xl:text-[12px]',
+}
+
 const className = {
-  containerLanguageButtonsMenu:
-    'relative top-0 right-[1vw] w-[34px]  sm:w-[60px] md:w-[65px] lg:w-[70px] xl:w-[8vw]',
-  languageButton:
-    'flex hover:cursor-pointer bg-primary-base items-center rounded-[100px] relative top-[0px] z-30 justify-around w-full h-[10px] sm:h-[17px] md:h-[20px] xl:h-[1.6vw] xl:gap-[2vw] px-[0.8vw]',
-  languageText:
-    'text-secondary-darker font-semibold font-jost text-[5px] sm:text-[7px] md:text-[8px] xl:text-[0.8vw]',
+  containerLanguageButtonsMenu: `relative top-0 right-[1vw] ${containerSize.movile} ${containerSize.sm} ${containerSize.md} ${containerSize.lg} ${containerSize.xl}`,
+  languageButton: `flex justify-around items-center bg-primary-base rounded-[100px] relative top-[0px] z-30 w-full hover:cursor-pointer ${languageButtonSize.movile} ${languageButtonSize.sm} ${languageButtonSize.md} ${languageButtonSize.lg} ${languageButtonSize.xl}`,
+  languageText: `text-secondary-darker font-semibold font-jost ${languageTextsize.movile} ${languageTextsize.sm} ${languageTextsize.md} ${languageTextsize.xl}`,
   languageButtonMenu:
     'absolute top-0 z-20 transition-opacity duration-1000 ease-in-out w-full',
 }
