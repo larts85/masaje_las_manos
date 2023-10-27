@@ -1,7 +1,7 @@
 const size = {
   movile: 'text-[7px]',
   sm: 'sm:text-[12px]',
-  md: 'md:text-[12px]',
+  md: 'md:text-[13px]',
   lg: 'lg:text-[15px]',
   xl: 'xl:text-[20px]',
 }
