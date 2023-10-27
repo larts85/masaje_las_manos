@@ -9,7 +9,7 @@ import useTranslations from '@/hooks/useTranslations'
 const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
-    <footer className="absolute top-[257vw]">
+    <footer className="absolute top-[285vw]">
       <FooterBackground />
       <FooterLineOne />
       <FooterLineTwo />

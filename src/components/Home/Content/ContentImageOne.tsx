@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 const ContentImageOne: FC = () => {
   return (
-    <div className="absolute z-10 top-[25vw] right-[2vw]">
+    <div className="absolute z-10 top-[29vw] right-[4vw]">
       <svg
-        width="25vw"
+        width="23vw"
         height="auto"
         viewBox="0 0 332 308"
         fill="none"
