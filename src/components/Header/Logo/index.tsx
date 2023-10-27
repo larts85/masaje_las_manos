@@ -22,12 +22,6 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
     },
   }
 
-  const logoColor = () => {
-    if (variant === VARIANT.SECONDARY) {
-      return 'darker'
-    } else return 'base'
-  }
-  const colorName = logoColor()
   return (
     <div className="flex justify-start gap-[2px] items-center px-[1vw]">
       <svg
