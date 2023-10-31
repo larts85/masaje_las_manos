@@ -6,8 +6,8 @@ const containerSize = {
   xl: 'xl:w-[85px]',
 }
 const languageButtonSize = {
-  movile: 'h-[10px]',
-  sm: 'sm:h-[15px]',
+  movile: 'h-[10px] py-[7px]',
+  sm: 'sm:h-[15px] py-[9px]',
   md: ' md:h-[20px]',
   lg: 'lg:h-[22px]',
   xl: 'xl:h-[25px]',
