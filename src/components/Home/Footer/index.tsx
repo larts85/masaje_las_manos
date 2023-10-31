@@ -5,6 +5,7 @@ import FooterLineTwo from './FooterLineTwo'
 import FooterWhatsapp from './FooterWhatsapp'
 import FooterLineThree from './FooterLineThree'
 import useTranslations from '@/hooks/useTranslations'
+import className from './footer.styles'
 
 const Footer: FC = () => {
   const { translations } = useTranslations()
@@ -16,8 +17,8 @@ const Footer: FC = () => {
       <FooterLineThree />
       <FooterWhatsapp />
 
-      <div className="relative top-[30vw] w-[100vw] bg-secondary-darker h-[7vw] flex items-center justify-center">
-        <p className="text-secondary-lighter text-[6px] sm:text-[8px] md:text-[10px] lg:text-12px] xl:text-[14px] text-center ">
+      <div id="copyrightContainer" className={className.copyrightContainer}>
+        <p className={className.copyright}>
           {translations.footerHomePage.Copyright}
         </p>
       </div>
