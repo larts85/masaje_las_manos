@@ -9,9 +9,9 @@ import className from './content.styles'
 const HomeBoddy: FC = () => {
   const { translations } = useTranslations()
   return (
-    <div id=" content" className={className.content}>
-      <div id="contentContainer" className={className.contentCotainer}>
-        <div id="sesionOne" className={className.sesionOne}>
+    <section className={className.content}>
+      <div className={className.contentCotainer}>
+        <div className={className.sesionOne}>
           {translations.contentHomePage.sesionOne.map((sesion) => (
             <p key={sesion}>
               {sesion}
@@ -20,11 +20,11 @@ const HomeBoddy: FC = () => {
             </p>
           ))}
         </div>
-        <div id="sesionTwo" className={className.sesionTwo}>
-          <p id="title" className={className.title}>
+        <div className={className.sesionTwo}>
+          <p className={className.title}>
             {translations.contentHomePage.sesionTwoTitle}
           </p>
-          <ul id="list" className={className.list}>
+          <ul className={className.list}>
             {translations.contentHomePage.sesionTwoContent.map(
               (vantagem, index) => (
                 <li key={index}>{vantagem}</li>
@@ -33,7 +33,7 @@ const HomeBoddy: FC = () => {
           </ul>
         </div>
 
-        <div id="sesionThree" className={className.sesionThree}>
+        <div className={className.sesionThree}>
           {translations.contentHomePage.sesionThree.map((sesion) => (
             <p key={sesion}>
               {sesion}
@@ -47,7 +47,7 @@ const HomeBoddy: FC = () => {
       <ContentImageTwo />
       <ContentImageThree />
       <ContentBackground />
-    </div>
+    </section>
   )
 }
 

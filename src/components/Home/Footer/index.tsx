@@ -17,7 +17,7 @@ const Footer: FC = () => {
       <FooterLineThree />
       <FooterWhatsapp />
 
-      <div id="copyrightContainer" className={className.copyrightContainer}>
+      <div className={className.copyrightContainer}>
         <p className={className.copyright}>
           {translations.footerHomePage.Copyright}
         </p>

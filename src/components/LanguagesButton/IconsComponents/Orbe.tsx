@@ -1,6 +1,6 @@
 const Orbe = () => {
   return (
-    <div className="max-w-[70px] max-h-[70px] w-[7px] sm:w-[10px] md:w-[12px] lg:w-[15px] xl:w-[1.4vw]">
+    <div className="max-w-[26px] max-h-[26.25px] w-[7px] sm:w-[10px] md:w-[12px] lg:w-[15px] xl:w-[20px] xxl:w-[26px]">
       <svg
         className="w-full h-auto"
         viewBox="0 0 28 28"

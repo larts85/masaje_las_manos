@@ -23,7 +23,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   }
 
   return (
-    <div className="flex justify-start gap-[2px] items-center px-[1vw]">
+    <div className={className.logoContaiiner}>
       <svg
         width="4vw"
         height="auto"

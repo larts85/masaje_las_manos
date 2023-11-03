@@ -3,11 +3,11 @@ import Link from 'next/link'
 import useTranslations from '../../../hooks/useTranslations'
 
 const Navbar = () => {
-  const { ul, li, container } = className
+  const { ul, li } = className
   const { translations } = useTranslations()
 
   return (
-    <nav className={container}>
+    <nav>
       <ul className={ul}>
         <Link href="/">
           <li className={li}>{translations.navLinks.home}</li>

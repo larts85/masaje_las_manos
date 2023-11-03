@@ -19,22 +19,22 @@ const Banner: FC = () => {
   } = className
 
   return (
-    <div id="banerContainer" className={bannerContainer}>
-      <div id="content" className={content}>
+    <section className={bannerContainer}>
+      <div className={content}>
         <ImageOne />
-        <div id="titleAndSlogan" className={titleAndSlogan}>
+        <h1 className={titleAndSlogan}>
           {translations.bannerHomePage.title}
           <p className={slogan}>{translations.bannerHomePage.slogan}</p>
-        </div>
+        </h1>
         <ImageTwo />
       </div>
-      <div id="backgound" className={backgound}>
-        <div id="rectangleBackGround" className={rectangleBackGround}></div>
+      <div className={backgound}>
+        <div className={rectangleBackGround}></div>
         <Background />
         <LineOne />
         <LineTwo />
       </div>
-    </div>
+    </section>
   )
 }
 
