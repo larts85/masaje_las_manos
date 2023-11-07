@@ -28,7 +28,7 @@ const sesionTreeSize = {
 }
 
 const className = {
-  content: 'relative',
+  content: 'relative top-[-20vw]',
   contentCotainer: 'z-20 h-[100vh] w-[100vw] items-center flex flex-col',
   sesionOne: `font-jost text-right font-normal leading-tight relative top-[31vw] right-[15vw] ${sesionOneSize.movile} ${sesionOneSize.sm} ${sesionOneSize.md} ${sesionOneSize.lg} ${sesionOneSize.xl}`,
   sesionTwo: `relative left-[15vw] top-[80vw]`,

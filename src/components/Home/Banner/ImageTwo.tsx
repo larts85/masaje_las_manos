@@ -1,10 +1,21 @@
 import { FC } from 'react'
 
 const ImageTwo: FC = () => {
+  const imageTwoPosition = {
+    movile: 'top-[-10vw] left-[7vw]',
+    sm: 'sm:top-[-6vw] sm:left-[7vw]',
+    md: '',
+    lg: 'lg:top-[-4vw] ',
+    xl: 'xl:top-[-5vw] xl:left-[6vw]',
+    xxl: 'xxl:top-[-9vw] xxl:left-[5vw]',
+  }
+
   return (
-    <div className="relative top-[8vw]">
+    <div
+      className={`relative top-[-9vw] left-[5vw] ${imageTwoPosition.movile} ${imageTwoPosition.sm} ${imageTwoPosition.md} ${imageTwoPosition.lg} ${imageTwoPosition.xl} ${imageTwoPosition.xxl}`}
+    >
       <svg
-        width="34vw"
+        width="30vw"
         height="auto"
         viewBox="0 0 139 131"
         fill="none"

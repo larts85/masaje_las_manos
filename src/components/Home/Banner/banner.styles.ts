@@ -1,25 +1,25 @@
 const titleAndSloganSize = {
-  movile: 'text-[15px]',
-  sm: 'sm:text-[30px]',
-  md: 'md:text-[35px] ',
-  lg: 'lg:text-[40px]',
-  xl: 'xl:text-[55px] ',
-  xxl: 'xxl:text-[75px] ',
+  movile: 'text-[15px] pt-4 pb-2',
+  sm: 'sm:text-[30px] sm:p-5',
+  md: 'md:text-[35px] md:p-6',
+  lg: 'lg:text-[40px] lg:p-7',
+  xl: 'xl:text-[60px] xl:p-8',
+  xxl: 'xxl:text-[75px] xxl:top-[-330px] xxl:p-10',
 }
 const sloganSize = {
-  movile: 'text-[6px]',
-  sm: 'sm:text-[11px]',
-  md: 'md:text-[14px]',
-  lg: 'lg:text-[22px]',
-  xl: 'xl:text-[24px]',
-  xxl: 'xxl:text-[32px]',
+  movile: 'text-[6px] border-[0.5px] p-[2px]',
+  sm: 'sm:text-[11px] sm:border-[1px] sm:p-[4px]',
+  md: 'md:text-[14px] md:border-[1.5px] md:p-[5px]',
+  lg: 'lg:text-[18px] lg:border-[2px] lg:p-2',
+  xl: 'xl:text-[25px] xl:border-[2.5px] xl:p-4',
+  xxl: 'xxl:text-[32px] xxl:p-5',
 }
 
 const className = {
-  bannerContainer: 'relative flex flex-col',
-  content: 'flex relative z-20 justify-around',
-  titleAndSlogan: `absolute top-[-23vw] flex flex-col items-center justify-center inset-0 leading-[128px] font-cormorant font-light text-neutral-darker whitespace-nowrap ${titleAndSloganSize.movile} ${titleAndSloganSize.sm} ${titleAndSloganSize.md} ${titleAndSloganSize.lg} ${titleAndSloganSize.xl} ${titleAndSloganSize.xxl}`,
-  slogan: `font-jost border-[1px] font-normal leading-10 text-center border-neutral-darker border-r p-1.5 whitespace-nowrap mt-[1vw] ${sloganSize.movile} ${sloganSize.sm} ${sloganSize.md} ${sloganSize.lg} ${sloganSize.xl} ${sloganSize.xxl}`,
+  bannerContainer: 'relative flex flex-col ',
+  content: 'z-20 flex flex-col items-center justify-between',
+  titleAndSlogan: `text-center font-cormorant font-light text-neutral-darker ${titleAndSloganSize.movile} ${titleAndSloganSize.sm} ${titleAndSloganSize.md} ${titleAndSloganSize.lg} ${titleAndSloganSize.xl} ${titleAndSloganSize.xxl}`,
+  slogan: `text-center font-jost font-normal border-neutral-darker whitespace-nowrap ${sloganSize.movile} ${sloganSize.sm} ${sloganSize.md} ${sloganSize.lg} ${sloganSize.xl} ${sloganSize.xxl}`,
   backgound: 'flex flex-col absolute top-0 z-10',
   rectangleBackGround: ' flex bg-secondary-lighter w-[100vw] h-[45vw] relative',
 }

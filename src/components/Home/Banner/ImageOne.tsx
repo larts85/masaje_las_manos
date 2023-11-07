@@ -1,8 +1,19 @@
 import { FC } from 'react'
 
 const ImageOne: FC = () => {
+  const imageOnePosition = {
+    movile: 'top-[0vw] right-[12vw]',
+    sm: 'sm:top-[4vw] sm:right-[12.5vw]',
+    md: '',
+    lg: 'lg:top-[6vw] lg:right-[12vw]',
+    xl: 'xl:top-[4vw] xl:right-[11vw]',
+    xxl: 'xxl:top-[2vw] xxl:right-[10vw]',
+  }
+
   return (
-    <div className="relative top-[9vw] right-[10vw] ">
+    <div
+      className={`relative ${imageOnePosition.movile} ${imageOnePosition.sm} ${imageOnePosition.md} ${imageOnePosition.lg} ${imageOnePosition.xl} ${imageOnePosition.xxl}`}
+    >
       <svg
         width="55vW"
         height="auto"

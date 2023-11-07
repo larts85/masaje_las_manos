@@ -21,13 +21,14 @@ const Banner: FC = () => {
   return (
     <section className={bannerContainer}>
       <div className={content}>
-        <ImageOne />
-        <h1 className={titleAndSlogan}>
-          {translations.bannerHomePage.title}
-          <p className={slogan}>{translations.bannerHomePage.slogan}</p>
-        </h1>
-        <ImageTwo />
+        <h2 className={titleAndSlogan}>{translations.bannerHomePage.title}</h2>
+        <p className={slogan}>{translations.bannerHomePage.slogan}</p>
+        <div className="relative flex mt-4 top-[-11vw] items-end">
+          <ImageOne />
+          <ImageTwo />
+        </div>
       </div>
+
       <div className={backgound}>
         <div className={rectangleBackGround}></div>
         <Background />
