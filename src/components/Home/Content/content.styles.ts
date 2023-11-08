@@ -10,17 +10,17 @@ const titleSize = {
   movile: 'text-[8.7px] w-[135px] leading-[15px]',
   sm: 'sm:text-[15px] sm:w-[220px] sm:leading-[20px]',
   md: 'md:text-[18px] md:w-[260px] md:leading-[25px]',
-  lg: 'lg:text-[21px] lg:w-[350px] lg:leading-[35px]',
+  lg: 'lg:text-[21px] lg:w-[300px] lg:leading-[35px]',
   xl: 'xl:text-[35px] xl:w-[500px] xl:leading-[45px]',
   xxl: 'xxl:text-[48px] xxl:w-[700px] xxl:leading-[56px]',
 }
 const listSize = {
-  movile: 'text-[6.6px] left-[6.1vw]',
-  sm: 'sm:text-[12px] left-[2.1vw]',
-  md: 'md:text-[15px] md:left-[4vw]',
-  lg: 'lg:text-[20px] lg:left-[]',
-  xl: 'xl:text-[25px]',
-  xxl: 'xxl:text[32px]',
+  movile: 'text-[6.6px] left-[9vw]',
+  sm: 'sm:text-[12px] left-[4vw]',
+  md: 'md:text-[15px] md:left-[3vw]',
+  lg: 'lg:text-[20px] lg:left-[2.7vw]',
+  xl: 'xl:text-[25px] xl:left-[4vw]',
+  xxl: 'xxl:text[32px] xxl:left-[6vw]',
 }
 const sesionTreeSize = {
   movile: 'text-[6.6px] w-[150px]',
