@@ -2,11 +2,11 @@ import { FC } from 'react'
 
 const ImageTwo: FC = () => {
   const imageTwoPosition = {
-    movile: 'top-[-12vw] left-[7vw]',
-    sm: 'sm:top-[-6vw] sm:left-[7vw]',
+    movile: 'top-[-12vw] left-[6vw]',
+    sm: 'sm:top-[-6vw] sm:left-[5vw]',
     md: '',
     lg: 'lg:top-[-4vw] ',
-    xl: 'xl:top-[-5vw] xl:left-[6vw]',
+    xl: 'xl:top-[-5vw] xl:left-[5vw]',
     xxl: 'xxl:top-[-9vw] xxl:left-[5vw]',
   }
 

@@ -4,7 +4,7 @@ const ContentBackground: FC = () => {
   return (
     <div className="top-0 z-0 absolute">
       <svg
-        width="100vw"
+        width="98.7vw"
         height="auto"
         viewBox="0 0 1440 3455"
         fill="none"

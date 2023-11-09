@@ -4,7 +4,7 @@ const LineOneAnimate: FC = () => {
   return (
     <div className="relative top-[-43.2vw]">
       <svg
-        width="100vw"
+        width="98.7vw"
         height="auto"
         viewBox="0 30 1440 656"
         fill="none"

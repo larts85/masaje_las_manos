@@ -4,7 +4,8 @@ const size = {
 }
 
 const className = {
-  hederContainer: `flex justify-between items-center h-max bg-secondary-lighter relative z-30 ${size.movile} ${size.sm}`,
+  hederContainer: `flex justify-between items-center w-[98.7vw] h-max relative z-30 ${size.movile} ${size.sm}`,
+  navAndButton: 'flex items-center gap-[2vw]',
 }
 
 export default className

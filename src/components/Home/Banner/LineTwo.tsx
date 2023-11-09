@@ -4,7 +4,7 @@ const LineTwo: FC = () => {
   return (
     <div className="relative top-[-68vw]">
       <svg
-        width="100vw"
+        width="98.7vw"
         height="auto"
         viewBox="0 50 1440 415"
         fill="none"

@@ -4,7 +4,7 @@ const FooterLineTwo: FC = () => {
   return (
     <div className="absolute top-[-13vw]">
       <svg
-        width="100vw"
+        width="98.7vw"
         height="auto"
         viewBox="0 0 1740 433"
         fill="none"

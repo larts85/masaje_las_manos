@@ -10,7 +10,7 @@ import className from './footer.styles'
 const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
-    <footer className="absolute top-[285vw]">
+    <footer className={className.footerContainer}>
       <FooterBackground />
       <FooterLineOne />
       <FooterLineTwo />

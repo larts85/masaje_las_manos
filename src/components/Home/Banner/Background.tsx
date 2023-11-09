@@ -4,7 +4,7 @@ const Background: FC = () => {
   return (
     <div className="relative">
       <svg
-        width="100vw"
+        width="98.7vw"
         height="auto"
         viewBox="0 0 1439 212"
         fill="none"

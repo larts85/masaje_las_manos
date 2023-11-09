@@ -4,7 +4,7 @@ const FooterBackground: FC = () => {
   return (
     <div className="absolute top-[-2vw] z-5">
       <svg
-        width="100vw"
+        width="98.7vw"
         height="auto"
         viewBox="0 0 1440 471"
         fill="none"
