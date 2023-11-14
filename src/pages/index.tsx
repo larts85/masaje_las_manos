@@ -20,11 +20,9 @@ const Home: NextPage = () => {
       </Head>
       <div className="flex flex-col items-center">
         <Header />
-        <main>
-          <Banner />
-          <Content />
-        </main>
-        {/* <Footer /> */}
+        <Banner />
+        <Content />
+        <Footer />
       </div>
     </div>
   )

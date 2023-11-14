@@ -32,7 +32,6 @@ const HomeBoddy: FC = () => {
             )}
           </ul>
         </div>
-
         <div className={className.sesionThree}>
           {translations.contentHomePage.sesionThree.map((sesion) => (
             <p key={sesion}>
