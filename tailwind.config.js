@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       screens: {
         xxl: '1440px',
+        xlg: '1441px',
       },
       colors: {
         primary: {

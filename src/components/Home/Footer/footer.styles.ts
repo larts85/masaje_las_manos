@@ -1,9 +1,11 @@
 const footerContainerSize = {
-  movile: 'top-[287vw]',
-  sm: 'sm:top-[283vw]',
-  lg: 'lg:top-[282.5vw]',
-  xl: 'xl:top-[282vw]',
-  xxl: 'xxl:top-[283.5vw]',
+  movile: 'top-[-31vw]',
+  sm: 'sm:top-[90vw]',
+  md: 'md:top-[113vw]',
+  lg: 'lg:top-[115vw]',
+  xl: 'xl:top-[114vw]',
+  xxl: 'xxl:top-[125vw]',
+  xlg: 'xlg:top-[450px]',
 }
 const copyrightSize = {
   movile: 'text-[6px]',
@@ -15,9 +17,10 @@ const copyrightSize = {
 }
 
 const className = {
-  footerContainer: `absolute ${footerContainerSize.movile} ${footerContainerSize.sm} ${footerContainerSize.lg} ${footerContainerSize.xl} ${footerContainerSize.xxl}`,
+  footerContainer: `relative ${footerContainerSize.movile} ${footerContainerSize.sm} ${footerContainerSize.md} ${footerContainerSize.lg} ${footerContainerSize.xl} ${footerContainerSize.xxl}
+  ${footerContainerSize.xlg}`,
   copyrightContainer:
-    'relative top-[30vw] bg-secondary-darker w-[98.7vw] h-[7vw] flex items-center justify-center',
+    'relative top-[30vw] bg-secondary-darker w-[100vw] h-[7vw] flex items-center justify-center max-w-[1440px]',
   copyright: `text-secondary-lighter text-center ${copyrightSize.movile} ${copyrightSize.sm} ${copyrightSize.md} ${copyrightSize.lg} ${copyrightSize.xl} ${copyrightSize.xxl}`,
 }
 

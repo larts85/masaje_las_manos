@@ -9,6 +9,7 @@ const FooterLineOne: FC = () => {
         viewBox="0 0 1440 385"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="max-w-[1440px]"
       >
         <path
           d="M-315.64 384.684C-301.233 357.412 91.7022 -136.852 657.091 39.2196C1222.48 215.292 1569.26 181.246 1808.73 36.7999"

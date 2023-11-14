@@ -4,11 +4,12 @@ const ContentBackground: FC = () => {
   return (
     <div className="top-0 z-0 absolute">
       <svg
-        width="98.7vw"
+        width="100vw"
         height="auto"
         viewBox="0 0 1440 3455"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="max-w-[1440px]"
       >
         <path
           d="M1494.14 2429.7L1491.92 3454L707 3452.3C1279.43 3028.51 953.917 2714 709.22 2428C896 2574 1131.91 2664.54 1494.14 2429.7Z"

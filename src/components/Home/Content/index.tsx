@@ -9,7 +9,7 @@ import className from './content.styles'
 const HomeBoddy: FC = () => {
   const { translations } = useTranslations()
   return (
-    <section className={className.content}>
+    <div className={className.content}>
       <div className={className.contentCotainer}>
         <div className={className.sesionOne}>
           {translations.contentHomePage.sesionOne.map((sesion) => (
@@ -42,12 +42,11 @@ const HomeBoddy: FC = () => {
           ))}
         </div>
       </div>
-
       <ContentImageOne />
       <ContentImageTwo />
       <ContentImageThree />
       <ContentBackground />
-    </section>
+    </div>
   )
 }
 

@@ -31,6 +31,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
         role="svg"
         fill="none"
         data-testid="logo"
+        className="max-w-[72.4528px]"
       >
         <path
           d="M36.192 0C34.0056 2.4272 27.7672 10.1356 27.7672 19.0921C27.7672 28.047 34.0048 35.757 36.192 38.1842C38.3784 35.7562 44.6168 28.047 44.6168 19.0921C44.6168 10.1356 38.3784 2.4272 36.192 0Z"

@@ -10,19 +10,20 @@ import className from './footer.styles'
 const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
-    <footer className={className.footerContainer}>
+    // <footer className="flex justify-center">
+    <div className={className.footerContainer}>
       <FooterBackground />
       <FooterLineOne />
       <FooterLineTwo />
       <FooterLineThree />
       <FooterWhatsapp />
-
       <div className={className.copyrightContainer}>
         <p className={className.copyright}>
           {translations.footerHomePage.Copyright}
         </p>
       </div>
-    </footer>
+    </div>
+    // </footer>
   )
 }
 

@@ -1,9 +1,9 @@
 const size = {
   movile: 'text-[7px]',
   sm: 'sm:text-[12px]',
-  md: 'md:text-[13px]',
-  lg: 'lg:text-[17px]',
-  xl: 'xl:text-[20px]',
+  md: 'md:text-[15px]',
+  lg: 'lg:text-[20px]',
+  xl: 'xl:text-[28px]',
   xxl: 'xxl:text-[32px]',
 }
 const className = {
