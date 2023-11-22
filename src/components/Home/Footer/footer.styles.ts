@@ -1,11 +1,11 @@
 const footerContainerSize = {
   movile: 'top-[0vw]',
   sm: 'sm:top-[140vw]',
-  md: 'md:top-[vw]',
-  lg: 'lg:top-[115vw]',
-  xl: 'xl:top-[114vw]',
-  xxl: 'xxl:top-[125vw]',
-  xlg: 'xlg:top-[450px]',
+  md: 'md:top-[139vw]',
+  lg: 'lg:top-[141vw]',
+  xl: 'xl:top-[140vw]',
+  xxl: 'xxl:top-[141vw]',
+  xlg: 'xlg:top-[0px]',
 }
 const copyrightSize = {
   movile: 'text-[6px]',
@@ -20,7 +20,7 @@ const className = {
   footerContainer: `relative flex ${footerContainerSize.movile} ${footerContainerSize.sm} ${footerContainerSize.md} ${footerContainerSize.lg} ${footerContainerSize.xl} ${footerContainerSize.xxl}
   ${footerContainerSize.xlg}`,
   copyrightContainer:
-    'relative top-[30vw] bg-secondary-darker w-[100vw] h-[7vw] flex items-center justify-center max-w-[1440px]',
+    'relative top-[30vw] bg-secondary-darker w-[100vw] h-[7vw] flex items-center justify-center max-w-[1440px] max-h-[100.8px] xlg:top-[0px]',
   copyright: `text-secondary-lighter text-center ${copyrightSize.movile} ${copyrightSize.sm} ${copyrightSize.md} ${copyrightSize.lg} ${copyrightSize.xl} ${copyrightSize.xxl}`,
 }
 

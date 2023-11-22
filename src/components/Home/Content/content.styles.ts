@@ -1,4 +1,4 @@
-const sesionOneSize = {
+const sesionOneTextSize = {
   movile: 'text-[6.6px] w-[175px]',
   sm: 'sm:text-[12px] sm:w-[350px] sm:top-[30vw]',
   md: 'md:text-[15px] md:w-[400px]',
@@ -7,9 +7,7 @@ const sesionOneSize = {
   xxl: 'xxl:text-[32px] xxl:w-[850px]',
   xlg: 'xlg:top-[550px] xlg:right-[150px]',
 }
-const sesionTwoSize = {
-  xlg: 'xlg:top-[1100px] xlg:left-[250px]',
-}
+
 const titleSize = {
   movile: 'text-[8.7px] w-[135px] leading-[15px]',
   sm: 'sm:text-[15px] sm:w-[220px] sm:leading-[20px]',
@@ -20,41 +18,34 @@ const titleSize = {
   xlg: 'xlg:pb-[100px]',
 }
 const listSize = {
-  movile: 'text-[6.6px] left-[9vw]',
-  sm: 'sm:text-[12px] left-[4vw]',
-  md: 'md:text-[15px] md:left-[3vw]',
-  lg: 'lg:text-[20px] lg:left-[2.7vw]',
-  xl: 'xl:text-[25px] xl:left-[4vw]',
-  xxl: 'xxl:text[32px] xxl:left-[6vw]',
-  xlg: 'xlg:left-[100px]',
+  movile: 'text-[6.6px] ',
+  sm: 'sm:text-[12px] ',
+  md: 'md:text-[15px] ',
+  lg: 'lg:text-[20px] ',
+  xl: 'xl:text-[25px] ',
+  xxl: 'xxl:text[32px] ',
 }
-const sesionTreeSize = {
+const sesionTreeTextSize = {
   movile: 'text-[6.6px] w-[150px]',
   sm: 'sm:top-[130vw] sm:text-[12px] sm:w-[255px]',
   md: 'md:text-[15px] md:w-[320px]',
   lg: 'lg:text-[20px] lg:w-[450px]',
   xl: 'xl:text-[25px] xl:w-[550px]',
   xxl: 'xxl:text[32px]',
-  xlg: 'xlg:top-[1900px] xlg:right-[180px]',
+  xlg: 'xlg:top-[1900px]',
 }
-const contentPosition = {
-  movile: 'top-[-22vw]',
-  sm: 'sm:top-[-20vw]',
-  md: 'md:top-[-18vw]',
-  lg: 'lg:top-[-16vw]',
-  xl: 'xl:top-[-17vw]',
-  xxl: 'xxl:top-[-15vw]',
-  xlg: 'xxl:top-[-230px]',
-}
+
 const className = {
-  content: `relative max-w-[1440px] h-auto ${contentPosition.movile} ${contentPosition.sm} ${contentPosition.md} ${contentPosition.lg} ${contentPosition.xl} ${contentPosition.xxl} ${contentPosition.xlg}`,
-  contentCotainer:
-    'relative z-20 w-[100vw] h-auto items-center flex flex-col max-w-[1440px]',
-  sesionOne: `font-jost text-right font-normal leading-tight relative top-[31vw] right-[15vw]  ${sesionOneSize.movile} ${sesionOneSize.sm} ${sesionOneSize.md} ${sesionOneSize.lg} ${sesionOneSize.xl} ${sesionOneSize.xxl} ${sesionOneSize.xlg}`,
-  sesionTwo: `relative left-[15vw] top-[80vw] ${sesionTwoSize.xlg}`,
-  title: `flex flex-col font-jost text-center font-bold pb-[7vw] ${titleSize.movile} ${titleSize.sm} ${titleSize.md} ${titleSize.lg} ${titleSize.xl} ${titleSize.xxl} ${titleSize.xlg}`,
-  list: `flex-shrink-0 relative text-left font-normal leading-tight overflow-hidden text-ellipsis ${listSize.movile} ${listSize.sm} ${listSize.md} ${listSize.lg} ${listSize.xl} ${listSize.xxl} ${listSize.xlg}`,
-  sesionThree: `relative top-[125vw]  md:top-[135vw] right-[15vw] flex-shrink-0 font-jost text-left font-normal leading-tight ${sesionTreeSize.movile} ${sesionTreeSize.sm} ${sesionTreeSize.md} ${sesionTreeSize.lg} ${sesionTreeSize.xl} ${sesionTreeSize.xxl} ${sesionTreeSize.xlg}`,
+  mainConter: 'flex flex-col items-center',
+  contentCotainer: 'max-w-[1440px]',
+  sessionOne: `flex w-[100vw] items-center justify-around max-w-[1440px]  h-[55vw] max-h-[1008px]`,
+  textsesionOne: `font-jost text-right font-normal leading-tight  ${sesionOneTextSize.movile} ${sesionOneTextSize.sm} ${sesionOneTextSize.md} ${sesionOneTextSize.lg} ${sesionOneTextSize.xl} ${sesionOneTextSize.xxl} ${sesionOneTextSize.xlg}`,
+  sesionTwo: `flex items-center justify-start max-h-[1512px]  h-[105vw]`,
+  sesionTwoText: 'flex flex-col items-end w-[55vw]',
+  sesionTwoTitle: `flex flex-col font-jost text-center font-bold pb-[7vw] ${titleSize.movile} ${titleSize.sm} ${titleSize.md} ${titleSize.lg} ${titleSize.xl} ${titleSize.xxl} ${titleSize.xlg}`,
+  sesionTwoList: ` text-left font-normal leading-tight overflow-hidden text-ellipsis ${listSize.movile} ${listSize.sm} ${listSize.md} ${listSize.lg} ${listSize.xl} ${listSize.xxl}`,
+  sesionThree: `flex justify-center items-stretch max-h-[936px] h-[62vw]`,
+  sesionThreeText: `font-jost text-left font-normal leading-tight pt-[5vh] ${sesionTreeTextSize.movile} ${sesionTreeTextSize.sm} ${sesionTreeTextSize.md} ${sesionTreeTextSize.lg} ${sesionTreeTextSize.xl} ${sesionTreeTextSize.xxl} ${sesionTreeTextSize.xlg}`,
 }
 
 export default className

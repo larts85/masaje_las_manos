@@ -10,21 +10,21 @@ const { headerContainer, navAndButton, headercontent } = className
 
 const Header: FC<headProp> = ({ transparent }) => {
   return (
-    // <header className="flex justify-center">
-    <div
-      className={`${headerContainer}  ${
-        transparent ? 'bg-white' : `bg-secondary-lighter`
-      }`}
-    >
-      <section className={headercontent}>
-        <Logo variant={VARIANT.PRIMARY} data-testid="logo-component" />
-        <div className={navAndButton}>
-          <Navbar data-testid="navbar-component" />
-          <LanguagesButton data-testid="languages-button-component" />
-        </div>
-      </section>
-    </div>
-    // </header>
+    <header className="flex justify-center">
+      <div
+        className={`${headerContainer}  ${
+          transparent ? 'bg-white' : `bg-secondary-lighter`
+        }`}
+      >
+        <section className={headercontent}>
+          <Logo variant={VARIANT.PRIMARY} data-testid="logo-component" />
+          <div className={navAndButton}>
+            <Navbar data-testid="navbar-component" />
+            <LanguagesButton data-testid="languages-button-component" />
+          </div>
+        </section>
+      </div>
+    </header>
   )
 }
 

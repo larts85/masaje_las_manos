@@ -19,22 +19,26 @@ const Banner: FC = () => {
   } = className
 
   return (
-    <section className={bannerContainer}>
-      <div className={content}>
-        <h2 className={titleAndSlogan}>{translations.bannerHomePage.title}</h2>
-        <p className={slogan}>{translations.bannerHomePage.slogan}</p>
-        <div className="relative top-[-9vw] flex  items-start xlg:top-[0vw]">
-          <ImageOne />
-          <ImageTwo />
+    <div className="flex justify-center">
+      <section className={bannerContainer}>
+        <div className={content}>
+          <h2 className={titleAndSlogan}>
+            {translations.bannerHomePage.title}
+          </h2>
+          <p className={slogan}>{translations.bannerHomePage.slogan}</p>
+          <div className="relative top-[-9vw] flex  items-start xlg:top-[0vw]">
+            <ImageOne />
+            <ImageTwo />
+          </div>
         </div>
-      </div>
-      <div className={backgound}>
-        <div className={rectangleBackGround}></div>
-        <Background />
-        <LineOne />
-        <LineTwo />
-      </div>
-    </section>
+        <div className={backgound}>
+          <div className={rectangleBackGround}></div>
+          <Background />
+          <LineOne />
+          <LineTwo />
+        </div>
+      </section>
+    </div>
   )
 }
 

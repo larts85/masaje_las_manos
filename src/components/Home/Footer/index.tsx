@@ -12,9 +12,9 @@ const Footer: FC = () => {
   return (
     <footer className={className.footerContainer}>
       <FooterBackground />
-      <FooterLineOne />
-      <FooterLineTwo />
-      <FooterLineThree />
+      {/* <FooterLineOne />
+      <FooterLineTwo /> */}
+      {/* <FooterLineThree /> */}
       <FooterWhatsapp />
       <div className={className.copyrightContainer}>
         <p className={className.copyright}>

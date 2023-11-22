@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const Background: FC = () => {
   return (
-    <div className="relative">
+    <div className="relative top-[-0.1vw]">
       <svg
         width="100vw"
         height="auto"
