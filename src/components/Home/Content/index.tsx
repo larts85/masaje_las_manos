@@ -6,7 +6,7 @@ import ContentImageThree from './ContentImageThree'
 import useTranslations from '@/hooks/useTranslations'
 import className from './content.styles'
 
-const HomeBoddy: FC = () => {
+const Content: FC = () => {
   const { translations } = useTranslations()
 
   return (
@@ -59,4 +59,4 @@ const HomeBoddy: FC = () => {
   )
 }
 
-export default HomeBoddy
+export default Content

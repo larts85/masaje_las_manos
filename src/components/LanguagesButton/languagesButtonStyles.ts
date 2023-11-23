@@ -25,7 +25,7 @@ const languageTextsize = {
 
 const className = {
   containerLanguageButtonsMenu: `relative top-0 right-[1vw] ${containerSize.movile} ${containerSize.sm} ${containerSize.md} ${containerSize.lg} ${containerSize.xl} ${containerSize.xxl}`,
-  languageButton: `flex justify-around items-center bg-primary-base rounded-[100px] relative top-[0px] z-30 w-full hover:cursor-pointer ${languageButtonSize.movile} ${languageButtonSize.sm} ${languageButtonSize.md} ${languageButtonSize.lg} ${languageButtonSize.xl} ${languageButtonSize.xxl}`,
+  languageButton: `flex justify-around items-center bg-primary-base rounded-[100px] relative top-[0px] z-30 w-full hover:cursor-pointer max-w-[134px] ${languageButtonSize.movile} ${languageButtonSize.sm} ${languageButtonSize.md} ${languageButtonSize.lg} ${languageButtonSize.xl} ${languageButtonSize.xxl}`,
   languageText: `text-secondary-darker font-semibold font-jost ${languageTextsize.movile} ${languageTextsize.sm} ${languageTextsize.md} ${languageTextsize.lg} ${languageTextsize.xl} ${languageTextsize.xxl}`,
   languageButtonMenu:
     'absolute top-0 z-20 transition-opacity duration-1000 ease-in-out w-full',

@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 const FooterLineThree: FC = () => {
   return (
-    <div className="absolute top-[-7vw]">
+    <div className="absolute z-20 top-[-15vw]">
       <svg
-        width="98.7vw"
+        width="100vw"
         height="auto"
         viewBox="0 0 1440 331"
         fill="none"

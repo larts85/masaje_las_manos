@@ -8,7 +8,7 @@ const size = {
 }
 
 const className = {
-  ul: 'flex flex-row items-center gap-[1vw] px-[1vw] max-w-[700px]',
+  ul: 'flex flex-row items-center gap-[1vw] px-[1vw] max-w-[700px] xlg:gap-[14px]',
   li: `font-jost font-normal leading-46 flex items-center uppercase text-secondary-darker mix-blend-normal ${size.movile} ${size.sm} ${size.md} ${size.lg} ${size.xl} ${size.xxl}`,
 }
 export default className
