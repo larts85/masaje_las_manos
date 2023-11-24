@@ -9,7 +9,7 @@ const Background: FC = () => {
         viewBox="0 0 1439 212"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="max-w-[1440px]"
+        className="max-w-[1440px] xlg:h-[409.59]"
       >
         <path
           d="M0 126.783C0 126.783 143 317.066 720 126.783C1297 -63.5 1440 126.783 1440 126.783V0H720H0V126.783Z"

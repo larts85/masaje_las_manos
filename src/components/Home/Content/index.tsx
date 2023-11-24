@@ -11,7 +11,7 @@ const Content: FC = () => {
 
   return (
     <div className={className.mainConter}>
-      <div className="relative w-full  xlg:top-0  top-[-17vw] max-w-[1440px]">
+      <div className={className.contentBackground}>
         <ContentBackground />
       </div>
 
@@ -44,13 +44,15 @@ const Content: FC = () => {
           </div>
         </div>
         <div className={className.sesionThree}>
-          <div className={className.sesionThreeText}>
-            {translations.contentHomePage.sesionThree.map((sesion) => (
-              <p key={sesion}>
-                {sesion}
-                <br />
-              </p>
-            ))}
+          <div className={className.contentSesionThreeText}>
+            <div className={className.sesionThreeText}>
+              {translations.contentHomePage.sesionThree.map((sesion) => (
+                <p key={sesion}>
+                  {sesion}
+                  <br />
+                </p>
+              ))}
+            </div>
           </div>
           <ContentImageThree />
         </div>

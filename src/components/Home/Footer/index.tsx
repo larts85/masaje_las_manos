@@ -11,7 +11,7 @@ const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
     <footer className={className.footerContainer}>
-      <div className="relative w-full max-w-[1440px] top-[-6vw] xlg:top-[-100px]">
+      <div className="relative w-full max-w-[1440px] top-[-6vw] xxl:top-[-80px]">
         <FooterBackground />
       </div>
 

@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const FooterBackground: FC = () => {
   return (
-    <div className="absolute top-[-2vw] -z-10 w-full">
+    <div className="absolute top-[-2vw] xxl:top-[-20px] -z-10 w-full">
       <svg
         width="100vw"
         height="auto"

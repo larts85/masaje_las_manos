@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const FooterLineOne: FC = () => {
   return (
-    <div className="absolute z-20 top-[-4vw]">
+    <div className="absolute z-20 top-[-9vw] xxl:top-[-110px]">
       <svg
         width="100vw"
         height="auto"

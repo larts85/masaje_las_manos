@@ -22,7 +22,7 @@ const className = {
   slogan: `text-center font-jost font-normal border-neutral-darker whitespace-nowrap ${sloganSize.movile} ${sloganSize.sm} ${sloganSize.md} ${sloganSize.lg} ${sloganSize.xl} ${sloganSize.xxl}`,
   backgound: 'flex flex-col absolute z-10 items-center',
   rectangleBackGround:
-    ' flex bg-secondary-lighter w-[100vw] h-[45vw] relative max-w-[1440px] max-h-[900px]',
+    ' flex bg-secondary-lighter w-[100vw] h-[45vw] relative max-w-[1440px] xlg:h-[648.44px]',
 }
 
 export default className
