@@ -19,7 +19,7 @@ const className = {
   bannerContainer: 'flex justify-center',
   sessionContent: 'relative flex flex-col w-[100vw] max-w-[1440px]',
   content: 'z-20 flex flex-col items-center justify-between',
-  imageContent: 'relative top-[-9vw] flex  items-start xlg:top-[0vw]',
+  imageContent: 'relative top-[-9vw] flex items-start xlg:top-[0vw]',
   titleAndSlogan: `text-center font-cormorant font-light text-neutral-darker ${titleAndSloganSize.movile} ${titleAndSloganSize.sm} ${titleAndSloganSize.md} ${titleAndSloganSize.lg} ${titleAndSloganSize.xl} ${titleAndSloganSize.xxl}`,
   slogan: `text-center font-jost font-normal border-neutral-darker whitespace-nowrap ${sloganSize.movile} ${sloganSize.sm} ${sloganSize.md} ${sloganSize.lg} ${sloganSize.xl} ${sloganSize.xxl}`,
   backgound: 'flex flex-col absolute z-10 items-center',

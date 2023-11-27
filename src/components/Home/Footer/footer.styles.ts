@@ -12,7 +12,7 @@ const className = {
   background: 'relative w-full max-w-[1440px] top-[-6vw] xxl:top-[-80px]',
   lineContainer: 'relative w-full max-w-[1440px]',
   content:
-    'flex flex-col items-end justify-end  h-[29vw] lg:h-[25vw] xxl:h-[26vw] max-h-[471px] xlg:h-[385px]',
+    'flex flex-col items-end justify-end h-[29vw] lg:h-[25vw] xxl:h-[26vw] max-h-[471px] xlg:h-[385px]',
   whatsapp: 'pr-[3vw] pb-[3vw] xlg:pr-[40px] xlg:pb-[20px]',
   copyrightContainer:
     'bg-secondary-darker w-[100vw] h-[7vw] flex items-center justify-center max-w-[1440px] max-h-[100.8px]',

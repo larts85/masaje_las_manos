@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const ContentBackground: FC = () => {
   return (
-    <div className="absolute -z-10  w-full ">
+    <div className="absolute -z-10 w-full ">
       <svg
         width="100vw"
         height="auto"
