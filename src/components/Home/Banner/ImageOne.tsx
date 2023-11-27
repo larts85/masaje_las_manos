@@ -1,9 +1,15 @@
 import { FC } from 'react'
 
 const ImageOne: FC = () => {
+  const position = {
+    movile: 'right-[8vw]',
+    lg: 'lg:right-[11vw]',
+    xxl: 'xxl:right-[12vw]',
+    xlg: 'xlg:top-[-70px] xlg:right-[180px]',
+  }
   return (
     <svg
-      className="max-w-[655.61px] relative right-[3vw] xlg:top-[-70px] xlg:right-[100px]"
+      className={`max-w-[655.61px] relative ${position.movile} ${position.lg} ${position.xxl} ${position.xlg}`}
       width="55vW"
       height="auto"
       viewBox="0 0 396 335"

@@ -39,10 +39,10 @@ const sesionTreeTextSize = {
 const className = {
   mainConter: 'flex flex-col items-center',
   contentBackground:
-    'relative w-full  xlg:top-[-110px]  top-[-17vw] max-w-[1440px]',
+    'relative w-full xlg:top-[-110px] top-[-17vw] max-w-[1440px]',
   contentCotainer: 'max-w-[1440px]',
   sessionOne: `flex w-[100vw] items-center justify-around max-w-[1400px]  h-[55vw] max-h-[1008px]`,
-  textsesionOne: `font-jost text-right font-normal leading-tight  ${sesionOneTextSize.movile} ${sesionOneTextSize.sm} ${sesionOneTextSize.md} ${sesionOneTextSize.lg} ${sesionOneTextSize.xl} ${sesionOneTextSize.xxl} ${sesionOneTextSize.xlg}`,
+  textsesionOne: `font-jost text-right font-normal leading-tight ${sesionOneTextSize.movile} ${sesionOneTextSize.sm} ${sesionOneTextSize.md} ${sesionOneTextSize.lg} ${sesionOneTextSize.xl} ${sesionOneTextSize.xxl} ${sesionOneTextSize.xlg}`,
   sesionTwo: `flex items-center justify-around max-h-[1400px] h-[105vw] `,
   sesionTwoText: 'flex flex-col w-[55vw] max-w-[700px]',
   sesionTwoTitle: `flex flex-col font-jost text-center font-bold pb-[7vw]  ${titleSize.movile} ${titleSize.sm} ${titleSize.md} ${titleSize.lg} ${titleSize.xl} ${titleSize.xxl} ${titleSize.xlg}`,

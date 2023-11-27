@@ -11,7 +11,9 @@ const Banner: FC = () => {
   const { translations } = useTranslations()
   const {
     bannerContainer,
+    sessionContent,
     content,
+    imageContent,
     titleAndSlogan,
     slogan,
     backgound,
@@ -19,14 +21,14 @@ const Banner: FC = () => {
   } = className
 
   return (
-    <div className="flex justify-center">
-      <section className={bannerContainer}>
+    <div className={bannerContainer}>
+      <section className={sessionContent}>
         <div className={content}>
           <h2 className={titleAndSlogan}>
             {translations.bannerHomePage.title}
           </h2>
           <p className={slogan}>{translations.bannerHomePage.slogan}</p>
-          <div className="relative top-[-9vw] flex  items-start xlg:top-[0vw]">
+          <div className={imageContent}>
             <ImageOne />
             <ImageTwo />
           </div>

@@ -1,9 +1,16 @@
 import { FC } from 'react'
 
 const ImageTwo: FC = () => {
+  const position = {
+    movile: 'left-[5vw]',
+    sm: 'sm:left-[5vw] sm:top-[3vw]',
+    xl: 'xl:left-[7vw]',
+    xxl: 'xxl:left-[9vw] xxl:top-[6vw]',
+    xlg: ' xlg:top-[-70px] xlg:left-[140px]',
+  }
   return (
     <svg
-      className="max-w-[504px] relative left-[3vw] top-[5vw] xlg:top-[-90px] xlg:left-[100px]"
+      className={`max-w-[504px] relative ${position.movile} ${position.sm} ${position.xl} ${position.xxl} ${position.xlg}`}
       width="35vw"
       height="auto"
       viewBox="0 0 547 596"

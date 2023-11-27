@@ -11,18 +11,18 @@ const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
     <footer className={className.footerContainer}>
-      <div className="relative w-full max-w-[1440px] top-[-6vw] xxl:top-[-80px]">
+      <div className={className.background}>
         <FooterBackground />
       </div>
 
-      <div className="relative w-full max-w-[1440px]">
+      <div className={className.lineContainer}>
         <FooterLineOne />
         <FooterLineTwo />
         <FooterLineThree />
       </div>
 
       <div className={className.content}>
-        <div className=" pr-[3vw] pb-[3vw] xlg:pr-[40px] xlg:pb-[20px]">
+        <div className={className.whatsapp}>
           <FooterWhatsapp />
         </div>
         <div className={className.copyrightContainer}>
