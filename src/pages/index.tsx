@@ -6,7 +6,7 @@ import useTranslations from '@/hooks/useTranslations'
 import Header from '../components/Header'
 import Banner from '@/components/Home/Banner'
 import Content from '@/components/Home/Content'
-import Footer from '@/components/Home/Footer'
+import Footer from '@/components/Footer'
 
 const Home: NextPage = () => {
   const { translations } = useTranslations()
