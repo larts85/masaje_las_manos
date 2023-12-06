@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { NextPage } from 'next'
 import useTranslations from '@/hooks/useTranslations'
 import Header from '@/components/Header'
+import ContactContent from '@/components/Contact'
 
 const Contact: NextPage = () => {
   const { translations } = useTranslations()
@@ -20,7 +21,7 @@ const Contact: NextPage = () => {
       <header>
         <Header />
       </header>
-      <div data-testid="contact-page">{translations.contact.pageTitle}</div>
+      <ContactContent />
     </div>
   )
 }

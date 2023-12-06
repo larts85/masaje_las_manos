@@ -41,6 +41,7 @@ module.exports = {
       },
       fontFamily: {
         jost: ['Jost', 'sans-serif'],
+        splineSans: ['Spline Sans', 'sans-serif'],
       },
       fontSize: {
         '10px': '10px',
