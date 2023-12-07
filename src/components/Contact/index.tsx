@@ -10,10 +10,11 @@ import FlowerSix from './BackGround/Flower6'
 import FlowerSeven from './BackGround/Flower7'
 import Vase from './BackGround/Vase'
 import FlowerThree from './BackGround/Flower3'
+import className from './contact.styles'
 
 const ContactContent: FC = () => {
   return (
-    <div>
+    <div className={className.page}>
       <div className={style.container}>
         <FlowerThree />
         <Form />

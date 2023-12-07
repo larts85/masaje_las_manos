@@ -10,6 +10,7 @@
     'form .'
     'form vase'
     'buttonBackground vase';
+  background-color: aqua;
 }
 
 .container > .flower {
