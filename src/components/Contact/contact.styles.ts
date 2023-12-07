@@ -1,4 +1,4 @@
 const className = {
-  page: 'flex justify-center bg-red-500',
+  page: 'flex justify-center ',
 }
 export default className
