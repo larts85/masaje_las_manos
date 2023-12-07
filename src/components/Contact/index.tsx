@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import style from './contact.module.css'
-import Form from './Form/Form'
+import Form from './Form'
 import Lines from './BackGround/Lines'
 import FlowerOne from './BackGround/Flower1'
 import FlowerFour from './BackGround/Flower4'

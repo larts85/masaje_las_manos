@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  background-color: blue;
+
   max-height: 2200px;
   max-width: 1440px;
   grid-template-columns: 1fr 1fr;
@@ -17,17 +17,19 @@
   grid-area: form;
   width: 755px;
   height: 1224px;
-  background: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 40px;
 }
 
 .vase {
   grid-area: vase;
   justify-self: center;
-  background-color: darkkhaki;
 }
 
 .topBackground {
-  background-color: yellow;
   grid-area: topBackground;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -35,13 +37,11 @@
 }
 
 .topBackground :nth-child(1) {
-  background-color: blue;
   grid-column: 1/2;
   grid-row: 2;
 }
 
 .topBackground :nth-child(2) {
-  background-color: blue;
   grid-column: 3/4;
   grid-row: 3/4;
   justify-self: center;
@@ -55,7 +55,6 @@
 }
 
 .buttonBackground {
-  background-color: aqua;
   grid-area: buttonBackground;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -63,14 +62,12 @@
 }
 
 .buttonBackground :nth-child(1) {
-  background-color: blueviolet;
   grid-column: 2/3;
   grid-row: 1/2;
   justify-self: center;
 }
 
 .buttonBackground :nth-child(2) {
-  background-color: chartreuse;
   grid-column: 3/4;
   grid-row: 1/2;
   justify-self: center;
@@ -78,13 +75,11 @@
 }
 
 .buttonBackground :nth-child(3) {
-  background-color: chocolate;
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
 .buttonBackground :nth-child(4) {
-  background-color: red;
   grid-column: 2/4;
   grid-row: 2/3;
   justify-self: end;
