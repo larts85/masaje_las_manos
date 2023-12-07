@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import className from './form.styles'
 import styles from '../contact.module.css'
-import FlowerThree from '../BackGround/Flower3'
 
 const Form: FC = () => {
   return (
@@ -15,7 +14,6 @@ const Form: FC = () => {
       <input className={className.inputs}></input>
       <label className={className.labels}>Mensaje</label>
       <input className={className.inputMessage}></input>
-      <FlowerThree />
     </form>
   )
 }

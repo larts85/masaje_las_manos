@@ -1,8 +1,9 @@
 import { FC } from 'react'
+import style from '../contact.module.css'
 
 const FlowerThree: FC = () => {
   return (
-    <div className="absolute top-[95vw] -z-10 left-[0]">
+    <div className={style.flower}>
       <svg
         width="80"
         height="80"
