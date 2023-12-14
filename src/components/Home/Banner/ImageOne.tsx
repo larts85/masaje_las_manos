@@ -1,17 +1,15 @@
 import { FC } from 'react'
+import style from './banner.module.css'
 
 const ImageOne: FC = () => {
-  const position = {
-    movile: 'right-[8vw]',
-    lg: 'lg:right-[11vw]',
-    xxl: 'xxl:right-[12vw]',
-    xlg: 'xlg:top-[-70px] xlg:right-[180px]',
+  const imageSize = {
+    movile: 'w-50vw h-auto',
+    xxl: 'xxl:w-[775.28px] xxl:h-[799px]',
   }
+
   return (
     <svg
-      className={`max-w-[655.61px] relative ${position.movile} ${position.lg} ${position.xxl} ${position.xlg}`}
-      width="55vW"
-      height="auto"
+      className={`${style.imageOne} ${imageSize.movile} ${imageSize.xxl} max-w-[775.28px] max-h-[799px]`}
       viewBox="0 0 396 335"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

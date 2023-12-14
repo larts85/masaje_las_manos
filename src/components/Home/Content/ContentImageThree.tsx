@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const ContentImageThree: FC = () => {
   return (
-    <div className="h-1/2 xxl:pl-[210px] xxl:pt-[100px]">
+    <div className="h-1/2 xxl:pl-210px xxl:pt-100px">
       <svg
         width="45vw"
         height="auto"
