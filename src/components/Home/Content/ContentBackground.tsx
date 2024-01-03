@@ -1,8 +1,9 @@
 import { FC } from 'react'
+import style from './content.module.css'
 
 const ContentBackground: FC = () => {
   return (
-    <div className="absolute -z-10 w-full ">
+    <div className={style.background}>
       <svg
         width="100vw"
         height="auto"

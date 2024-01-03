@@ -1,8 +1,9 @@
 import { FC } from 'react'
+import style from './content.module.css'
 
 const ContentImageOne: FC = () => {
   return (
-    <div className="w-1/6">
+    <div className={style.sectionOneImage}>
       <svg
         width="23vw"
         height="100%"
