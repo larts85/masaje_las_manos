@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const LineOneAnimate: FC = () => {
   return (
-    <div className="relative top-[-43.2vw] xlg:top-[-650px]">
+    <div className="absolute top-[15vh] xxl:top-[550px]">
       <svg
         className="max-w-[1440px]"
         width="98.7vw"

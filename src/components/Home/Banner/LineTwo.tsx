@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const LineTwo: FC = () => {
   return (
-    <div className="relative top-[-68vw] xlg:top-[-1000px]">
+    <div className="absolute top-[22vh] xxl:top-[850px]">
       <svg
         className="max-w-[1440px]"
         width="98.7vw"

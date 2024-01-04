@@ -45,7 +45,6 @@ const className = {
   sesionTwoText: 'flex flex-col justify-start',
   sesionTwoTitle: `font-jost text-center font-bold pb-[7vw] ${titleSize.movile} ${titleSize.sm} ${titleSize.md} ${titleSize.lg} ${titleSize.xl} ${titleSize.xxl} ${titleSize.xlg}`,
   sesionTwoList: ` text-left font-normal leading-tight overflow-hidden text-ellipsis ${listSize.movile} ${listSize.sm} ${listSize.md} ${listSize.lg} ${listSize.xl} ${listSize.xxl} ${listSize.xlg}`,
-  sesionThree: 'flex justify-around mb-[5vh]',
   sesionThreeText: 'flex flex-col items-end justify-center',
   sesionThreeParagraph: `font-jost text-left font-normal leading-tight ml-6 ${sesionTreeTextSize.movile} ${sesionTreeTextSize.sm} ${sesionTreeTextSize.md} ${sesionTreeTextSize.lg} ${sesionTreeTextSize.xl} ${sesionTreeTextSize.xxl} ${sesionTreeTextSize.xlg}`,
   sesionThreeImage: 'flex flex-col justify-end items-start',

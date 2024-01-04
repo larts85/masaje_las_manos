@@ -33,5 +33,5 @@
   grid-row: 3/4;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5vh;
+  /* margin-bottom: 5vh; */
 }

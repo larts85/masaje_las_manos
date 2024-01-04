@@ -12,7 +12,9 @@ const Content: FC = () => {
 
   return (
     <div>
-      <div className={style.content}>
+      <div
+        className={`${style.content} mt-[-5vh] sm:mt-[-12vh] md:mt-[-15vh] xl:mt-[-230px] `}
+      >
         <section className={style.sectionOne}>
           <div className={className.textsesionOne}>
             {translations.contentHomePage.sesionOne.map((sesion) => (
