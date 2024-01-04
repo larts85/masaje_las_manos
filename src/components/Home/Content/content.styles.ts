@@ -27,12 +27,12 @@ const listSize = {
   xlg: 'xlg:pl-40',
 }
 const sesionTreeTextSize = {
-  movile: 'text-[6.6px] w-40',
+  movile: 'text-[6.6px] w-[130px]',
   sm: 'sm:text-12px sm:w-64',
   md: 'md:text-15px md:w-80',
   lg: 'lg:text-20px lg:w-450px',
   xl: 'xl:text-25px xl:w-550px',
-  xxl: 'xxl:text-32px',
+  xxl: 'xxl:text-32px xxl:w-700px',
   xlg: 'xlg:mt-0',
 }
 
@@ -45,9 +45,10 @@ const className = {
   sesionTwoText: 'flex flex-col justify-start',
   sesionTwoTitle: `font-jost text-center font-bold pb-[7vw] ${titleSize.movile} ${titleSize.sm} ${titleSize.md} ${titleSize.lg} ${titleSize.xl} ${titleSize.xxl} ${titleSize.xlg}`,
   sesionTwoList: ` text-left font-normal leading-tight overflow-hidden text-ellipsis ${listSize.movile} ${listSize.sm} ${listSize.md} ${listSize.lg} ${listSize.xl} ${listSize.xxl} ${listSize.xlg}`,
-  sesionThreeText: 'flex flex-col items-center justify-center',
-  sesionThreeParagraph: `ml-[30px] font-jost text-left font-normal leading-tight ${sesionTreeTextSize.movile} ${sesionTreeTextSize.sm} ${sesionTreeTextSize.md} ${sesionTreeTextSize.lg} ${sesionTreeTextSize.xl} ${sesionTreeTextSize.xxl} ${sesionTreeTextSize.xlg}`,
-  sesionThreeImage: 'flex flex-col justify-end',
+  sesionThree: 'flex justify-around mb-[5vh]',
+  sesionThreeText: 'flex flex-col items-end justify-center',
+  sesionThreeParagraph: `font-jost text-left font-normal leading-tight ml-6 ${sesionTreeTextSize.movile} ${sesionTreeTextSize.sm} ${sesionTreeTextSize.md} ${sesionTreeTextSize.lg} ${sesionTreeTextSize.xl} ${sesionTreeTextSize.xxl} ${sesionTreeTextSize.xlg}`,
+  sesionThreeImage: 'flex flex-col justify-end items-start',
 }
 
 export default className
