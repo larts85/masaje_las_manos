@@ -1,0 +1,47 @@
+.footer {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  width: 100vw;
+  position: relative;
+}
+
+.footerBackground {
+  grid-column: 1/-1;
+  grid-row: 1/4;
+  z-index: -10;
+}
+
+.footerLineOne {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  position: absolute;
+}
+
+.footerLineTwo {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  position: absolute;
+  top: -110%;
+}
+
+.footerLineThree {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  position: absolute;
+  top: -50%;
+}
+
+.footerWhatsapp {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+
+.footerCopyright {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  align-self: end;
+}

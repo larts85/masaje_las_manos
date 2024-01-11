@@ -1,8 +1,9 @@
 import { FC } from 'react'
+import style from './footer.module.css'
 
 const FooterBackground: FC = () => {
   return (
-    <div className="absolute top-[-2vw] xxl:top-[-20px] -z-10 w-full">
+    <div className={style.footerBackground}>
       <svg
         width="100vw"
         height="auto"

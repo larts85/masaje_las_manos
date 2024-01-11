@@ -6,32 +6,27 @@ import FooterWhatsapp from './FooterWhatsapp'
 import FooterLineThree from './FooterLineThree'
 import useTranslations from '@/hooks/useTranslations'
 import className from './footer.styles'
+import style from './footer.module.css'
 
 const Footer: FC = () => {
   const { translations } = useTranslations()
   return (
-    <footer className={className.footerContainer}>
-      <div className={className.background}>
+    <div className="flex flex-col items-center">
+      <footer className={`${style.footer} mt-[-10%] xxl:mt-[-120px]`}>
         <FooterBackground />
-      </div>
-
-      <div className={className.lineContainer}>
         <FooterLineOne />
         <FooterLineTwo />
         <FooterLineThree />
-      </div>
-
-      <div className={className.content}>
-        <div className={className.whatsapp}>
-          <FooterWhatsapp />
-        </div>
-        <div className={className.copyrightContainer}>
+        <FooterWhatsapp />
+        <div
+          className={`${className.copyrightContainer} ${style.footerCopyright}`}
+        >
           <p className={className.copyright}>
             {translations.footerHomePage.Copyright}
           </p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   )
 }
 

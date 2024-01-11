@@ -1,8 +1,15 @@
 import { FC } from 'react'
+import style from './footer.module.css'
 
 const FooterLineThree: FC = () => {
+  const topSize = {
+    movile: 'top-[2vh]',
+    sm: 'sm:top-[0vh]',
+  }
   return (
-    <div className="absolute z-20 top-[-15vw] xxl:top-[-230px]">
+    <div
+      className={`${style.footerLineThree} z-20 ${topSize.movile} ${topSize.sm}`}
+    >
       <svg
         width="100vw"
         height="auto"

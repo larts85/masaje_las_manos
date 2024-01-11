@@ -1,8 +1,9 @@
 import { FC } from 'react'
+import style from './footer.module.css'
 
 const FooterLineOne: FC = () => {
   return (
-    <div className="absolute z-20 top-[-9vw] xxl:top-[-110px]">
+    <div className={`z-20 ${style.footerLineOne}`}>
       <svg
         width="100vw"
         height="auto"

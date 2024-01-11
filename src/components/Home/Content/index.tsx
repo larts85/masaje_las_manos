@@ -11,10 +11,8 @@ const Content: FC = () => {
   const { translations } = useTranslations()
 
   return (
-    <div>
-      <div
-        className={`${style.content} mt-[-5vh] sm:mt-[-12vh] md:mt-[-15vh] xl:mt-[-230px] `}
-      >
+    <div className="flex flex-col items-center">
+      <div className={`mt-[-12%]  xxl:mt-[-200px] ${style.content} `}>
         <section className={style.sectionOne}>
           <div className={className.textsesionOne}>
             {translations.contentHomePage.sesionOne.map((sesion) => (
