@@ -1,17 +1,18 @@
 import { FC } from 'react'
+import style from './banner.module.css'
 
 const Background: FC = () => {
   return (
     <svg
-      width="100vw"
+      width="98.7vw"
       height="auto"
-      viewBox="0 0 1439 212"
+      viewBox="0 0 1439 1012"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="max-w-1440px xlg:h-[409.59]"
+      className={`max-w-1440px max-h-[1013.35px] ${style.background}`}
     >
       <path
-        d="M0 126.783C0 126.783 143 317.066 720 126.783C1297 -63.5 1440 126.783 1440 126.783V0H720H0V126.783Z"
+        d="M-1 926.783C-1 926.783 142 1117.07 719 926.783C1296 736.5 1439 926.783 1439 926.783V-1.99994H719H-1V926.783Z"
         fill="#FFF5E6"
       />
     </svg>

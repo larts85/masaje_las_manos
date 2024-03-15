@@ -1,13 +1,14 @@
 import { FC } from 'react'
+import style from './banner.module.css'
 
 const LineTwo: FC = () => {
   return (
-    <div className="absolute top-[22vh] xxl:top-[850px]">
+    <div className={`max-w-1440px ${style.lineTwo}`}>
       <svg
         className="max-w-[1440px]"
-        width="98.7vw"
+        width="100vw"
         height="auto"
-        viewBox="0 50 1440 415"
+        viewBox="0 50 1440 375"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

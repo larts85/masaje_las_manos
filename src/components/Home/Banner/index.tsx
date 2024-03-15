@@ -22,10 +22,10 @@ const Banner: FC = () => {
         </p>
         <ImageOne />
         <ImageTwo />
+        <Background />
+        <LineTwo />
+        <LineOne />
       </section>
-      <Background />
-      <LineOne />
-      <LineTwo />
     </div>
   )
 }
