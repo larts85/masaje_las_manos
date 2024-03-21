@@ -1,45 +1,28 @@
 import { FC } from 'react'
-import Logo from '../Logo'
+import Logo from './Logo'
 import { VARIANT } from '@/types/globals.types'
 import className from './head.styles'
-import Navbar from '@/components/Navbar/index'
+import Navbar from '@/components/Header/Navbar/index'
 import LanguagesButton from '../LanguagesButton'
+import { headProp } from './head.types'
 
-const {
-  mobileLogoButton,
-  mobileLanguageButton,
-  mobileNavbar,
-  logoImageTextLg,
-  containerLogoNavButton,
-  navbar,
-  languagesButton,
-} = className
+const { headerContainer, navAndButton, headercontent } = className
 
-const Header: FC = () => {
+const Header: FC<headProp> = ({ transparent }) => {
   return (
-    <header>
-      <div className={mobileLogoButton}>
-        <Logo variant={VARIANT.PRIMARY} />
-        <div
-          className={mobileLanguageButton}
-          data-testid="mobile-language-button-header"
-        >
-          <LanguagesButton isMobile={true} />
-        </div>
-      </div>
-      <div className={mobileNavbar} data-testid="mobile-navbar">
-        <Navbar />
-      </div>
-      <div className={containerLogoNavButton}>
-        <div data-testid="logoImageTextLg" className={logoImageTextLg}>
-          <Logo variant={VARIANT.PRIMARY} />
-        </div>
-        <div className={navbar} data-testid="navbar">
-          <Navbar />
-        </div>
-        <div className={languagesButton} data-testid="language-button">
-          <LanguagesButton />
-        </div>
+    <header className="flex justify-center">
+      <div
+        className={`${headerContainer}  ${
+          transparent ? 'bg-white' : `bg-secondary-lighter`
+        }`}
+      >
+        <section className={headercontent}>
+          <Logo variant={VARIANT.PRIMARY} data-testid="logo-component" />
+          <div className={navAndButton}>
+            <Navbar data-testid="navbar-component" />
+            <LanguagesButton data-testid="languages-button-component" />
+          </div>
+        </section>
       </div>
     </header>
   )

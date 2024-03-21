@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { VARIANT } from '@/types/globals.types'
 import { StyleVariants, LogoProps } from './logo.types'
+import className from './logo.style'
 
 const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   const logoStyleVariants: StyleVariants = {
@@ -21,21 +22,16 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
     },
   }
 
-  const logoColor = () => {
-    if (variant === VARIANT.SECONDARY) {
-      return 'darker'
-    } else return 'base'
-  }
-  const colorName = logoColor()
   return (
-    <div className="p-2 flex justify-start gap-2">
+    <div className={className.logoContaiiner}>
       <svg
-        width="73"
-        height="43"
+        width="4vw"
+        height="auto"
         viewBox="0 0 73 43"
         role="svg"
         fill="none"
         data-testid="logo"
+        className="max-w-[72.4528px]"
       >
         <path
           d="M36.192 0C34.0056 2.4272 27.7672 10.1356 27.7672 19.0921C27.7672 28.047 34.0048 35.757 36.192 38.1842C38.3784 35.7562 44.6168 28.047 44.6168 19.0921C44.6168 10.1356 38.3784 2.4272 36.192 0Z"
@@ -59,11 +55,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
         />
       </svg>
 
-      <h1
-        className={`hidden sm:block whitespace-nowrap font-jost font-normal text-xl leading-8 text-${variant}-${colorName} pl-5 `}
-      >
-        THE HANDS MASSAGE
-      </h1>
+      <h1 className={className.logo}>THE HANDS MASSAGE</h1>
     </div>
   )
 }

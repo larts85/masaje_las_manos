@@ -1,11 +1,12 @@
+const size = {
+  movile: 'p-2.5',
+  sm: 'sm:p-4',
+}
+
 const className = {
-  mobileLogoButton: 'grid grid-cols-2 lg:hidden items-center',
-  mobileLanguageButton: 'flex justify-end pr-[135px] lg:hidden',
-  mobileNavbar: 'lg:hidden',
-  containerLogoNavButton: 'hidden lg:flex items-center justify-between',
-  logoImageTextLg: 'w-1/3 pl-5',
-  navbar: 'flex-1',
-  languagesButton: 'flex justify-end pr-10 w-1/5',
+  headerContainer: `w-100vw  relative z-30 max-w-1440px ${size.movile} ${size.sm}`,
+  navAndButton: 'flex items-center gap-[2vw] max-w-[862.8px]',
+  headercontent: 'flex  items-center justify-between max-w-1440px',
 }
 
 export default className

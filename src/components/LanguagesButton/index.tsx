@@ -1,22 +1,19 @@
 import { FC, useState } from 'react'
 import className from './languagesButtonStyles'
 import useTranslations from '@/hooks/useTranslations'
-import MenuArrow from '../IconsComponents/MenuArrow'
+import Arrow from './IconsComponents/Arrow'
 import LanguagesMenu from './LanguagesMenu'
 import { LanguagesButtonsProps } from './languagesButton.types'
-import Orbe from '../IconsComponents/Orbe'
+import Orbe from './IconsComponents/Orbe'
 
 const {
-  containerMobileLanguageButtonMenu,
-  mobilelanguageButton,
-  mobileLanguagetext,
-  containerLanguageButtons,
+  containerLanguageButtonsMenu,
   languageButton,
   languageText,
   languageButtonMenu,
 } = className
 
-const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
+const LanguagesButton: FC<LanguagesButtonsProps> = () => {
   const { currentLang } = useTranslations()
 
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -26,46 +23,19 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
   }
   return (
     <div data-testid="languagesButton">
-      {isMobile && (
-        <div className={containerMobileLanguageButtonMenu}>
-          <div
-            onClick={handleClick}
-            data-testid="mobile-language-button"
-            className={`mobileLanguageButton ${mobilelanguageButton} 
-            `}
-          >
-            <div className={mobileLanguagetext}>
-              {currentLang?.split('-')[0].toUpperCase()}
-            </div>
-            <div className={isOpenMenu ? 'rotate-180' : ''}>
-              <MenuArrow />
-            </div>
-          </div>
-          <div
-            data-testid="lange-buttons-menu"
-            className={`${languageButtonMenu} ${
-              isOpenMenu ? `opacity-100` : `opacity-0`
-            }`}
-          >
-            <LanguagesMenu isMobile />
-          </div>
-        </div>
-      )}
-      {!isMobile && (
-        <div className={containerLanguageButtons}>
+      {
+        <div className={containerLanguageButtonsMenu}>
           <div
             data-testid="language-button-lg"
-            className={`languageButton lg:${languageButton}`}
+            className={languageButton}
             onClick={handleClick}
           >
-            <div>
-              <Orbe />
-            </div>
+            <Orbe />
             <div className={languageText}>
               {currentLang?.split('-')[0].toUpperCase()}
             </div>
             <div className={isOpenMenu ? '-rotate-90' : 'rotate-90'}>
-              <MenuArrow />
+              <Arrow />
             </div>
           </div>
           <div
@@ -77,7 +47,7 @@ const LanguagesButton: FC<LanguagesButtonsProps> = ({ isMobile = false }) => {
             <LanguagesMenu />
           </div>
         </div>
-      )}
+      }
     </div>
   )
 }

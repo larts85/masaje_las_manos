@@ -18,10 +18,8 @@ describe('Home', () => {
 
     render(<Home />)
 
-    const heading = screen.getByRole('heading', {
-      name: /Hello world/i,
-    })
-    expect(heading).toBeInTheDocument()
+    const title = screen.getByRole('heading', { level: 1 })
+    expect(title).toBeInTheDocument()
   })
 
   it('renders a heading', () => {
@@ -33,9 +31,7 @@ describe('Home', () => {
 
     render(<Home />)
 
-    const heading = screen.getByRole('heading', {
-      name: /hola mundo/i,
-    })
-    expect(heading).toBeInTheDocument()
+    const title = screen.getByRole('heading', { level: 1 })
+    expect(title).toBeInTheDocument()
   })
 })

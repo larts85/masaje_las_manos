@@ -24,20 +24,6 @@ describe('LanguagesMenu', () => {
     expect(englishButton).toBeInTheDocument()
   })
 
-  it('should display a button for each non-current language if the isMobile property is true', () => {
-    mockRouter.mockReturnValue({
-      asPath: '/',
-      locale: 'en-US',
-      locales: ['en-US', 'es-AR', 'pt-BR'],
-    })
-    render(<LanguagesMenu isMobile={true} />)
-
-    const spanishButton = screen.getByRole('link', { name: /es/i })
-    expect(spanishButton).toBeInTheDocument()
-    const englishButton = screen.queryByRole('link', { name: /en/i })
-    expect(englishButton).not.toBeInTheDocument()
-  })
-
   it.skip('should change path on button click', () => {
     const onMock = jest.fn(() => Promise.resolve(true))
     const emitMock = jest.fn(() => Promise.resolve(true))
