@@ -18,10 +18,11 @@ const Home: NextPage = () => {
         <meta name="description" content={translations.home.metaDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+
       <Header />
       <Banner />
-      {/* <Content />
-      <Footer /> */}
+      <Content />
+      <Footer />
     </div>
   )
 }

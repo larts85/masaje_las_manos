@@ -3,14 +3,13 @@ import style from './footer.module.css'
 
 const FooterLineTwo: FC = () => {
   return (
-    <div className={`${style.footerLineTwo} z-20 `}>
+    <div className={`${style.footerLineTwo}`}>
       <svg
-        width="100vw"
+        width="100%"
         height="auto"
-        viewBox="0 0 1740 433"
+        viewBox="0 150 1740 300"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="max-w-1440px"
       >
         <path
           d="M-167.783 341.217C-161.868 332.823 223.805 183.285 882.653 387.215C1541.5 591.144 1908.17 41.509 1997.49 0.830385"

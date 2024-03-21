@@ -5,7 +5,7 @@ const LineOneAnimate: FC = () => {
   return (
     <svg
       className={`${style.lineOne} max-w-1440px`}
-      width="100vw"
+      width="100%"
       height="auto"
       viewBox="0 400 1440 300"
       fill="none"

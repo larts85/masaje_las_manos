@@ -9,8 +9,7 @@ const copyrightSize = {
 
 const className = {
   lineContainer: 'relative w-full max-w-1440px',
-  copyrightContainer:
-    'bg-secondary-darker w-100vw h-3vh flex items-center justify-center max-w-1440px max-h-[100.8px]',
+  copyrightContainer: 'bg-secondary-darker flex items-center justify-center',
   copyright: `text-secondary-lighter text-center ${copyrightSize.movile} ${copyrightSize.sm} ${copyrightSize.md} ${copyrightSize.lg} ${copyrightSize.xl} ${copyrightSize.xxl}`,
 }
 

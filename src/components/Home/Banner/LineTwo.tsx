@@ -6,7 +6,7 @@ const LineTwo: FC = () => {
     <div className={`max-w-1440px ${style.lineTwo}`}>
       <svg
         className="max-w-[1440px]"
-        width="100vw"
+        width="100%"
         height="auto"
         viewBox="0 50 1440 375"
         fill="none"
