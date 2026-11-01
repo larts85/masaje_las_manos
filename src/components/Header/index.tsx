@@ -4,11 +4,11 @@ import { VARIANT } from '@/types/globals.types'
 import className from './head.styles'
 import Navbar from '@/components/Header/Navbar/index'
 import LanguagesButton from '../LanguagesButton'
-import { headProp } from './head.types'
+import { HeaderProps } from './head.types'
 
 const { headerContainer, navAndButton, headercontent } = className
 
-const Header: FC<headProp> = ({ transparent }) => {
+const Header: FC<HeaderProps> = ({ transparent }) => {
   return (
     <header className="flex justify-center">
       <div

@@ -23,7 +23,7 @@ const Logo: FC<LogoProps> = ({ variant = VARIANT.PRIMARY }) => {
   }
 
   return (
-    <div className={className.logoContaiiner}>
+    <div className={className.logoContainer}>
       <svg
         width="4vw"
         height="auto"

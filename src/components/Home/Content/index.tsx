@@ -15,11 +15,9 @@ const Content: FC = () => {
       <div className={`mt-[-12%]  xxl:mt-[-200px] ${style.content} `}>
         <section className={style.sectionOne}>
           <div className={className.textsesionOne}>
-            {translations.contentHomePage.sesionOne.map((sesion) => (
-              <p key={sesion}>
-                {sesion}
-                <br></br>
-                <br></br>
+            {translations.contentHomePage.sesionOne.map((session) => (
+              <p key={session} className="mb-4 last:mb-0">
+                {session}
               </p>
             ))}
           </div>
@@ -44,10 +42,9 @@ const Content: FC = () => {
 
         <section className={style.sectionThree}>
           <div className={className.sesionThreeText}>
-            {translations.contentHomePage.sesionThree.map((sesion) => (
-              <p key={sesion} className={className.sesionThreeParagraph}>
-                {sesion}
-                <br />
+            {translations.contentHomePage.sesionThree.map((session) => (
+              <p key={session} className={className.sesionThreeParagraph}>
+                {session}
               </p>
             ))}
           </div>

@@ -1,5 +1,5 @@
 const sesionOneTextSize = {
-  movile: 'text-[6.6px] w-44',
+  mobile: 'text-[6.6px] w-44',
   sm: 'sm:text-12px sm:w-350px',
   md: 'md:text-15px md:w-400px',
   lg: 'lg:text-20px lg:w-600px',
@@ -9,7 +9,7 @@ const sesionOneTextSize = {
 }
 
 const titleSize = {
-  movile: 'text-[9.7px] w-135px leading-4',
+  mobile: 'text-[9.7px] w-135px leading-4',
   sm: 'sm:text-15px sm:w-220px sm:leading-5',
   md: 'md:text-18px md:w-260px md:leading-6',
   lg: 'lg:text-[27px] lg:w-400px lg:leading-9',
@@ -18,7 +18,7 @@ const titleSize = {
   xlg: 'xlg:pb-52',
 }
 const listSize = {
-  movile: 'text-[6.4px] pl-[3vw] ',
+  mobile: 'text-[6.4px] pl-3 ',
   sm: 'sm:text-12px ',
   md: 'md:text-15px',
   lg: 'lg:text-20px ',
@@ -27,7 +27,7 @@ const listSize = {
   xlg: 'xlg:pl-40',
 }
 const sesionTreeTextSize = {
-  movile: 'text-[6.6px] w-[130px]',
+  mobile: 'text-[6.6px] w-130px',
   sm: 'sm:text-12px sm:w-64',
   md: 'md:text-15px md:w-80',
   lg: 'lg:text-20px lg:w-450px',
@@ -41,12 +41,12 @@ const className = {
   contentBackground:
     'relative w-full xlg:top-[-110px] top-[-10vh] max-w-1440px',
   contentCotainer: 'max-w-1440px',
-  textsesionOne: `flex flex-col justify-center font-jost text-right font-normal leading-tight ${sesionOneTextSize.movile} ${sesionOneTextSize.sm} ${sesionOneTextSize.md} ${sesionOneTextSize.lg} ${sesionOneTextSize.xl} ${sesionOneTextSize.xxl} ${sesionOneTextSize.xlg}`,
+  textsesionOne: `flex flex-col justify-center font-jost text-right font-normal leading-tight ${sesionOneTextSize.mobile} ${sesionOneTextSize.sm} ${sesionOneTextSize.md} ${sesionOneTextSize.lg} ${sesionOneTextSize.xl} ${sesionOneTextSize.xxl} ${sesionOneTextSize.xlg}`,
   sesionTwoText: 'flex flex-col justify-start',
-  sesionTwoTitle: `font-jost text-center font-bold pb-[7vw] ${titleSize.movile} ${titleSize.sm} ${titleSize.md} ${titleSize.lg} ${titleSize.xl} ${titleSize.xxl} ${titleSize.xlg}`,
-  sesionTwoList: ` text-left font-normal leading-tight overflow-hidden text-ellipsis ${listSize.movile} ${listSize.sm} ${listSize.md} ${listSize.lg} ${listSize.xl} ${listSize.xxl} ${listSize.xlg}`,
+  sesionTwoTitle: `font-jost text-center font-bold pb-[7vw] ${titleSize.mobile} ${titleSize.sm} ${titleSize.md} ${titleSize.lg} ${titleSize.xl} ${titleSize.xxl} ${titleSize.xlg}`,
+  sesionTwoList: ` text-left font-normal leading-tight overflow-hidden text-ellipsis ${listSize.mobile} ${listSize.sm} ${listSize.md} ${listSize.lg} ${listSize.xl} ${listSize.xxl} ${listSize.xlg}`,
   sesionThreeText: 'flex flex-col items-end justify-center',
-  sesionThreeParagraph: `font-jost text-left font-normal leading-tight ml-6 ${sesionTreeTextSize.movile} ${sesionTreeTextSize.sm} ${sesionTreeTextSize.md} ${sesionTreeTextSize.lg} ${sesionTreeTextSize.xl} ${sesionTreeTextSize.xxl} ${sesionTreeTextSize.xlg}`,
+  sesionThreeParagraph: `font-jost text-left font-normal leading-tight ml-6 ${sesionTreeTextSize.mobile} ${sesionTreeTextSize.sm} ${sesionTreeTextSize.md} ${sesionTreeTextSize.lg} ${sesionTreeTextSize.xl} ${sesionTreeTextSize.xxl} ${sesionTreeTextSize.xlg}`,
   sesionThreeImage: 'flex flex-col justify-end items-start',
 }
 

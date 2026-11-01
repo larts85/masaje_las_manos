@@ -1,3 +1,3 @@
-export interface headProp {
+export interface HeaderProps {
   transparent?: true | false
 }
