@@ -4,14 +4,14 @@ on: [pull_request]
 
 jobs:
   Deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
-          node-version: 16.13.0
+          node-version: '22'
       - name: Install dependencies
         run: yarn
       - name: Lint
