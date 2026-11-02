@@ -1,6 +1,6 @@
 import className from './navbar.styles'
 import Link from 'next/link'
-import useTranslations from '../../hooks/useTranslations'
+import useTranslations from '../../../hooks/useTranslations'
 
 const Navbar = () => {
   const { ul, li } = className

@@ -5,11 +5,11 @@ import className from './languagesMenuStyles'
 import { ReactNode } from 'react'
 import { LangMenuProps } from './languagesMenu.types'
 import { FC } from 'react'
-import MenuCheck from '@/components/IconsComponents/MenuCheck'
+import MenuCheck from '@/components/LanguagesButton/IconsComponents/MenuCheck'
 
-const { menu, ul, menuMobile, linkMenuMobile, linkMenu, ulMobile } = className
+const { menu, liMenu, linkMenu, ulMenu } = className
 
-const LanguagesMenu: FC<LangMenuProps> = ({ isMobile = false }) => {
+const LanguagesMenu: FC<LangMenuProps> = () => {
   const { asPath } = useRouter()
 
   const { currentLang, langs } = useTranslations()
@@ -21,33 +21,26 @@ const LanguagesMenu: FC<LangMenuProps> = ({ isMobile = false }) => {
   }
 
   return (
-    <div className={isMobile ? menuMobile : menu} data-testid="langButtonsMenu">
-      <ul className={isMobile ? ulMobile : ul}>
+    <div className={menu} data-testid="langButtonsMenu">
+      <ul className={ulMenu}>
         {langs!.map((lang) => (
-          <li key={lang} className={isMobile ? linkMenuMobile : linkMenu}>
-            {!isMobile && currentLang === lang && <MenuCheck />}
-            {!isMobile && (
+          <li key={lang} className={liMenu}>
+            {currentLang === lang && <MenuCheck />}
+            {
               <Link
                 locale={lang}
                 href={asPath}
-                className={
-                  currentLang === lang
-                    ? `text-neutral-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
-                    : `text-secondary-darker p-1 font-jost font-medium text-xl leading-7 tracking-tighter`
-                }
+                className={`${linkMenu}
+                  ${
+                    currentLang === lang
+                      ? 'text-neutral-darker'
+                      : 'text-secondary-darker'
+                  }
+                `}
               >
                 {fullLanguages[lang.split('-')[0]]}
               </Link>
-            )}
-            {isMobile && currentLang !== lang && (
-              <Link
-                locale={lang}
-                href={asPath}
-                className="text-secondary-darker hover:text-neutral-darker ml-2 w-[30px]"
-              >
-                {lang.split('-')[0].toUpperCase()}
-              </Link>
-            )}
+            }
           </li>
         ))}
       </ul>
