@@ -22,5 +22,36 @@
   "about": {
     "pageTitle": "Nós",
     "metaDescription": ""
+  },
+  "bannerHomePage": {
+    "title": "THE HANDS MASSAGE",
+    "slogan": "SEU BEM-ESTAR EM NOSSAS MÃOS"
+  },
+  "contentHomePage": {
+    "sesionOne": [
+      "Bem-vindo à The Hands Massage, onde lhe disponibilizamos um serviço de massagem profissional que pode ser local ou ao domicílio, conforme a sua preferência.",
+      "Oferecemos uma ampla variedade de tratamentos de massagens projetados para atender às suas necessidades."
+    ],
+    "sesionTwoTitle": "Por que é importante ter uma rotina de massagens?",
+    "sesionTwoContent": [
+      "- Melhora a circulação sanguínea.",
+      "- Aumentar a flexibilidade.",
+      "- Melhora a mobilidade articular.",
+      "- Melhorar o sistema imunológico.",
+      "- Promove um sono melhor.",
+      "- Reduz a tensão muscular.",
+      "- Lesões esportivas podem ser tratadas.",
+      "- Melhora as condições musculares crônicas.",
+      "- Alivia a dor e a inflamação.",
+      "- Melhorar a recuperação.",
+      "- Reduz o estresse."
+    ],
+    "sesionThree": [
+      "Nossa equipe de terapeutas é altamente treinada e pronta para lhe oferecer o atendimento personalizado que você merece.",
+      "Convidamo-lo a conhecer todos os serviços e instalações que dispomos e não hesite em contactar-nos para esclarecer qualquer dúvida ou para marcar uma consulta."
+    ]
+  },
+  "footerHomePage": {
+    "Copyright": "The Hands Massage 2023, Todos os direitos reservados, Desenvolvido por Lucesitaliss e Imadev"
   }
 }
