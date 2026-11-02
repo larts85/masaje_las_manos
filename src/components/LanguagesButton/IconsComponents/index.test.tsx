@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import MenuArrow from './MenuArrow'
+import MenuArrow from './Arrow'
 import MenuCheck from './MenuCheck'
 import Orbe from './Orbe'
 
