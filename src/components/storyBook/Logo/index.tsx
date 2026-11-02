@@ -1,4 +1,4 @@
-import Logo from '@/components/Logo'
+import Logo from '@/components/Header/Logo'
 import { VARIANT } from '@/types/globals.types'
 import { FC } from 'react'
 
