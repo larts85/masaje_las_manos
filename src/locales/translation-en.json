@@ -22,5 +22,36 @@
   "about": {
     "pageTitle": "About",
     "metaDescription": ""
+  },
+  "bannerHomePage": {
+    "title": "THE HANDS MASSAGE",
+    "slogan": "YOUR WELL-BEING IN OUR HANDS"
+  },
+  "contentHomePage": {
+    "sesionOne": [
+      "Welcome to The Hands Massage, where we provide you with a professional massage service that can be local or at home, according to your preference.",
+      "We offer a wide variety of massage treatments designed to meet your needs."
+    ],
+    "sesionTwoTitle": "Why is it important to have a massage routine?",
+    "sesionTwoContent": [
+      "- Improves blood circulation.",
+      "- Increase flexibility.",
+      "- Improves joint mobility.",
+      "- Improve the immune system.",
+      "- Promotes better sleep.",
+      "- Reduces muscle tension.",
+      "- Sports injuries can be treated.",
+      "- Improves chronic muscle conditions.",
+      "- Relieve pain and inflammation.",
+      "- Improve recovery.",
+      "- Reduces stress."
+    ],
+    "sesionThree": [
+      "Our team of therapists are highly trained and ready to provide you with the personalized attention you deserve.",
+      "We invite you to discover all the services and premises we have and do not hesitate to contact us to clarify any questions or to coordinate an appointment."
+    ]
+  },
+  "footerHomePage": {
+    "Copyright": "The Hands Massage 2023, All rights reserved, Developed by Lucesitaliss and Imadev"
   }
 }
